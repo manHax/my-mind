@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../notes/domain/note.dart';
 import '../../notes/domain/note_metadata.dart';
 import '../../notes/infrastructure/markdown_parser.dart';
+import '../../notes/application/notes_providers.dart';
 import '../infrastructure/github_note_repository.dart';
 
 enum SyncState { idle, syncing, success, error }
