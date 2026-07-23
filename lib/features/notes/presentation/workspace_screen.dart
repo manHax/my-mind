@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 import '../domain/note.dart';
@@ -105,6 +106,74 @@ class _WorkspaceScreenState extends ConsumerState<WorkspaceScreen> {
     }
   }
 
+  Future<void> _sharePublicGist(BuildContext context, WidgetRef ref) async {
+    final currentPath = ref.read(currentNotePathProvider);
+    final content = ref.read(activeNoteContentProvider);
+    
+    showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (ctx) => const AlertDialog(
+        content: Row(
+          children: [
+            CircularProgressIndicator(),
+            SizedBox(width: 16),
+            Text('Generating public link...'),
+          ],
+        ),
+      ),
+    );
+
+    try {
+      final repo = ref.read(githubNoteRepositoryProvider);
+      final url = await repo?.createPublicGist(currentPath, content);
+      
+      if (context.mounted) Navigator.pop(context); // close loading dialog
+      
+      if (url != null && context.mounted) {
+        showDialog(
+          context: context,
+          builder: (ctx) => AlertDialog(
+            title: const Text('Share Link Ready! 🚀'),
+            content: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text('Anyone with this link can read this note securely via GitHub Gists:'),
+                const SizedBox(height: 12),
+                Container(
+                  padding: const EdgeInsets.all(12),
+                  decoration: BoxDecoration(
+                    color: Theme.of(context).colorScheme.surfaceContainerHighest,
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: SelectableText(url, style: TextStyle(fontFamily: 'monospace', color: Theme.of(context).colorScheme.primary)),
+                ),
+              ],
+            ),
+            actions: [
+              TextButton(onPressed: () => Navigator.pop(ctx), child: const Text('Close')),
+              FilledButton.icon(
+                icon: const Icon(Icons.copy, size: 16),
+                label: const Text('Copy Link'),
+                onPressed: () {
+                  Clipboard.setData(ClipboardData(text: url));
+                  ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Link copied to clipboard!')));
+                  Navigator.pop(ctx);
+                },
+              ),
+            ],
+          ),
+        );
+      }
+    } catch(e) {
+      if (context.mounted) Navigator.pop(context);
+      if (context.mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Error: $e')));
+      }
+    }
+  }
+
   @override
   void initState() {
     super.initState();
@@ -169,6 +238,11 @@ class _WorkspaceScreenState extends ConsumerState<WorkspaceScreen> {
         elevation: 0,
         backgroundColor: Theme.of(context).colorScheme.surface,
         actions: [
+          IconButton(
+            tooltip: 'Share as Public Link',
+            icon: const Icon(Icons.ios_share),
+            onPressed: () => _sharePublicGist(context, ref),
+          ),
           IconButton(
             tooltip: 'Rename / Move Note',
             icon: const Icon(Icons.drive_file_rename_outline),

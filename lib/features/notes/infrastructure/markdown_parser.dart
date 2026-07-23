@@ -5,6 +5,16 @@ import '../domain/note.dart';
 class MarkdownParser {
   static const _separator = '---';
 
+  static String extractTitle(String body, String path) {
+    final lines = body.split('\n');
+    for (final line in lines) {
+      if (line.trim().startsWith('# ')) {
+        return line.trim().substring(2).trim();
+      }
+    }
+    return path.split(RegExp(r'[\\/]')).last.replaceAll('.md', '');
+  }
+
   static Note parse(String content, String path) {
     if (content.startsWith(_separator)) {
       final endOfFrontMatter = content.indexOf('\n$_separator', _separator.length);
@@ -34,7 +44,7 @@ class MarkdownParser {
     return Note(
       path: path,
       metadata: NoteMetadata(
-        title: path.split(RegExp(r'[\\/]')).last.replaceAll('.md', ''),
+        title: extractTitle(content, path),
         created: DateTime.now(),
         updated: DateTime.now(),
       ),

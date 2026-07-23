@@ -60,15 +60,32 @@ class SyncService {
         throw Exception('Not connected to GitHub.');
       }
       
-      // Parse the raw content from TextField to extract existing metadata and body separately
+      // Get the cached metadata (so we don't lose created timestamp, tags, etc.)
+      final currentMetadata = _ref.read(activeNoteMetadataProvider);
+      
+      // Parse the raw content from TextField in case user typed their own frontmatter manually
       Note parsedNote = MarkdownParser.parse(content, notePath);
       
-      // Update the 'updated' timestamp
-      parsedNote = parsedNote.copyWith(
-        metadata: parsedNote.metadata.copyWith(updated: DateTime.now()),
+      // If the user didn't type new frontmatter, use the cached one, otherwise use what they typed
+      NoteMetadata metaToUse = currentMetadata ?? parsedNote.metadata;
+      
+      // Auto-extract title from the current text editor content (the H1 or filename)
+      final extractedTitle = MarkdownParser.extractTitle(parsedNote.content.isEmpty && content.isNotEmpty ? content : parsedNote.content, notePath);
+      
+      // Update the 'updated' timestamp and the extracted title
+      metaToUse = metaToUse.copyWith(
+        title: extractedTitle,
+        updated: DateTime.now(),
       );
       
-      await repo.saveNote(parsedNote);
+      // Re-construct the Note
+      final noteToSave = Note(
+        path: notePath,
+        metadata: metaToUse,
+        content: parsedNote.content.isEmpty && content.isNotEmpty ? content : parsedNote.content,
+      );
+
+      await repo.saveNote(noteToSave);
       
       _ref.read(syncStateProvider.notifier).set(SyncState.success);
       _ref.read(syncMessageProvider.notifier).set('Saved to Cloud');

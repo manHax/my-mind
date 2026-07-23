@@ -123,4 +123,30 @@ class GithubNoteRepository {
       );
     }
   }
+
+  /// Creates a public GitHub Gist to share a specific note
+  Future<String> createPublicGist(String filename, String content) async {
+    final url = Uri.parse('https://api.github.com/gists');
+    final res = await http.post(
+      url,
+      headers: _headers,
+      body: jsonEncode({
+        'description': 'Shared via My Mind (Cloud Native PKM)',
+        'public': false,
+        'files': {
+          filename.split('/').last: {
+            'content': content
+          }
+        }
+      }),
+    );
+
+    if (res.statusCode == 201) {
+      final json = jsonDecode(res.body);
+      return json['html_url'];
+    } else {
+      throw Exception('Failed to create Gist: ${res.body}');
+    }
+  }
 }
+
