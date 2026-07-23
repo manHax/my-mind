@@ -1,0 +1,31 @@
+    name: Deploy Flutter Web to GitHub Pages
+
+    on:
+      push:
+        branches:
+          - main # (Sesuaikan jika branch utama Anda bernama 'master')
+
+    jobs:
+      build_and_deploy:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Checkout repository
+            uses: actions/checkout@v4
+
+          - name: Set up Flutter
+            uses: subosito/flutter-action@v2
+            with:
+              channel: 'stable' # Menggunakan versi stabil terbaru
+
+          - name: Install dependencies
+            run: flutter pub get
+
+          - name: Build Web
+            # Sangat penting menambahkan --base-href agar script/gambar tidak error (karena numpang di manhax.github.io/my-mind/)
+            run: flutter build web --base-href "/my-mind/" --release
+
+          - name: Deploy to GitHub Pages
+            uses: peaceiris/actions-gh-pages@v4
+            with:
+              github_token: ${{ secrets.GITHUB_TOKEN }}
+              publish_dir: ./build/web
