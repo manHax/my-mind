@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 import '../../sync/infrastructure/github_note_repository.dart';
 import '../../sync/infrastructure/github_auth_service.dart';
+import '../../workspace/infrastructure/workspace_repository.dart';
 
 class SettingsDialog extends ConsumerWidget {
   const SettingsDialog({super.key});
@@ -66,6 +68,25 @@ class SettingsDialog extends ConsumerWidget {
                     ),
                   ),
                 ],
+              ),
+            ),
+            const SizedBox(height: 32),
+            SizedBox(
+              width: double.infinity,
+              child: OutlinedButton.icon(
+                icon: const Icon(Icons.logout, color: Colors.red),
+                label: const Text('Disconnect Workspace', style: TextStyle(color: Colors.red)),
+                style: OutlinedButton.styleFrom(
+                  side: const BorderSide(color: Colors.red),
+                  padding: const EdgeInsets.symmetric(vertical: 16),
+                ),
+                onPressed: () {
+                  ref.read(sharedPreferencesProvider).remove('github_token');
+                  ref.read(sharedPreferencesProvider).remove('github_repo');
+                  ref.read(githubAuthNotifierProvider.notifier).setToken('');
+                  ref.read(workspaceRepoProvider.notifier).set(null);
+                  context.go('/');
+                },
               ),
             ),
           ],
