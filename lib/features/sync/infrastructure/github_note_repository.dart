@@ -5,12 +5,22 @@ import '../../notes/domain/note.dart';
 import '../../notes/domain/note_metadata.dart';
 import '../../notes/infrastructure/markdown_parser.dart';
 import 'github_auth_service.dart';
+import '../../workspace/infrastructure/workspace_repository.dart';
 
 // The workspace is now represented by a GitHub Repository Name (e.g. "Manhakkim/my-mind-notes")
 class WorkspaceRepoNotifier extends Notifier<String?> {
   @override
-  String? build() => null;
-  void set(String? repo) => state = repo;
+  String? build() {
+    final prefs = ref.watch(sharedPreferencesProvider);
+    return prefs.getString('github_repo');
+  }
+
+  void set(String? repo) {
+    if (repo != null) {
+      ref.read(sharedPreferencesProvider).setString('github_repo', repo);
+    }
+    state = repo;
+  }
 }
 final workspaceRepoProvider = NotifierProvider<WorkspaceRepoNotifier, String?>(WorkspaceRepoNotifier.new);
 

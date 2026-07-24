@@ -1,4 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../../workspace/infrastructure/workspace_repository.dart';
 
 class AuthState {
   final String? accessToken;
@@ -7,9 +8,14 @@ class AuthState {
 
 class GithubAuthNotifier extends Notifier<AuthState> {
   @override
-  AuthState build() => AuthState();
+  AuthState build() {
+    final prefs = ref.watch(sharedPreferencesProvider);
+    final savedToken = prefs.getString('github_token');
+    return AuthState(accessToken: savedToken);
+  }
 
   void setToken(String token) {
+    ref.read(sharedPreferencesProvider).setString('github_token', token);
     state = AuthState(accessToken: token);
   }
 }

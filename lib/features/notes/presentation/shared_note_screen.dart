@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:http/http.dart' as http;
+import '../infrastructure/markdown_parser.dart';
 
 class SharedNoteScreen extends StatefulWidget {
   final String gistId;
@@ -35,9 +36,18 @@ class _SharedNoteScreenState extends State<SharedNoteScreen> {
         final files = data['files'] as Map<String, dynamic>;
         if (files.isNotEmpty) {
           final firstFile = files.values.first;
+          
+          String rawContent = firstFile['content'];
+          if (rawContent.trimLeft().startsWith('---')) {
+            final end = rawContent.indexOf('\n---', 3);
+            if (end != -1) {
+              rawContent = rawContent.substring(end + 4).trimLeft();
+            }
+          }
+
           setState(() {
             _filename = firstFile['filename'];
-            _content = firstFile['content'];
+            _content = rawContent;
             _isLoading = false;
           });
         } else {
@@ -80,7 +90,7 @@ class _SharedNoteScreenState extends State<SharedNoteScreen> {
                   children: [
                     Expanded(
                       child: Text(
-                        _filename.replaceAll('.md', ''),
+                        _filename.isNotEmpty ? MarkdownParser.extractTitle(_content, _filename) : '',
                         style: Theme.of(context).textTheme.displaySmall?.copyWith(
                           fontWeight: FontWeight.w700,
                           color: Theme.of(context).colorScheme.primary,
