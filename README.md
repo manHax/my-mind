@@ -30,9 +30,8 @@ Aplikasi ini menggunakan sistem keamanan **Fine-Grained Token** dari GitHub, di 
    * Pada bagian **Repository access**, pilih opsi **"Only select repositories"**.
    * Pilih nama repository yang baru saja Anda buat di Langkah 1 (misal: `catatan-rahasia`).
 8. **Berikan Akses Minimal (Permissions):**
-   * Buka dropdown menu **Repository permissions**.
-   * Cari bagian **Contents**, ubah statusnya menjadi **Read and write**.
-   * *(Ini adalah satu-satunya izin yang dibutuhkan agar aplikasi dapat mengelola file `.md` Anda).*
+   * Di bagian **Repository permissions** -> Cari **Contents**, ubah menjadi **Read and write**.
+   * Di bagian **Account permissions** (ada di bawahnya) -> Cari **Gists**, ubah menjadi **Read and write** *(ini wajib agar fitur Share Link berfungsi)*.
 9. Scroll ke bawah dan klik **Generate token**, lalu *copy* (salin) token panjang tersebut yang berawalan `github_pat_...`. Simpan token ini baik-baik!
 
 ---

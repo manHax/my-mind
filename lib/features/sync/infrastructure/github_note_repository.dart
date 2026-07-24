@@ -126,6 +126,7 @@ class GithubNoteRepository {
 
   /// Creates a public GitHub Gist to share a specific note
   Future<String> createPublicGist(String filename, String content) async {
+    final gistContent = content.trim().isEmpty ? "(Catatan kosong)" : content;
     final url = Uri.parse('https://api.github.com/gists');
     final res = await http.post(
       url,
@@ -135,7 +136,7 @@ class GithubNoteRepository {
         'public': false,
         'files': {
           filename.split('/').last: {
-            'content': content
+            'content': gistContent
           }
         }
       }),
@@ -143,7 +144,7 @@ class GithubNoteRepository {
 
     if (res.statusCode == 201) {
       final json = jsonDecode(res.body);
-      return json['html_url'];
+      return json['id']; // We now return ID so we can embed it in our own web URL
     } else {
       throw Exception('Failed to create Gist: ${res.body}');
     }

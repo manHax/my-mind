@@ -126,11 +126,14 @@ class _WorkspaceScreenState extends ConsumerState<WorkspaceScreen> {
 
     try {
       final repo = ref.read(githubNoteRepositoryProvider);
-      final url = await repo?.createPublicGist(currentPath, content);
+      final gistId = await repo?.createPublicGist(currentPath, content);
       
       if (context.mounted) Navigator.pop(context); // close loading dialog
       
-      if (url != null && context.mounted) {
+      if (gistId != null && context.mounted) {
+        final String baseUrl = Uri.base.toString().split('#').first;
+        final String shareUrl = '$baseUrl#/share/$gistId';
+
         showDialog(
           context: context,
           builder: (ctx) => AlertDialog(
@@ -139,7 +142,7 @@ class _WorkspaceScreenState extends ConsumerState<WorkspaceScreen> {
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text('Anyone with this link can read this note securely via GitHub Gists:'),
+                const Text('Anyone with this link can read this note seamlessly on your web app:'),
                 const SizedBox(height: 12),
                 Container(
                   padding: const EdgeInsets.all(12),
@@ -147,7 +150,7 @@ class _WorkspaceScreenState extends ConsumerState<WorkspaceScreen> {
                     color: Theme.of(context).colorScheme.surfaceContainerHighest,
                     borderRadius: BorderRadius.circular(8),
                   ),
-                  child: SelectableText(url, style: TextStyle(fontFamily: 'monospace', color: Theme.of(context).colorScheme.primary)),
+                  child: SelectableText(shareUrl, style: TextStyle(fontFamily: 'monospace', color: Theme.of(context).colorScheme.primary)),
                 ),
               ],
             ),
@@ -157,7 +160,7 @@ class _WorkspaceScreenState extends ConsumerState<WorkspaceScreen> {
                 icon: const Icon(Icons.copy, size: 16),
                 label: const Text('Copy Link'),
                 onPressed: () {
-                  Clipboard.setData(ClipboardData(text: url));
+                  Clipboard.setData(ClipboardData(text: shareUrl));
                   ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Link copied to clipboard!')));
                   Navigator.pop(ctx);
                 },
