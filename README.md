@@ -2,7 +2,16 @@
 
 **My Mind** adalah aplikasi manajemen pengetahuan pribadi (Personal Knowledge Management / PKM) lintas platform (Web, Desktop, Mobile) yang indah, ringan, dan tersinkronisasi secara otomatis dengan **GitHub**.
 
-Aplikasi ini menggunakan filosofi **Markdown Native**. Setiap huruf yang Anda ketik akan langsung dirender menjadi pratinjau (Live Preview) yang cantik, dan setiap 5 detik saat Anda berhenti mengetik, catatan Anda akan otomatis ditembakkan ke *Private Repository GitHub* Anda (Auto-Save).
+Aplikasi ini menggunakan filosofi **Markdown Native** dan memiliki berbagai fitur modern untuk mengatur pengetahuan Anda, termasuk metadata YAML Frontmatter.
+
+---
+
+## ✨ Fitur Utama Terbaru
+* **Cloud-Native Sync**: Sinkronisasi langsung ke Private Repository GitHub melalui API tanpa perlu *command line* Git lokal.
+* **Auto-Save & Toggle**: Perubahan Anda akan otomatis disimpan tiap 5 detik saat berhenti mengetik. Fitur ini bisa dinonaktifkan di Settings jika Anda ingin menggunakan tombol manual.
+* **Smart View Modes**: Tiga mode tampilan fleksibel: *Editor Only* (fokus menulis), *Split View* (menulis sekaligus pratinjau), dan *Reader Only* (fokus membaca).
+* **Rich Metadata Management**: Mendukung format standar *YAML Frontmatter*. Anda bisa mengelola *Title, Tags, Date, Favorite,* dan *Published* dengan mudah melalui antarmuka *Edit Metadata*.
+* **Public Sharing**: Bagikan catatan *private* Anda ke publik dengan satu klik via *GitHub Gists*.
 
 ---
 
@@ -18,7 +27,7 @@ Untuk menggunakan aplikasi ini, Anda tidak memerlukan *database* berbayar apa pu
 5. Klik **Create repository**.
 
 ### Langkah 2: Buat Fine-Grained Personal Access Token (PAT)
-Aplikasi ini menggunakan sistem keamanan **Fine-Grained Token** dari GitHub, di mana Anda bisa membatasi agar aplikasi HANYA diizinkan mengakses satu repository khusus saja (tanpa bisa menyentuh data Anda yang lain).
+Aplikasi ini menggunakan sistem keamanan **Fine-Grained Token** dari GitHub, di mana Anda bisa membatasi agar aplikasi HANYA diizinkan mengakses satu repository khusus saja.
 
 1. Di GitHub, klik Foto Profil Anda (Pojok Kanan Atas) > **Settings**.
 2. Scroll ke menu paling bawah sebelah kiri, klik **Developer settings**.
@@ -40,33 +49,33 @@ Aplikasi ini menggunakan sistem keamanan **Fine-Grained Token** dari GitHub, di 
 
 ### 1. Masuk ke Aplikasi (Login)
 Saat Anda menjalankan aplikasi (`flutter run -d chrome` atau `windows`), Anda akan disambut oleh layar "Mount Cloud Workspace".
-* **Personal Access Token**: Tempel (paste) kode `ghp_...` yang baru saja Anda buat.
+* **Personal Access Token**: Tempel kode `ghp_...` atau `github_pat_...` Anda.
 * **Target Repository**: Ketikkan nama akun GitHub Anda diikuti garis miring dan nama repo Anda. *(Contoh: `Manhakkim/catatan-rahasia`)*.
 * Klik **Mount Cloud Workspace**.
 
 ### 2. Membaca & Menulis Catatan
-* **Sidebar (Kiri)**: Menampilkan seluruh file `.md` yang ada di cloud Anda. Klik nama file untuk membukanya.
-* **Editor (Tengah)**: Ketik catatan Anda di sini menggunakan format standar Markdown (`#`, `**bold**`, `- list`, dsb).
-* **Live Preview (Kanan)**: Tampilan visual hasil akhir dari ketikan Anda, dirender secara *real-time*.
+Gunakan grup ikon **View Mode** di baris menu atas (kanan) untuk mengatur tampilan ruang kerja:
+* 📝 **Editor Only**: Menampilkan panel teks editor saja untuk fokus menulis.
+* 🗂️ **Split View**: Tampilan berdampingan (Editor di kiri, Preview di kanan).
+* 📖 **Reader Only**: Menampilkan Markdown yang sudah dirender dengan indah untuk fokus membaca.
 
-### 3. Fitur Auto-Sync (Cloud)
-Anda **TIDAK PERLU** menekan tombol *Save*. 
-Perhatikan indikator di pojok kanan atas aplikasi:
-* Jika Anda sedang mengetik, ia akan bersiap-siap (Abu-abu).
-* Jika Anda **berhenti mengetik selama 5 detik**, indikator akan berubah menjadi biru (Syncing).
-* Jika berhasil, ia akan berubah hijau (Saved to Cloud). Jika internet terputus, ia akan berwarna merah.
+### 3. Mengatur Metadata (YAML Frontmatter)
+Setiap catatan mendukung *frontmatter* YAML (Title, Tags, Date, Favorite, Published).
+* Buka catatan, lalu klik ikon **slider/tune (Edit Metadata)** di deretan menu atas.
+* Atur parameter sesuai kebutuhan, lalu klik **Save**. Aplikasi akan langsung memformulasikannya ke format YAML yang rapi di awal file Anda.
 
-### 4. Membuat Folder & File Baru
-* Klik ikon **(+) Plus** di sidebar kiri.
-* Untuk membuat **File Baru**: Ketikkan nama file, misal `jurnal.md`.
-* Untuk membuat **Folder Baru**: GitHub tidak mengizinkan folder kosong, sehingga folder dibuat bersaman dengan file. Ketikkan nama folder, lalu garis miring `/`, lalu nama file. 
-  *(Contoh: `jurnal_2026/hari_ini.md`)*. Aplikasi akan otomatis menciptakan folder tersebut.
+### 4. Fitur Auto-Sync & Manual Save
+Secara bawaan, aplikasi akan otomatis mem-push perubahan Anda ke GitHub ketika Anda berhenti mengetik selama 5 detik.
+* Jika Anda lebih suka metode konvensional, klik ikon ⚙️ **Settings** di bawah kiri (Sidebar) dan nonaktifkan fitur *Auto-save*.
+* Saat dimatikan, sebuah tombol 💾 **Save** akan muncul di baris menu atas untuk Anda tekan saat ingin menembakkan catatan ke GitHub.
 
-### 5. Mengubah Nama (Rename) / Memindahkan File
-* Pastikan file yang ingin diubah sedang terbuka di Editor.
-* Klik tombol **✏️ (Edit/Rename)** di bagian atas (sebelah kiri indikator Sync).
-* Ganti namanya menjadi yang baru. Jika Anda ingin memindahkannya ke dalam folder lain, cukup ubah strukturnya (contoh: dari `jurnal.md` menjadi `arsip/jurnal_lama.md`).
-* Aplikasi akan menyalin isinya, menghapus file lama di Cloud, dan memuat ulang Sidebar Anda.
+### 5. Membuat, Mengubah, dan Memindahkan File/Folder
+* **Buat Baru**: Klik ikon **(+) Plus** di pojok atas sidebar kiri. Untuk mengorganisir menggunakan folder, cukup gunakan simbol garis miring `/` (contoh: `jurnal_2026/hari_ini.md`).
+* **Rename / Move**: Buka file yang dimaksud, lalu klik ikon **✏️ (Rename)** di menu atas. Ubah struktur teksnya (contoh: pindahkan `jurnal.md` ke folder lain menjadi `arsip/jurnal.md`).
+
+### 6. Berbagi Catatan ke Publik
+* Ingin membagikan file rahasia secara individual? Klik ikon **📤 (Share as Public Link)** di menu atas.
+* Aplikasi akan menggunakan token Anda untuk menembak API Gist, dan menghasilkan tautan *shareable* yang bisa langsung di-copy!
 
 ---
 *Didesain dan dibangun dengan ❤️ menggunakan Flutter & arsitektur Clean Riverpod.*
