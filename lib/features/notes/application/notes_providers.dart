@@ -59,3 +59,14 @@ class ActiveNoteContentNotifier extends Notifier<String> {
 }
 
 final activeNoteContentProvider = NotifierProvider<ActiveNoteContentNotifier, String>(ActiveNoteContentNotifier.new);
+
+enum ViewMode { split, editorOnly, readerOnly }
+
+class ViewModeNotifier extends Notifier<ViewMode> {
+  @override
+  ViewMode build() => ViewMode.split;
+  
+  void set(ViewMode mode) => state = mode;
+}
+
+final viewModeProvider = NotifierProvider<ViewModeNotifier, ViewMode>(ViewModeNotifier.new);

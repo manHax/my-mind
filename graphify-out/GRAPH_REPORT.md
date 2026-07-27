@@ -1,16 +1,16 @@
 # Graph Report - my-mind  (2026-07-27)
 
 ## Corpus Check
-- 53 files · ~20,702 words
+- 53 files · ~20,848 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 457 nodes · 595 edges · 63 communities (20 shown, 43 thin omitted)
+- 460 nodes · 603 edges · 63 communities (20 shown, 43 thin omitted)
 - Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 20 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `f26ec36e`
+- Built from commit: `fe685a8c`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -77,27 +77,27 @@
 
 ## God Nodes (most connected - your core abstractions)
 1. `Win32Window` - 22 edges
-2. `_WorkspaceScreenState` - 12 edges
+2. `_WorkspaceScreenState` - 13 edges
 3. `MessageHandler` - 12 edges
 4. `sharedPreferencesProvider` - 11 edges
 5. `FlutterWindow` - 10 edges
 6. `Create` - 10 edges
 7. `WndProc` - 10 edges
-8. `MessageHandler` - 9 edges
-9. `currentNotePathProvider` - 8 edges
-10. `activeNoteContentProvider` - 8 edges
+8. `build` - 9 edges
+9. `MessageHandler` - 9 edges
+10. `currentNotePathProvider` - 8 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Deploy Flutter Web to GitHub Pages` --conceptually_related_to--> `Web Base Href`  [INFERRED]
   .github/workflows/deploy-web.yml → web/index.html
 - `my_mind Package` --conceptually_related_to--> `Flutter Lints`  [INFERRED]
   pubspec.yaml → analysis_options.yaml
+- `build` --references--> `sharedPreferencesProvider`  [EXTRACTED]
+  lib/features/sync/infrastructure/github_auth_service.dart → lib/features/workspace/infrastructure/workspace_repository.dart
 - `OnCreate` --calls--> `RegisterPlugins()`  [INFERRED]
   windows/runner/flutter_window.h → windows/flutter/generated_plugin_registrant.cc
 - `wWinMain()` --calls--> `CreateAndAttachConsole()`  [INFERRED]
   windows/runner/main.cpp → windows/runner/utils.cpp
-- `Win32Window::Win32Window()` --calls--> `Destroy`  [INFERRED]
-  windows/runner/win32_window.cpp → windows/runner/win32_window.h
 
 ## Import Cycles
 - None detected.
@@ -112,24 +112,24 @@ Cohesion: 0.07
 Nodes (51): Point, RECT, Size, unique_ptr, DartProject, HWND, LPARAM, LRESULT (+43 more)
 
 ### Community 1 - "Sync & GitHub Auth"
-Cohesion: 0.05
-Nodes (46): dart:async, github_auth_service.dart, ../infrastructure/github_note_repository.dart, CurrentNotePathNotifier, WorkspacePathNotifier, AutoSaveNotifier, build, _debounceTimer (+38 more)
+Cohesion: 0.06
+Nodes (41): dart:async, github_auth_service.dart, ../infrastructure/github_note_repository.dart, CurrentNotePathNotifier, WorkspacePathNotifier, AutoSaveNotifier, build, _debounceTimer (+33 more)
 
 ### Community 2 - "iOS & macOS Runner"
 Cohesion: 0.06
 Nodes (29): Any, Cocoa, file_picker, Flutter, FlutterAppDelegate, FlutterImplicitEngineBridge, FlutterImplicitEngineDelegate, FlutterMacOS (+21 more)
 
 ### Community 3 - "Notes Providers & Screen"
-Cohesion: 0.12
-Nodes (32): ../application/notes_providers.dart, ConsumerState, ConsumerWidget, ../infrastructure/markdown_parser.dart, ActiveNoteContentNotifier, activeNoteContentProvider, activeNoteMetadataProvider, build (+24 more)
+Cohesion: 0.11
+Nodes (36): ../application/notes_providers.dart, ConsumerStatefulWidget, ../infrastructure/markdown_parser.dart, ActiveNoteContentNotifier, activeNoteContentProvider, activeNoteMetadataProvider, build, currentNotePathProvider (+28 more)
 
 ### Community 4 - "Note & Workspace Models"
 Cohesion: 0.06
 Nodes (35): @immutable, DateTime, int get, ActiveNoteMetadataNotifier, content, copyWith, metadata, hashCode (+27 more)
 
 ### Community 5 - "App Router Navigation"
-Cohesion: 0.10
-Nodes (26): class, ConsumerStatefulWidget, WorkspaceScreen, build, SettingsDialog, autoSaveProvider, githubAuthNotifierProvider, workspaceRepoProvider (+18 more)
+Cohesion: 0.07
+Nodes (35): class, ConsumerState, ConsumerWidget, ../../features/notes/presentation/shared_note_screen.dart, ../../features/notes/presentation/workspace_screen.dart, ../../features/sync/infrastructure/github_note_repository.dart, ../../features/workspace/presentation/workspace_selector_screen.dart, GoRouter (+27 more)
 
 ### Community 6 - "Local Note Repo & Git"
 Cohesion: 0.11
@@ -140,12 +140,12 @@ Cohesion: 0.09
 Nodes (22): FlPluginRegistry, FlView, GApplication, gboolean, gchar, GObject, GtkApplication, fl_register_plugins() (+14 more)
 
 ### Community 8 - "Workspace Repo & Main"
-Cohesion: 0.07
-Nodes (27): core/router/app_router.dart, ../domain/workspace.dart, ../../features/notes/presentation/shared_note_screen.dart, ../../features/notes/presentation/workspace_screen.dart, ../../features/sync/infrastructure/github_note_repository.dart, features/workspace/infrastructure/workspace_repository.dart, ../../features/workspace/presentation/workspace_selector_screen.dart, GoRouter (+19 more)
+Cohesion: 0.09
+Nodes (22): core/router/app_router.dart, dart:convert, ../domain/workspace.dart, features/workspace/infrastructure/workspace_repository.dart, routerProvider, getLastOpenedWorkspaceId, getRecentWorkspaces, _getWorkspacesMap (+14 more)
 
 ### Community 9 - "Shared Note Screen"
 Cohesion: 0.13
-Nodes (15): dart:convert, build, _content, createState, _error, _fetchGist, _filename, gistId (+7 more)
+Nodes (15): build, _content, createState, _error, _fetchGist, _filename, gistId, initState (+7 more)
 
 ### Community 10 - "Windows Main Utils"
 Cohesion: 0.24
@@ -190,6 +190,6 @@ _Questions this graph is uniquely positioned to answer:_
 - **Should `Windows Runner Win32` be split into smaller, more focused modules?**
   _Cohesion score 0.06594071385359952 - nodes in this community are weakly interconnected._
 - **Should `Sync & GitHub Auth` be split into smaller, more focused modules?**
-  _Cohesion score 0.05442176870748299 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05758582502768549 - nodes in this community are weakly interconnected._
 - **Should `iOS & macOS Runner` be split into smaller, more focused modules?**
   _Cohesion score 0.05647840531561462 - nodes in this community are weakly interconnected._

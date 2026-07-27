@@ -27,6 +27,7 @@
       "_origin": "ast",
       "id": "android_app_build_gradle",
       "community": 23,
+      "community_name": "Icon/Config Artifacts",
       "norm_label": "app/build.gradle.kts"
     },
     {
@@ -37,6 +38,7 @@
       "_origin": "ast",
       "id": "android_app_src_main_kotlin_com_example_my_mind_mainactivity",
       "community": 15,
+      "community_name": "Android Main Activity",
       "norm_label": "mainactivity.kt"
     },
     {
@@ -47,6 +49,7 @@
       "_origin": "ast",
       "id": "android_app_src_main_kotlin_com_example_my_mind_mainactivity_mainactivity",
       "community": 15,
+      "community_name": "Android Main Activity",
       "norm_label": "mainactivity"
     },
     {
@@ -57,6 +60,7 @@
       "_origin": "ast",
       "id": "flutteractivity",
       "community": 15,
+      "community_name": "Android Main Activity",
       "norm_label": "flutteractivity"
     },
     {
@@ -67,6 +71,7 @@
       "_origin": "ast",
       "id": "android_build_gradle",
       "community": 29,
+      "community_name": "Icon/Config Artifacts",
       "norm_label": "android/build.gradle.kts"
     },
     {
@@ -77,6 +82,7 @@
       "_origin": "ast",
       "id": "android_settings_gradle",
       "community": 30,
+      "community_name": "Icon/Config Artifacts",
       "norm_label": "settings.gradle.kts"
     },
     {
@@ -87,39 +93,43 @@
       "_origin": "ast",
       "id": "ios_runnertests_runnertests",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": "ios/runnertests/runnertests.swift"
     },
     {
       "label": "Flutter",
       "file_type": "code",
       "type": "module",
-      "source_file": "ios/RunnerTests/RunnerTests.swift",
+      "source_file": "ios/Runner/SceneDelegate.swift",
       "source_location": "L1",
       "_origin": "ast",
       "id": "flutter",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": "flutter"
     },
     {
       "label": "UIKit",
       "file_type": "code",
       "type": "module",
-      "source_file": "ios/RunnerTests/RunnerTests.swift",
+      "source_file": "ios/Runner/SceneDelegate.swift",
       "source_location": "L2",
       "_origin": "ast",
       "id": "uikit",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": "uikit"
     },
     {
       "label": "XCTest",
       "file_type": "code",
       "type": "module",
-      "source_file": "ios/RunnerTests/RunnerTests.swift",
+      "source_file": "macos/RunnerTests/RunnerTests.swift",
       "source_location": "L3",
       "_origin": "ast",
       "id": "xctest",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": "xctest"
     },
     {
@@ -130,6 +140,7 @@
       "_origin": "ast",
       "id": "ios_runnertests_runnertests_runnertests",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": "runnertests"
     },
     {
@@ -140,6 +151,7 @@
       "_origin": "ast",
       "id": "xctestcase",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": "xctestcase"
     },
     {
@@ -150,6 +162,7 @@
       "_origin": "ast",
       "id": "ios_runnertests_runnertests_runnertests_testexample",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": ".testexample()"
     },
     {
@@ -160,6 +173,7 @@
       "_origin": "ast",
       "id": "ios_runner_appdelegate",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": "ios/runner/appdelegate.swift"
     },
     {
@@ -170,6 +184,7 @@
       "_origin": "ast",
       "id": "ios_runner_appdelegate_appdelegate",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": "appdelegate"
     },
     {
@@ -180,6 +195,7 @@
       "_origin": "ast",
       "id": "flutterappdelegate",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": "flutterappdelegate"
     },
     {
@@ -190,6 +206,7 @@
       "_origin": "ast",
       "id": "flutterimplicitenginedelegate",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": "flutterimplicitenginedelegate"
     },
     {
@@ -200,6 +217,7 @@
       "_origin": "ast",
       "id": "ios_runner_appdelegate_appdelegate_application",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": ".application()"
     },
     {
@@ -210,6 +228,7 @@
       "_origin": "ast",
       "id": "uiapplication",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": "uiapplication"
     },
     {
@@ -220,6 +239,7 @@
       "_origin": "ast",
       "id": "any",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": "any"
     },
     {
@@ -230,6 +250,7 @@
       "_origin": "ast",
       "id": "ios_runner_appdelegate_swift_bool",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": "bool"
     },
     {
@@ -240,6 +261,7 @@
       "_origin": "ast",
       "id": "ios_runner_appdelegate_appdelegate_didinitializeimplicitflutterengine",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": ".didinitializeimplicitflutterengine()"
     },
     {
@@ -250,6 +272,7 @@
       "_origin": "ast",
       "id": "flutterimplicitenginebridge",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": "flutterimplicitenginebridge"
     },
     {
@@ -260,6 +283,7 @@
       "_origin": "ast",
       "id": "ios_runner_runner_bridging_header",
       "community": 48,
+      "community_name": "Icon/Config Artifacts",
       "norm_label": "runner-bridging-header.h"
     },
     {
@@ -270,6 +294,7 @@
       "_origin": "ast",
       "id": "ios_runner_scenedelegate",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": "scenedelegate.swift"
     },
     {
@@ -280,6 +305,7 @@
       "_origin": "ast",
       "id": "ios_runner_scenedelegate_scenedelegate",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": "scenedelegate"
     },
     {
@@ -290,6 +316,7 @@
       "_origin": "ast",
       "id": "flutterscenedelegate",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": "flutterscenedelegate"
     },
     {
@@ -299,7 +326,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_router_app_router",
-      "community": 5,
+      "community": 8,
+      "community_name": "Workspace Repo & Main",
       "norm_label": "app_router.dart"
     },
     {
@@ -310,6 +338,7 @@
       "_origin": "ast",
       "id": "lib_core_router_app_router_routerprovider",
       "community": 8,
+      "community_name": "Workspace Repo & Main",
       "norm_label": "routerprovider"
     },
     {
@@ -320,6 +349,7 @@
       "_origin": "ast",
       "id": "package_go_router_go_router_dart",
       "community": 5,
+      "community_name": "App Router Navigation",
       "norm_label": "package:go_router/go_router.dart"
     },
     {
@@ -329,7 +359,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "package_flutter_riverpod_flutter_riverpod_dart",
-      "community": 5,
+      "community": 8,
+      "community_name": "Workspace Repo & Main",
       "norm_label": "package:flutter_riverpod/flutter_riverpod.dart"
     },
     {
@@ -339,7 +370,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "features_workspace_presentation_workspace_selector_screen_dart",
-      "community": 5,
+      "community": 8,
+      "community_name": "Workspace Repo & Main",
       "norm_label": "../../features/workspace/presentation/workspace_selector_screen.dart"
     },
     {
@@ -349,7 +381,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "features_notes_presentation_workspace_screen_dart",
-      "community": 5,
+      "community": 8,
+      "community_name": "Workspace Repo & Main",
       "norm_label": "../../features/notes/presentation/workspace_screen.dart"
     },
     {
@@ -359,7 +392,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "features_notes_presentation_shared_note_screen_dart",
-      "community": 5,
+      "community": 8,
+      "community_name": "Workspace Repo & Main",
       "norm_label": "../../features/notes/presentation/shared_note_screen.dart"
     },
     {
@@ -369,7 +403,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "features_sync_infrastructure_github_note_repository_dart",
-      "community": 5,
+      "community": 8,
+      "community_name": "Workspace Repo & Main",
       "norm_label": "../../features/sync/infrastructure/github_note_repository.dart"
     },
     {
@@ -379,7 +414,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "gorouter",
-      "community": 5,
+      "community": 8,
+      "community_name": "Workspace Repo & Main",
       "norm_label": "gorouter"
     },
     {
@@ -390,6 +426,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_application_notes_providers",
       "community": 3,
+      "community_name": "Notes Providers & Screen",
       "norm_label": "notes_providers.dart"
     },
     {
@@ -400,6 +437,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_application_notes_providers_currentnotepathnotifier",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "currentnotepathnotifier"
     },
     {
@@ -410,6 +448,7 @@
       "_origin": "ast",
       "id": "notifier",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "notifier"
     },
     {
@@ -420,6 +459,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_application_notes_providers_activenotemetadatanotifier",
       "community": 4,
+      "community_name": "Note & Workspace Models",
       "norm_label": "activenotemetadatanotifier"
     },
     {
@@ -430,6 +470,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_application_notes_providers_activenotecontentnotifier",
       "community": 3,
+      "community_name": "Notes Providers & Screen",
       "norm_label": "activenotecontentnotifier"
     },
     {
@@ -440,6 +481,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_application_notes_providers_noteslistprovider",
       "community": 3,
+      "community_name": "Notes Providers & Screen",
       "norm_label": "noteslistprovider"
     },
     {
@@ -450,6 +492,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_application_notes_providers_repo",
       "community": 3,
+      "community_name": "Notes Providers & Screen",
       "norm_label": "repo"
     },
     {
@@ -460,6 +503,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_application_notes_providers_currentnotepathprovider",
       "community": 3,
+      "community_name": "Notes Providers & Screen",
       "norm_label": "currentnotepathprovider"
     },
     {
@@ -470,6 +514,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_application_notes_providers_activenotemetadataprovider",
       "community": 3,
+      "community_name": "Notes Providers & Screen",
       "norm_label": "activenotemetadataprovider"
     },
     {
@@ -480,6 +525,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_application_notes_providers_activenotecontentprovider",
       "community": 3,
+      "community_name": "Notes Providers & Screen",
       "norm_label": "activenotecontentprovider"
     },
     {
@@ -490,6 +536,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_application_notes_providers_fetchallmarkdownfiles",
       "community": 3,
+      "community_name": "Notes Providers & Screen",
       "norm_label": "fetchallmarkdownfiles"
     },
     {
@@ -500,6 +547,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_application_notes_providers_build",
       "community": 3,
+      "community_name": "Notes Providers & Screen",
       "norm_label": "build"
     },
     {
@@ -510,6 +558,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_application_notes_providers_loadcontent",
       "community": 3,
+      "community_name": "Notes Providers & Screen",
       "norm_label": "loadcontent"
     },
     {
@@ -520,6 +569,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_application_notes_providers_updatecontent",
       "community": 3,
+      "community_name": "Notes Providers & Screen",
       "norm_label": "updatecontent"
     },
     {
@@ -530,6 +580,7 @@
       "_origin": "ast",
       "id": "sync_infrastructure_github_note_repository_dart",
       "community": 5,
+      "community_name": "App Router Navigation",
       "norm_label": "../../sync/infrastructure/github_note_repository.dart"
     },
     {
@@ -539,7 +590,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "infrastructure_markdown_parser_dart",
-      "community": 9,
+      "community": 3,
+      "community_name": "Notes Providers & Screen",
       "norm_label": "../infrastructure/markdown_parser.dart"
     },
     {
@@ -549,7 +601,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "domain_note_metadata_dart",
-      "community": 3,
+      "community": 47,
+      "community_name": "Icon/Config Artifacts",
       "norm_label": "../domain/note_metadata.dart"
     },
     {
@@ -560,6 +613,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_domain_note",
       "community": 4,
+      "community_name": "Note & Workspace Models",
       "norm_label": "note.dart"
     },
     {
@@ -570,6 +624,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_domain_note_note",
       "community": 4,
+      "community_name": "Note & Workspace Models",
       "norm_label": "note"
     },
     {
@@ -580,6 +635,7 @@
       "_origin": "ast",
       "id": "annotation_immutable",
       "community": 4,
+      "community_name": "Note & Workspace Models",
       "norm_label": "@immutable"
     },
     {
@@ -590,6 +646,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_domain_note_path",
       "community": 4,
+      "community_name": "Note & Workspace Models",
       "norm_label": "path"
     },
     {
@@ -600,6 +657,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_domain_note_dart_lib_features_notes_domain_note_metadata",
       "community": 4,
+      "community_name": "Note & Workspace Models",
       "norm_label": "metadata"
     },
     {
@@ -610,6 +668,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_domain_note_content",
       "community": 4,
+      "community_name": "Note & Workspace Models",
       "norm_label": "content"
     },
     {
@@ -620,6 +679,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_domain_note_operator",
       "community": 4,
+      "community_name": "Note & Workspace Models",
       "norm_label": "operator"
     },
     {
@@ -630,6 +690,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_domain_note_hashcode",
       "community": 4,
+      "community_name": "Note & Workspace Models",
       "norm_label": "hashcode"
     },
     {
@@ -640,6 +701,7 @@
       "_origin": "ast",
       "id": "int_get",
       "community": 4,
+      "community_name": "Note & Workspace Models",
       "norm_label": "int get"
     },
     {
@@ -650,6 +712,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_domain_note_copywith",
       "community": 4,
+      "community_name": "Note & Workspace Models",
       "norm_label": "copywith"
     },
     {
@@ -660,6 +723,7 @@
       "_origin": "ast",
       "id": "package_flutter_foundation_dart",
       "community": 4,
+      "community_name": "Note & Workspace Models",
       "norm_label": "package:flutter/foundation.dart"
     },
     {
@@ -670,6 +734,7 @@
       "_origin": "ast",
       "id": "note_metadata_dart",
       "community": 4,
+      "community_name": "Note & Workspace Models",
       "norm_label": "note_metadata.dart"
     },
     {
@@ -680,6 +745,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_domain_note_metadata_dart_lib_features_notes_domain_note_metadata",
       "community": 4,
+      "community_name": "Note & Workspace Models",
       "norm_label": "note_metadata.dart"
     },
     {
@@ -690,6 +756,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_domain_note_metadata_notemetadata",
       "community": 4,
+      "community_name": "Note & Workspace Models",
       "norm_label": "notemetadata"
     },
     {
@@ -700,6 +767,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_domain_note_metadata_title",
       "community": 4,
+      "community_name": "Note & Workspace Models",
       "norm_label": "title"
     },
     {
@@ -710,6 +778,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_domain_note_metadata_tags",
       "community": 4,
+      "community_name": "Note & Workspace Models",
       "norm_label": "tags"
     },
     {
@@ -720,6 +789,7 @@
       "_origin": "ast",
       "id": "list",
       "community": 4,
+      "community_name": "Note & Workspace Models",
       "norm_label": "list"
     },
     {
@@ -730,6 +800,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_domain_note_metadata_created",
       "community": 4,
+      "community_name": "Note & Workspace Models",
       "norm_label": "created"
     },
     {
@@ -740,6 +811,7 @@
       "_origin": "ast",
       "id": "datetime",
       "community": 4,
+      "community_name": "Note & Workspace Models",
       "norm_label": "datetime"
     },
     {
@@ -750,6 +822,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_domain_note_metadata_updated",
       "community": 4,
+      "community_name": "Note & Workspace Models",
       "norm_label": "updated"
     },
     {
@@ -760,7 +833,41 @@
       "_origin": "ast",
       "id": "lib_features_notes_domain_note_metadata_favorite",
       "community": 4,
+      "community_name": "Note & Workspace Models",
       "norm_label": "favorite"
+    },
+    {
+      "label": "published",
+      "file_type": "code",
+      "source_file": "lib/features/notes/domain/note_metadata.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_notes_domain_note_metadata_published",
+      "community": 4,
+      "community_name": "Note & Workspace Models",
+      "norm_label": "published"
+    },
+    {
+      "label": "date",
+      "file_type": "code",
+      "source_file": "lib/features/notes/domain/note_metadata.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_notes_domain_note_metadata_date",
+      "community": 4,
+      "community_name": "Note & Workspace Models",
+      "norm_label": "date"
+    },
+    {
+      "label": "String?",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast",
+      "id": "none_string",
+      "community": 56,
+      "community_name": "Icon/Config Artifacts",
+      "norm_label": "string?"
     },
     {
       "label": "operator",
@@ -770,6 +877,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_domain_note_metadata_operator",
       "community": 4,
+      "community_name": "Note & Workspace Models",
       "norm_label": "operator"
     },
     {
@@ -780,6 +888,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_domain_note_metadata_copywith",
       "community": 4,
+      "community_name": "Note & Workspace Models",
       "norm_label": "copywith"
     },
     {
@@ -790,6 +899,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_domain_note_metadata_frommap",
       "community": 4,
+      "community_name": "Note & Workspace Models",
       "norm_label": "frommap"
     },
     {
@@ -800,6 +910,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_domain_note_metadata_tomap",
       "community": 4,
+      "community_name": "Note & Workspace Models",
       "norm_label": "tomap"
     },
     {
@@ -809,7 +920,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_notes_infrastructure_local_note_repository",
-      "community": 6,
+      "community": 47,
+      "community_name": "Icon/Config Artifacts",
       "norm_label": "local_note_repository.dart"
     },
     {
@@ -820,17 +932,8 @@
       "_origin": "ast",
       "id": "lib_features_notes_infrastructure_local_note_repository_workspacepathnotifier",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "workspacepathnotifier"
-    },
-    {
-      "label": "String?",
-      "file_type": "code",
-      "source_file": null,
-      "source_location": null,
-      "_origin": "ast",
-      "id": "none_string",
-      "community": 56,
-      "norm_label": "string?"
     },
     {
       "label": "LocalNoteRepository",
@@ -839,7 +942,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_notes_infrastructure_local_note_repository_localnoterepository",
-      "community": 6,
+      "community": 47,
+      "community_name": "Icon/Config Artifacts",
       "norm_label": "localnoterepository"
     },
     {
@@ -849,7 +953,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_notes_infrastructure_local_note_repository_workspacepathprovider",
-      "community": 6,
+      "community": 47,
+      "community_name": "Icon/Config Artifacts",
       "norm_label": "workspacepathprovider"
     },
     {
@@ -859,7 +964,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_notes_infrastructure_local_note_repository_localnoterepositoryprovider",
-      "community": 6,
+      "community": 47,
+      "community_name": "Icon/Config Artifacts",
       "norm_label": "localnoterepositoryprovider"
     },
     {
@@ -869,7 +975,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_notes_infrastructure_local_note_repository_path",
-      "community": 6,
+      "community": 47,
+      "community_name": "Icon/Config Artifacts",
       "norm_label": "path"
     },
     {
@@ -879,7 +986,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_notes_infrastructure_local_note_repository_workspacepath",
-      "community": 6,
+      "community": 47,
+      "community_name": "Icon/Config Artifacts",
       "norm_label": "workspacepath"
     },
     {
@@ -889,7 +997,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_notes_infrastructure_local_note_repository_build",
-      "community": 6,
+      "community": 47,
+      "community_name": "Icon/Config Artifacts",
       "norm_label": "build"
     },
     {
@@ -899,7 +1008,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_notes_infrastructure_local_note_repository_getallnotes",
-      "community": 6,
+      "community": 47,
+      "community_name": "Icon/Config Artifacts",
       "norm_label": "getallnotes"
     },
     {
@@ -909,7 +1019,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_notes_infrastructure_local_note_repository_savenote",
-      "community": 6,
+      "community": 47,
+      "community_name": "Icon/Config Artifacts",
       "norm_label": "savenote"
     },
     {
@@ -919,7 +1030,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_notes_infrastructure_local_note_repository_deletenote",
-      "community": 6,
+      "community": 47,
+      "community_name": "Icon/Config Artifacts",
       "norm_label": "deletenote"
     },
     {
@@ -929,7 +1041,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "dart_io",
-      "community": 6,
+      "community": 47,
+      "community_name": "Icon/Config Artifacts",
       "norm_label": "dart:io"
     },
     {
@@ -939,7 +1052,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "package_path_path_dart",
-      "community": 6,
+      "community": 47,
+      "community_name": "Icon/Config Artifacts",
       "norm_label": "package:path/path.dart"
     },
     {
@@ -949,7 +1063,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "domain_note_dart",
-      "community": 3,
+      "community": 47,
+      "community_name": "Icon/Config Artifacts",
       "norm_label": "../domain/note.dart"
     },
     {
@@ -959,7 +1074,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "markdown_parser_dart",
-      "community": 6,
+      "community": 47,
+      "community_name": "Icon/Config Artifacts",
       "norm_label": "markdown_parser.dart"
     },
     {
@@ -969,7 +1085,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_notes_infrastructure_markdown_parser",
-      "community": 3,
+      "community": 47,
+      "community_name": "Icon/Config Artifacts",
       "norm_label": "markdown_parser.dart"
     },
     {
@@ -979,7 +1096,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_notes_infrastructure_markdown_parser_markdownparser",
-      "community": 3,
+      "community": 47,
+      "community_name": "Icon/Config Artifacts",
       "norm_label": "markdownparser"
     },
     {
@@ -989,7 +1107,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_notes_infrastructure_markdown_parser_separator",
-      "community": 3,
+      "community": 47,
+      "community_name": "Icon/Config Artifacts",
       "norm_label": "_separator"
     },
     {
@@ -999,7 +1118,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "static_const",
-      "community": 3,
+      "community": 47,
+      "community_name": "Icon/Config Artifacts",
       "norm_label": "static const"
     },
     {
@@ -1009,7 +1129,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_notes_infrastructure_markdown_parser_extracttitle",
-      "community": 3,
+      "community": 47,
+      "community_name": "Icon/Config Artifacts",
       "norm_label": "extracttitle"
     },
     {
@@ -1019,7 +1140,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_notes_infrastructure_markdown_parser_parse",
-      "community": 3,
+      "community": 47,
+      "community_name": "Icon/Config Artifacts",
       "norm_label": "parse"
     },
     {
@@ -1029,7 +1151,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_notes_infrastructure_markdown_parser_stringify",
-      "community": 3,
+      "community": 47,
+      "community_name": "Icon/Config Artifacts",
       "norm_label": "stringify"
     },
     {
@@ -1039,7 +1162,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "package_yaml_yaml_dart",
-      "community": 3,
+      "community": 47,
+      "community_name": "Icon/Config Artifacts",
       "norm_label": "package:yaml/yaml.dart"
     },
     {
@@ -1050,6 +1174,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_presentation_shared_note_screen",
       "community": 9,
+      "community_name": "Shared Note Screen",
       "norm_label": "shared_note_screen.dart"
     },
     {
@@ -1060,6 +1185,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_presentation_shared_note_screen_sharednotescreen",
       "community": 9,
+      "community_name": "Shared Note Screen",
       "norm_label": "sharednotescreen"
     },
     {
@@ -1070,6 +1196,7 @@
       "_origin": "ast",
       "id": "statefulwidget",
       "community": 9,
+      "community_name": "Shared Note Screen",
       "norm_label": "statefulwidget"
     },
     {
@@ -1080,6 +1207,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_presentation_shared_note_screen_sharednotescreenstate",
       "community": 9,
+      "community_name": "Shared Note Screen",
       "norm_label": "_sharednotescreenstate"
     },
     {
@@ -1090,6 +1218,7 @@
       "_origin": "ast",
       "id": "state",
       "community": 9,
+      "community_name": "Shared Note Screen",
       "norm_label": "state"
     },
     {
@@ -1100,6 +1229,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_presentation_shared_note_screen_gistid",
       "community": 9,
+      "community_name": "Shared Note Screen",
       "norm_label": "gistid"
     },
     {
@@ -1110,6 +1240,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_presentation_shared_note_screen_isloading",
       "community": 9,
+      "community_name": "Shared Note Screen",
       "norm_label": "_isloading"
     },
     {
@@ -1120,6 +1251,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_presentation_shared_note_screen_content",
       "community": 9,
+      "community_name": "Shared Note Screen",
       "norm_label": "_content"
     },
     {
@@ -1130,6 +1262,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_presentation_shared_note_screen_filename",
       "community": 9,
+      "community_name": "Shared Note Screen",
       "norm_label": "_filename"
     },
     {
@@ -1140,6 +1273,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_presentation_shared_note_screen_error",
       "community": 9,
+      "community_name": "Shared Note Screen",
       "norm_label": "_error"
     },
     {
@@ -1150,6 +1284,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_presentation_shared_note_screen_createstate",
       "community": 9,
+      "community_name": "Shared Note Screen",
       "norm_label": "createstate"
     },
     {
@@ -1160,6 +1295,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_presentation_shared_note_screen_initstate",
       "community": 9,
+      "community_name": "Shared Note Screen",
       "norm_label": "initstate"
     },
     {
@@ -1170,6 +1306,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_presentation_shared_note_screen_fetchgist",
       "community": 9,
+      "community_name": "Shared Note Screen",
       "norm_label": "_fetchgist"
     },
     {
@@ -1180,6 +1317,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_presentation_shared_note_screen_build",
       "community": 9,
+      "community_name": "Shared Note Screen",
       "norm_label": "build"
     },
     {
@@ -1189,7 +1327,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "dart_convert",
-      "community": 8,
+      "community": 9,
+      "community_name": "Shared Note Screen",
       "norm_label": "dart:convert"
     },
     {
@@ -1200,6 +1339,7 @@
       "_origin": "ast",
       "id": "package_flutter_material_dart",
       "community": 5,
+      "community_name": "App Router Navigation",
       "norm_label": "package:flutter/material.dart"
     },
     {
@@ -1209,7 +1349,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "package_flutter_markdown_flutter_markdown_dart",
-      "community": 9,
+      "community": 3,
+      "community_name": "Notes Providers & Screen",
       "norm_label": "package:flutter_markdown/flutter_markdown.dart"
     },
     {
@@ -1220,6 +1361,7 @@
       "_origin": "ast",
       "id": "package_http_http_dart",
       "community": 9,
+      "community_name": "Shared Note Screen",
       "norm_label": "package:http/http.dart"
     },
     {
@@ -1230,6 +1372,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_presentation_workspace_screen",
       "community": 3,
+      "community_name": "Notes Providers & Screen",
       "norm_label": "workspace_screen.dart"
     },
     {
@@ -1240,6 +1383,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_presentation_workspace_screen_workspacescreen",
       "community": 5,
+      "community_name": "App Router Navigation",
       "norm_label": "workspacescreen"
     },
     {
@@ -1250,6 +1394,7 @@
       "_origin": "ast",
       "id": "consumerstatefulwidget",
       "community": 5,
+      "community_name": "App Router Navigation",
       "norm_label": "consumerstatefulwidget"
     },
     {
@@ -1260,6 +1405,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_presentation_workspace_screen_workspacescreenstate",
       "community": 3,
+      "community_name": "Notes Providers & Screen",
       "norm_label": "_workspacescreenstate"
     },
     {
@@ -1270,6 +1416,7 @@
       "_origin": "ast",
       "id": "consumerstate",
       "community": 3,
+      "community_name": "Notes Providers & Screen",
       "norm_label": "consumerstate"
     },
     {
@@ -1280,6 +1427,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_presentation_workspace_screen_syncstatusindicator",
       "community": 3,
+      "community_name": "Notes Providers & Screen",
       "norm_label": "syncstatusindicator"
     },
     {
@@ -1289,7 +1437,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "consumerwidget",
-      "community": 8,
+      "community": 3,
+      "community_name": "Notes Providers & Screen",
       "norm_label": "consumerwidget"
     },
     {
@@ -1300,6 +1449,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_presentation_workspace_screen_controller",
       "community": 3,
+      "community_name": "Notes Providers & Screen",
       "norm_label": "_controller"
     },
     {
@@ -1310,6 +1460,7 @@
       "_origin": "ast",
       "id": "texteditingcontroller",
       "community": 5,
+      "community_name": "App Router Navigation",
       "norm_label": "texteditingcontroller"
     },
     {
@@ -1320,6 +1471,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_presentation_workspace_screen_createstate",
       "community": 3,
+      "community_name": "Notes Providers & Screen",
       "norm_label": "createstate"
     },
     {
@@ -1330,6 +1482,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_presentation_workspace_screen_createnewnote",
       "community": 3,
+      "community_name": "Notes Providers & Screen",
       "norm_label": "_createnewnote"
     },
     {
@@ -1340,6 +1493,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_presentation_workspace_screen_renamecurrentnote",
       "community": 3,
+      "community_name": "Notes Providers & Screen",
       "norm_label": "_renamecurrentnote"
     },
     {
@@ -1350,7 +1504,19 @@
       "_origin": "ast",
       "id": "lib_features_notes_presentation_workspace_screen_sharepublicgist",
       "community": 3,
+      "community_name": "Notes Providers & Screen",
       "norm_label": "_sharepublicgist"
+    },
+    {
+      "label": "_editMetadata",
+      "file_type": "code",
+      "source_file": "lib/features/notes/presentation/workspace_screen.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_notes_presentation_workspace_screen_editmetadata",
+      "community": 3,
+      "community_name": "Notes Providers & Screen",
+      "norm_label": "_editmetadata"
     },
     {
       "label": "initState",
@@ -1360,6 +1526,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_presentation_workspace_screen_initstate",
       "community": 3,
+      "community_name": "Notes Providers & Screen",
       "norm_label": "initstate"
     },
     {
@@ -1370,6 +1537,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_presentation_workspace_screen_dispose",
       "community": 3,
+      "community_name": "Notes Providers & Screen",
       "norm_label": "dispose"
     },
     {
@@ -1380,6 +1548,7 @@
       "_origin": "ast",
       "id": "lib_features_notes_presentation_workspace_screen_build",
       "community": 3,
+      "community_name": "Notes Providers & Screen",
       "norm_label": "build"
     },
     {
@@ -1390,6 +1559,7 @@
       "_origin": "ast",
       "id": "package_flutter_services_dart",
       "community": 3,
+      "community_name": "Notes Providers & Screen",
       "norm_label": "package:flutter/services.dart"
     },
     {
@@ -1399,7 +1569,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "sync_application_sync_service_dart",
-      "community": 3,
+      "community": 5,
+      "community_name": "App Router Navigation",
       "norm_label": "../../sync/application/sync_service.dart"
     },
     {
@@ -1410,6 +1581,7 @@
       "_origin": "ast",
       "id": "settings_presentation_settings_dialog_dart",
       "community": 3,
+      "community_name": "Notes Providers & Screen",
       "norm_label": "../../settings/presentation/settings_dialog.dart"
     },
     {
@@ -1420,6 +1592,7 @@
       "_origin": "ast",
       "id": "application_notes_providers_dart",
       "community": 3,
+      "community_name": "Notes Providers & Screen",
       "norm_label": "../application/notes_providers.dart"
     },
     {
@@ -1430,6 +1603,7 @@
       "_origin": "ast",
       "id": "lib_features_settings_presentation_settings_dialog",
       "community": 5,
+      "community_name": "App Router Navigation",
       "norm_label": "settings_dialog.dart"
     },
     {
@@ -1440,6 +1614,7 @@
       "_origin": "ast",
       "id": "lib_features_settings_presentation_settings_dialog_settingsdialog",
       "community": 5,
+      "community_name": "App Router Navigation",
       "norm_label": "settingsdialog"
     },
     {
@@ -1450,6 +1625,7 @@
       "_origin": "ast",
       "id": "lib_features_settings_presentation_settings_dialog_build",
       "community": 5,
+      "community_name": "App Router Navigation",
       "norm_label": "build"
     },
     {
@@ -1460,6 +1636,7 @@
       "_origin": "ast",
       "id": "route",
       "community": 5,
+      "community_name": "App Router Navigation",
       "norm_label": "route /"
     },
     {
@@ -1470,6 +1647,7 @@
       "_origin": "ast",
       "id": "sync_infrastructure_github_auth_service_dart",
       "community": 5,
+      "community_name": "App Router Navigation",
       "norm_label": "../../sync/infrastructure/github_auth_service.dart"
     },
     {
@@ -1480,6 +1658,7 @@
       "_origin": "ast",
       "id": "workspace_infrastructure_workspace_repository_dart",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "../../workspace/infrastructure/workspace_repository.dart"
     },
     {
@@ -1490,7 +1669,19 @@
       "_origin": "ast",
       "id": "lib_features_sync_application_sync_service",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "sync_service.dart"
+    },
+    {
+      "label": "AutoSaveNotifier",
+      "file_type": "code",
+      "source_file": "lib/features/sync/application/sync_service.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_sync_application_sync_service_autosavenotifier",
+      "community": 1,
+      "community_name": "Sync & GitHub Auth",
+      "norm_label": "autosavenotifier"
     },
     {
       "label": "SyncState",
@@ -1500,6 +1691,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_application_sync_service_syncstate",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "syncstate"
     },
     {
@@ -1510,6 +1702,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_application_sync_service_syncstatenotifier",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "syncstatenotifier"
     },
     {
@@ -1520,6 +1713,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_application_sync_service_syncmessagenotifier",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "syncmessagenotifier"
     },
     {
@@ -1530,7 +1724,19 @@
       "_origin": "ast",
       "id": "lib_features_sync_application_sync_service_syncservice",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "syncservice"
+    },
+    {
+      "label": "autoSaveProvider",
+      "file_type": "code",
+      "source_file": "lib/features/sync/application/sync_service.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_sync_application_sync_service_autosaveprovider",
+      "community": 5,
+      "community_name": "App Router Navigation",
+      "norm_label": "autosaveprovider"
     },
     {
       "label": "syncStateProvider",
@@ -1540,6 +1746,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_application_sync_service_syncstateprovider",
       "community": 3,
+      "community_name": "Notes Providers & Screen",
       "norm_label": "syncstateprovider"
     },
     {
@@ -1550,6 +1757,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_application_sync_service_syncmessageprovider",
       "community": 3,
+      "community_name": "Notes Providers & Screen",
       "norm_label": "syncmessageprovider"
     },
     {
@@ -1560,6 +1768,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_application_sync_service_syncserviceprovider",
       "community": 3,
+      "community_name": "Notes Providers & Screen",
       "norm_label": "syncserviceprovider"
     },
     {
@@ -1570,6 +1779,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_application_sync_service_ref",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "ref"
     },
     {
@@ -1580,6 +1790,7 @@
       "_origin": "ast",
       "id": "ref",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "ref"
     },
     {
@@ -1590,6 +1801,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_application_sync_service_debouncetimer",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "_debouncetimer"
     },
     {
@@ -1600,6 +1812,7 @@
       "_origin": "ast",
       "id": "timer",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "timer?"
     },
     {
@@ -1610,6 +1823,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_application_sync_service_issyncing",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "_issyncing"
     },
     {
@@ -1620,7 +1834,19 @@
       "_origin": "ast",
       "id": "lib_features_sync_application_sync_service_build",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "build"
+    },
+    {
+      "label": "toggle",
+      "file_type": "code",
+      "source_file": "lib/features/sync/application/sync_service.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_sync_application_sync_service_toggle",
+      "community": 1,
+      "community_name": "Sync & GitHub Auth",
+      "norm_label": "toggle"
     },
     {
       "label": "onStartup",
@@ -1630,6 +1856,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_application_sync_service_onstartup",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "onstartup"
     },
     {
@@ -1640,7 +1867,19 @@
       "_origin": "ast",
       "id": "lib_features_sync_application_sync_service_triggerautosync",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "triggerautosync"
+    },
+    {
+      "label": "forceSave",
+      "file_type": "code",
+      "source_file": "lib/features/sync/application/sync_service.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_sync_application_sync_service_forcesave",
+      "community": 1,
+      "community_name": "Sync & GitHub Auth",
+      "norm_label": "forcesave"
     },
     {
       "label": "_executeAutoSync",
@@ -1650,6 +1889,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_application_sync_service_executeautosync",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "_executeautosync"
     },
     {
@@ -1660,6 +1900,7 @@
       "_origin": "ast",
       "id": "dart_async",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "dart:async"
     },
     {
@@ -1670,6 +1911,7 @@
       "_origin": "ast",
       "id": "notes_domain_note_dart",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "../../notes/domain/note.dart"
     },
     {
@@ -1680,6 +1922,7 @@
       "_origin": "ast",
       "id": "notes_domain_note_metadata_dart",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "../../notes/domain/note_metadata.dart"
     },
     {
@@ -1690,6 +1933,7 @@
       "_origin": "ast",
       "id": "notes_infrastructure_markdown_parser_dart",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "../../notes/infrastructure/markdown_parser.dart"
     },
     {
@@ -1700,6 +1944,7 @@
       "_origin": "ast",
       "id": "notes_application_notes_providers_dart",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "../../notes/application/notes_providers.dart"
     },
     {
@@ -1710,6 +1955,7 @@
       "_origin": "ast",
       "id": "infrastructure_github_note_repository_dart",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "../infrastructure/github_note_repository.dart"
     },
     {
@@ -1720,6 +1966,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_infrastructure_git_service",
       "community": 6,
+      "community_name": "Local Note Repo & Git",
       "norm_label": "git_service.dart"
     },
     {
@@ -1730,6 +1977,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_infrastructure_git_service_gitservice",
       "community": 6,
+      "community_name": "Local Note Repo & Git",
       "norm_label": "gitservice"
     },
     {
@@ -1740,6 +1988,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_infrastructure_git_service_gitconflictexception",
       "community": 6,
+      "community_name": "Local Note Repo & Git",
       "norm_label": "gitconflictexception"
     },
     {
@@ -1750,6 +1999,7 @@
       "_origin": "ast",
       "id": "exception",
       "community": 6,
+      "community_name": "Local Note Repo & Git",
       "norm_label": "exception"
     },
     {
@@ -1760,6 +2010,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_infrastructure_git_service_gitserviceprovider",
       "community": 6,
+      "community_name": "Local Note Repo & Git",
       "norm_label": "gitserviceprovider"
     },
     {
@@ -1770,6 +2021,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_infrastructure_git_service_path",
       "community": 6,
+      "community_name": "Local Note Repo & Git",
       "norm_label": "path"
     },
     {
@@ -1780,6 +2032,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_infrastructure_git_service_workspacepath",
       "community": 6,
+      "community_name": "Local Note Repo & Git",
       "norm_label": "workspacepath"
     },
     {
@@ -1790,6 +2043,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_infrastructure_git_service_message",
       "community": 6,
+      "community_name": "Local Note Repo & Git",
       "norm_label": "message"
     },
     {
@@ -1800,6 +2054,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_infrastructure_git_service_run",
       "community": 6,
+      "community_name": "Local Note Repo & Git",
       "norm_label": "_run"
     },
     {
@@ -1810,6 +2065,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_infrastructure_git_service_init",
       "community": 6,
+      "community_name": "Local Note Repo & Git",
       "norm_label": "init"
     },
     {
@@ -1820,6 +2076,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_infrastructure_git_service_connecttoremote",
       "community": 6,
+      "community_name": "Local Note Repo & Git",
       "norm_label": "connecttoremote"
     },
     {
@@ -1830,6 +2087,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_infrastructure_git_service_haschanges",
       "community": 6,
+      "community_name": "Local Note Repo & Git",
       "norm_label": "haschanges"
     },
     {
@@ -1840,6 +2098,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_infrastructure_git_service_commit",
       "community": 6,
+      "community_name": "Local Note Repo & Git",
       "norm_label": "commit"
     },
     {
@@ -1850,6 +2109,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_infrastructure_git_service_push",
       "community": 6,
+      "community_name": "Local Note Repo & Git",
       "norm_label": "push"
     },
     {
@@ -1860,6 +2120,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_infrastructure_git_service_fetch",
       "community": 6,
+      "community_name": "Local Note Repo & Git",
       "norm_label": "fetch"
     },
     {
@@ -1870,6 +2131,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_infrastructure_git_service_hasconflicts",
       "community": 6,
+      "community_name": "Local Note Repo & Git",
       "norm_label": "hasconflicts"
     },
     {
@@ -1880,6 +2142,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_infrastructure_git_service_pull",
       "community": 6,
+      "community_name": "Local Note Repo & Git",
       "norm_label": "pull"
     },
     {
@@ -1890,6 +2153,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_infrastructure_git_service_tostring",
       "community": 6,
+      "community_name": "Local Note Repo & Git",
       "norm_label": "tostring"
     },
     {
@@ -1900,6 +2164,7 @@
       "_origin": "ast",
       "id": "notes_infrastructure_local_note_repository_dart",
       "community": 6,
+      "community_name": "Local Note Repo & Git",
       "norm_label": "../../notes/infrastructure/local_note_repository.dart"
     },
     {
@@ -1910,6 +2175,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_infrastructure_github_auth_service",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "github_auth_service.dart"
     },
     {
@@ -1920,6 +2186,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_infrastructure_github_auth_service_authstate",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "authstate"
     },
     {
@@ -1930,6 +2197,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_infrastructure_github_auth_service_githubauthnotifier",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "githubauthnotifier"
     },
     {
@@ -1940,6 +2208,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_infrastructure_github_auth_service_accesstoken",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "accesstoken"
     },
     {
@@ -1950,6 +2219,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_infrastructure_github_auth_service_githubauthnotifierprovider",
       "community": 5,
+      "community_name": "App Router Navigation",
       "norm_label": "githubauthnotifierprovider"
     },
     {
@@ -1960,6 +2230,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_infrastructure_github_auth_service_build",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "build"
     },
     {
@@ -1970,6 +2241,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_infrastructure_github_auth_service_settoken",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "settoken"
     },
     {
@@ -1980,6 +2252,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_infrastructure_github_note_repository",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "github_note_repository.dart"
     },
     {
@@ -1990,6 +2263,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_infrastructure_github_note_repository_workspacereponotifier",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "workspacereponotifier"
     },
     {
@@ -2000,6 +2274,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_infrastructure_github_note_repository_githubnoterepository",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "githubnoterepository"
     },
     {
@@ -2010,6 +2285,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_infrastructure_github_note_repository_workspacerepoprovider",
       "community": 5,
+      "community_name": "App Router Navigation",
       "norm_label": "workspacerepoprovider"
     },
     {
@@ -2020,6 +2296,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_infrastructure_github_note_repository_githubnoterepositoryprovider",
       "community": 3,
+      "community_name": "Notes Providers & Screen",
       "norm_label": "githubnoterepositoryprovider"
     },
     {
@@ -2030,6 +2307,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_infrastructure_github_note_repository_token",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "token"
     },
     {
@@ -2040,6 +2318,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_infrastructure_github_note_repository_repo",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "repo"
     },
     {
@@ -2050,6 +2329,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_infrastructure_github_note_repository_repofullname",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "repofullname"
     },
     {
@@ -2060,6 +2340,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_infrastructure_github_note_repository_headers",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "_headers"
     },
     {
@@ -2070,6 +2351,7 @@
       "_origin": "ast",
       "id": "map",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "map"
     },
     {
@@ -2080,6 +2362,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_infrastructure_github_note_repository_build",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "build"
     },
     {
@@ -2090,6 +2373,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_infrastructure_github_note_repository_savenote",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "savenote"
     },
     {
@@ -2100,6 +2384,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_infrastructure_github_note_repository_fetchallmarkdownfiles",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "fetchallmarkdownfiles"
     },
     {
@@ -2110,6 +2395,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_infrastructure_github_note_repository_fetchnotecontent",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "fetchnotecontent"
     },
     {
@@ -2120,6 +2406,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_infrastructure_github_note_repository_renamenote",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "renamenote"
     },
     {
@@ -2130,6 +2417,7 @@
       "_origin": "ast",
       "id": "lib_features_sync_infrastructure_github_note_repository_createpublicgist",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "createpublicgist"
     },
     {
@@ -2140,6 +2428,7 @@
       "_origin": "ast",
       "id": "github_auth_service_dart",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "github_auth_service.dart"
     },
     {
@@ -2150,6 +2439,7 @@
       "_origin": "ast",
       "id": "lib_features_workspace_domain_workspace",
       "community": 4,
+      "community_name": "Note & Workspace Models",
       "norm_label": "workspace.dart"
     },
     {
@@ -2160,6 +2450,7 @@
       "_origin": "ast",
       "id": "lib_features_workspace_domain_workspace_workspace",
       "community": 4,
+      "community_name": "Note & Workspace Models",
       "norm_label": "workspace"
     },
     {
@@ -2170,6 +2461,7 @@
       "_origin": "ast",
       "id": "lib_features_workspace_domain_workspace_id",
       "community": 4,
+      "community_name": "Note & Workspace Models",
       "norm_label": "id"
     },
     {
@@ -2180,6 +2472,7 @@
       "_origin": "ast",
       "id": "lib_features_workspace_domain_workspace_name",
       "community": 4,
+      "community_name": "Note & Workspace Models",
       "norm_label": "name"
     },
     {
@@ -2190,6 +2483,7 @@
       "_origin": "ast",
       "id": "lib_features_workspace_domain_workspace_path",
       "community": 4,
+      "community_name": "Note & Workspace Models",
       "norm_label": "path"
     },
     {
@@ -2200,6 +2494,7 @@
       "_origin": "ast",
       "id": "lib_features_workspace_domain_workspace_lastopened",
       "community": 4,
+      "community_name": "Note & Workspace Models",
       "norm_label": "lastopened"
     },
     {
@@ -2210,6 +2505,7 @@
       "_origin": "ast",
       "id": "lib_features_workspace_domain_workspace_operator",
       "community": 4,
+      "community_name": "Note & Workspace Models",
       "norm_label": "operator"
     },
     {
@@ -2220,6 +2516,7 @@
       "_origin": "ast",
       "id": "lib_features_workspace_domain_workspace_copywith",
       "community": 4,
+      "community_name": "Note & Workspace Models",
       "norm_label": "copywith"
     },
     {
@@ -2230,6 +2527,7 @@
       "_origin": "ast",
       "id": "lib_features_workspace_domain_workspace_frommap",
       "community": 4,
+      "community_name": "Note & Workspace Models",
       "norm_label": "frommap"
     },
     {
@@ -2240,6 +2538,7 @@
       "_origin": "ast",
       "id": "lib_features_workspace_domain_workspace_tomap",
       "community": 4,
+      "community_name": "Note & Workspace Models",
       "norm_label": "tomap"
     },
     {
@@ -2250,6 +2549,7 @@
       "_origin": "ast",
       "id": "lib_features_workspace_infrastructure_workspace_repository",
       "community": 8,
+      "community_name": "Workspace Repo & Main",
       "norm_label": "workspace_repository.dart"
     },
     {
@@ -2260,6 +2560,7 @@
       "_origin": "ast",
       "id": "lib_features_workspace_infrastructure_workspace_repository_workspacerepository",
       "community": 8,
+      "community_name": "Workspace Repo & Main",
       "norm_label": "workspacerepository"
     },
     {
@@ -2270,6 +2571,7 @@
       "_origin": "ast",
       "id": "lib_features_workspace_infrastructure_workspace_repository_sharedpreferencesprovider",
       "community": 1,
+      "community_name": "Sync & GitHub Auth",
       "norm_label": "sharedpreferencesprovider"
     },
     {
@@ -2280,6 +2582,7 @@
       "_origin": "ast",
       "id": "lib_features_workspace_infrastructure_workspace_repository_workspacerepositoryprovider",
       "community": 8,
+      "community_name": "Workspace Repo & Main",
       "norm_label": "workspacerepositoryprovider"
     },
     {
@@ -2290,6 +2593,7 @@
       "_origin": "ast",
       "id": "lib_features_workspace_infrastructure_workspace_repository_prefs",
       "community": 8,
+      "community_name": "Workspace Repo & Main",
       "norm_label": "_prefs"
     },
     {
@@ -2300,6 +2604,7 @@
       "_origin": "ast",
       "id": "sharedpreferences",
       "community": 8,
+      "community_name": "Workspace Repo & Main",
       "norm_label": "sharedpreferences"
     },
     {
@@ -2310,6 +2615,7 @@
       "_origin": "ast",
       "id": "lib_features_workspace_infrastructure_workspace_repository_recentworkspaceskey",
       "community": 8,
+      "community_name": "Workspace Repo & Main",
       "norm_label": "_recentworkspaceskey"
     },
     {
@@ -2320,6 +2626,7 @@
       "_origin": "ast",
       "id": "lib_features_workspace_infrastructure_workspace_repository_lastopenedkey",
       "community": 8,
+      "community_name": "Workspace Repo & Main",
       "norm_label": "_lastopenedkey"
     },
     {
@@ -2330,6 +2637,7 @@
       "_origin": "ast",
       "id": "lib_features_workspace_infrastructure_workspace_repository_saveworkspace",
       "community": 8,
+      "community_name": "Workspace Repo & Main",
       "norm_label": "saveworkspace"
     },
     {
@@ -2340,6 +2648,7 @@
       "_origin": "ast",
       "id": "lib_features_workspace_infrastructure_workspace_repository_getrecentworkspaces",
       "community": 8,
+      "community_name": "Workspace Repo & Main",
       "norm_label": "getrecentworkspaces"
     },
     {
@@ -2350,6 +2659,7 @@
       "_origin": "ast",
       "id": "lib_features_workspace_infrastructure_workspace_repository_setlastopenedworkspaceid",
       "community": 8,
+      "community_name": "Workspace Repo & Main",
       "norm_label": "setlastopenedworkspaceid"
     },
     {
@@ -2360,6 +2670,7 @@
       "_origin": "ast",
       "id": "lib_features_workspace_infrastructure_workspace_repository_getlastopenedworkspaceid",
       "community": 8,
+      "community_name": "Workspace Repo & Main",
       "norm_label": "getlastopenedworkspaceid"
     },
     {
@@ -2370,6 +2681,7 @@
       "_origin": "ast",
       "id": "lib_features_workspace_infrastructure_workspace_repository_getworkspacesmap",
       "community": 8,
+      "community_name": "Workspace Repo & Main",
       "norm_label": "_getworkspacesmap"
     },
     {
@@ -2380,6 +2692,7 @@
       "_origin": "ast",
       "id": "package_shared_preferences_shared_preferences_dart",
       "community": 8,
+      "community_name": "Workspace Repo & Main",
       "norm_label": "package:shared_preferences/shared_preferences.dart"
     },
     {
@@ -2390,6 +2703,7 @@
       "_origin": "ast",
       "id": "domain_workspace_dart",
       "community": 8,
+      "community_name": "Workspace Repo & Main",
       "norm_label": "../domain/workspace.dart"
     },
     {
@@ -2400,6 +2714,7 @@
       "_origin": "ast",
       "id": "lib_features_workspace_presentation_workspace_selector_screen",
       "community": 5,
+      "community_name": "App Router Navigation",
       "norm_label": "workspace_selector_screen.dart"
     },
     {
@@ -2410,6 +2725,7 @@
       "_origin": "ast",
       "id": "lib_features_workspace_presentation_workspace_selector_screen_workspaceselectorscreen",
       "community": 5,
+      "community_name": "App Router Navigation",
       "norm_label": "workspaceselectorscreen"
     },
     {
@@ -2420,6 +2736,7 @@
       "_origin": "ast",
       "id": "lib_features_workspace_presentation_workspace_selector_screen_workspaceselectorscreenstate",
       "community": 5,
+      "community_name": "App Router Navigation",
       "norm_label": "_workspaceselectorscreenstate"
     },
     {
@@ -2430,6 +2747,7 @@
       "_origin": "ast",
       "id": "class",
       "community": 5,
+      "community_name": "App Router Navigation",
       "norm_label": "class"
     },
     {
@@ -2440,6 +2758,7 @@
       "_origin": "ast",
       "id": "lib_features_workspace_presentation_workspace_selector_screen_repocontroller",
       "community": 5,
+      "community_name": "App Router Navigation",
       "norm_label": "_repocontroller"
     },
     {
@@ -2450,6 +2769,7 @@
       "_origin": "ast",
       "id": "lib_features_workspace_presentation_workspace_selector_screen_tokencontroller",
       "community": 5,
+      "community_name": "App Router Navigation",
       "norm_label": "_tokencontroller"
     },
     {
@@ -2460,6 +2780,7 @@
       "_origin": "ast",
       "id": "lib_features_workspace_presentation_workspace_selector_screen_createstate",
       "community": 5,
+      "community_name": "App Router Navigation",
       "norm_label": "createstate"
     },
     {
@@ -2470,6 +2791,7 @@
       "_origin": "ast",
       "id": "lib_features_workspace_presentation_workspace_selector_screen_dispose",
       "community": 5,
+      "community_name": "App Router Navigation",
       "norm_label": "dispose"
     },
     {
@@ -2480,6 +2802,7 @@
       "_origin": "ast",
       "id": "lib_features_workspace_presentation_workspace_selector_screen_build",
       "community": 5,
+      "community_name": "App Router Navigation",
       "norm_label": "build"
     },
     {
@@ -2490,6 +2813,7 @@
       "_origin": "ast",
       "id": "route_workspace",
       "community": 5,
+      "community_name": "App Router Navigation",
       "norm_label": "route /workspace"
     },
     {
@@ -2500,6 +2824,7 @@
       "_origin": "ast",
       "id": "lib_main",
       "community": 8,
+      "community_name": "Workspace Repo & Main",
       "norm_label": "main.dart"
     },
     {
@@ -2510,6 +2835,7 @@
       "_origin": "ast",
       "id": "lib_main_myapp",
       "community": 8,
+      "community_name": "Workspace Repo & Main",
       "norm_label": "myapp"
     },
     {
@@ -2520,6 +2846,7 @@
       "_origin": "ast",
       "id": "lib_main_prefs",
       "community": 8,
+      "community_name": "Workspace Repo & Main",
       "norm_label": "prefs"
     },
     {
@@ -2530,6 +2857,7 @@
       "_origin": "ast",
       "id": "lib_main_main",
       "community": 8,
+      "community_name": "Workspace Repo & Main",
       "norm_label": "main"
     },
     {
@@ -2540,6 +2868,7 @@
       "_origin": "ast",
       "id": "lib_main_build",
       "community": 8,
+      "community_name": "Workspace Repo & Main",
       "norm_label": "build"
     },
     {
@@ -2550,6 +2879,7 @@
       "_origin": "ast",
       "id": "package_google_fonts_google_fonts_dart",
       "community": 8,
+      "community_name": "Workspace Repo & Main",
       "norm_label": "package:google_fonts/google_fonts.dart"
     },
     {
@@ -2560,6 +2890,7 @@
       "_origin": "ast",
       "id": "features_workspace_infrastructure_workspace_repository_dart",
       "community": 8,
+      "community_name": "Workspace Repo & Main",
       "norm_label": "features/workspace/infrastructure/workspace_repository.dart"
     },
     {
@@ -2570,6 +2901,7 @@
       "_origin": "ast",
       "id": "core_router_app_router_dart",
       "community": 8,
+      "community_name": "Workspace Repo & Main",
       "norm_label": "core/router/app_router.dart"
     },
     {
@@ -2580,6 +2912,7 @@
       "_origin": "ast",
       "id": "linux_flutter_generated_plugin_registrant_cc_linux_flutter_generated_plugin_registrant",
       "community": 7,
+      "community_name": "Linux Runner Application",
       "norm_label": "linux/flutter/generated_plugin_registrant.cc"
     },
     {
@@ -2590,6 +2923,7 @@
       "_origin": "ast",
       "id": "linux_flutter_generated_plugin_registrant_fl_register_plugins",
       "community": 7,
+      "community_name": "Linux Runner Application",
       "norm_label": "fl_register_plugins()"
     },
     {
@@ -2600,6 +2934,7 @@
       "_origin": "ast",
       "id": "flpluginregistry",
       "community": 7,
+      "community_name": "Linux Runner Application",
       "norm_label": "flpluginregistry"
     },
     {
@@ -2610,6 +2945,7 @@
       "_origin": "ast",
       "id": "linux_flutter_generated_plugin_registrant_h_linux_flutter_generated_plugin_registrant",
       "community": 7,
+      "community_name": "Linux Runner Application",
       "norm_label": "linux/flutter/generated_plugin_registrant.h"
     },
     {
@@ -2620,6 +2956,7 @@
       "_origin": "ast",
       "id": "linux_runner_main",
       "community": 7,
+      "community_name": "Linux Runner Application",
       "norm_label": "main.cc"
     },
     {
@@ -2630,6 +2967,7 @@
       "_origin": "ast",
       "id": "linux_runner_main_main",
       "community": 7,
+      "community_name": "Linux Runner Application",
       "norm_label": "main()"
     },
     {
@@ -2640,6 +2978,7 @@
       "_origin": "ast",
       "id": "linux_runner_my_application_cc_linux_runner_my_application",
       "community": 7,
+      "community_name": "Linux Runner Application",
       "norm_label": "my_application.cc"
     },
     {
@@ -2650,6 +2989,7 @@
       "_origin": "ast",
       "id": "linux_runner_my_application_myapplication",
       "community": 7,
+      "community_name": "Linux Runner Application",
       "norm_label": "_myapplication"
     },
     {
@@ -2660,6 +3000,7 @@
       "_origin": "ast",
       "id": "gtkapplication",
       "community": 7,
+      "community_name": "Linux Runner Application",
       "norm_label": "gtkapplication"
     },
     {
@@ -2670,6 +3011,7 @@
       "_origin": "ast",
       "id": "linux_runner_my_application_myapplication_parent_instance",
       "community": 7,
+      "community_name": "Linux Runner Application",
       "norm_label": "parent_instance"
     },
     {
@@ -2680,6 +3022,7 @@
       "_origin": "ast",
       "id": "linux_runner_my_application_myapplication_dart_entrypoint_arguments",
       "community": 7,
+      "community_name": "Linux Runner Application",
       "norm_label": "dart_entrypoint_arguments"
     },
     {
@@ -2690,6 +3033,7 @@
       "_origin": "ast",
       "id": "linux_runner_my_application_first_frame_cb",
       "community": 7,
+      "community_name": "Linux Runner Application",
       "norm_label": "first_frame_cb()"
     },
     {
@@ -2700,6 +3044,7 @@
       "_origin": "ast",
       "id": "flview",
       "community": 7,
+      "community_name": "Linux Runner Application",
       "norm_label": "flview"
     },
     {
@@ -2710,6 +3055,7 @@
       "_origin": "ast",
       "id": "linux_runner_my_application_my_application_activate",
       "community": 7,
+      "community_name": "Linux Runner Application",
       "norm_label": "my_application_activate()"
     },
     {
@@ -2720,6 +3066,7 @@
       "_origin": "ast",
       "id": "gapplication",
       "community": 7,
+      "community_name": "Linux Runner Application",
       "norm_label": "gapplication"
     },
     {
@@ -2730,6 +3077,7 @@
       "_origin": "ast",
       "id": "linux_runner_my_application_my_application_local_command_line",
       "community": 7,
+      "community_name": "Linux Runner Application",
       "norm_label": "my_application_local_command_line()"
     },
     {
@@ -2740,6 +3088,7 @@
       "_origin": "ast",
       "id": "gboolean",
       "community": 7,
+      "community_name": "Linux Runner Application",
       "norm_label": "gboolean"
     },
     {
@@ -2750,6 +3099,7 @@
       "_origin": "ast",
       "id": "gchar",
       "community": 7,
+      "community_name": "Linux Runner Application",
       "norm_label": "gchar"
     },
     {
@@ -2760,6 +3110,7 @@
       "_origin": "ast",
       "id": "linux_runner_my_application_my_application_startup",
       "community": 7,
+      "community_name": "Linux Runner Application",
       "norm_label": "my_application_startup()"
     },
     {
@@ -2770,6 +3121,7 @@
       "_origin": "ast",
       "id": "linux_runner_my_application_my_application_shutdown",
       "community": 7,
+      "community_name": "Linux Runner Application",
       "norm_label": "my_application_shutdown()"
     },
     {
@@ -2780,6 +3132,7 @@
       "_origin": "ast",
       "id": "linux_runner_my_application_my_application_dispose",
       "community": 7,
+      "community_name": "Linux Runner Application",
       "norm_label": "my_application_dispose()"
     },
     {
@@ -2790,6 +3143,7 @@
       "_origin": "ast",
       "id": "gobject",
       "community": 7,
+      "community_name": "Linux Runner Application",
       "norm_label": "gobject"
     },
     {
@@ -2800,6 +3154,7 @@
       "_origin": "ast",
       "id": "linux_runner_my_application_my_application_class_init",
       "community": 7,
+      "community_name": "Linux Runner Application",
       "norm_label": "my_application_class_init()"
     },
     {
@@ -2810,6 +3165,7 @@
       "_origin": "ast",
       "id": "myapplicationclass",
       "community": 7,
+      "community_name": "Linux Runner Application",
       "norm_label": "myapplicationclass"
     },
     {
@@ -2820,6 +3176,7 @@
       "_origin": "ast",
       "id": "linux_runner_my_application_my_application_init",
       "community": 7,
+      "community_name": "Linux Runner Application",
       "norm_label": "my_application_init()"
     },
     {
@@ -2830,6 +3187,7 @@
       "_origin": "ast",
       "id": "linux_runner_my_application_my_application_new",
       "community": 7,
+      "community_name": "Linux Runner Application",
       "norm_label": "my_application_new()"
     },
     {
@@ -2840,6 +3198,7 @@
       "_origin": "ast",
       "id": "linux_runner_my_application_h_linux_runner_my_application",
       "community": 7,
+      "community_name": "Linux Runner Application",
       "norm_label": "my_application.h"
     },
     {
@@ -2850,17 +3209,19 @@
       "_origin": "ast",
       "id": "macos_flutter_generatedpluginregistrant",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": "generatedpluginregistrant.swift"
     },
     {
       "label": "FlutterMacOS",
       "file_type": "code",
       "type": "module",
-      "source_file": "macos/Flutter/GeneratedPluginRegistrant.swift",
-      "source_location": "L5",
+      "source_file": "macos/Runner/MainFlutterWindow.swift",
+      "source_location": "L2",
       "_origin": "ast",
       "id": "fluttermacos",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": "fluttermacos"
     },
     {
@@ -2872,6 +3233,7 @@
       "_origin": "ast",
       "id": "foundation",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": "foundation"
     },
     {
@@ -2883,6 +3245,7 @@
       "_origin": "ast",
       "id": "file_picker",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": "file_picker"
     },
     {
@@ -2894,6 +3257,7 @@
       "_origin": "ast",
       "id": "shared_preferences_foundation",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": "shared_preferences_foundation"
     },
     {
@@ -2905,6 +3269,7 @@
       "_origin": "ast",
       "id": "url_launcher_macos",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": "url_launcher_macos"
     },
     {
@@ -2915,6 +3280,7 @@
       "_origin": "ast",
       "id": "macos_flutter_generatedpluginregistrant_registergeneratedplugins",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": "registergeneratedplugins()"
     },
     {
@@ -2925,6 +3291,7 @@
       "_origin": "ast",
       "id": "flutterpluginregistry",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": "flutterpluginregistry"
     },
     {
@@ -2935,17 +3302,19 @@
       "_origin": "ast",
       "id": "macos_runnertests_runnertests",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": "macos/runnertests/runnertests.swift"
     },
     {
       "label": "Cocoa",
       "file_type": "code",
       "type": "module",
-      "source_file": "macos/RunnerTests/RunnerTests.swift",
+      "source_file": "macos/Runner/MainFlutterWindow.swift",
       "source_location": "L1",
       "_origin": "ast",
       "id": "cocoa",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": "cocoa"
     },
     {
@@ -2956,6 +3325,7 @@
       "_origin": "ast",
       "id": "macos_runnertests_runnertests_runnertests",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": "runnertests"
     },
     {
@@ -2966,6 +3336,7 @@
       "_origin": "ast",
       "id": "macos_runnertests_runnertests_runnertests_testexample",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": ".testexample()"
     },
     {
@@ -2976,6 +3347,7 @@
       "_origin": "ast",
       "id": "macos_runner_appdelegate",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": "macos/runner/appdelegate.swift"
     },
     {
@@ -2986,6 +3358,7 @@
       "_origin": "ast",
       "id": "macos_runner_appdelegate_appdelegate",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": "appdelegate"
     },
     {
@@ -2996,6 +3369,7 @@
       "_origin": "ast",
       "id": "macos_runner_appdelegate_appdelegate_applicationshouldterminateafterlastwindowclosed",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": ".applicationshouldterminateafterlastwindowclosed()"
     },
     {
@@ -3006,6 +3380,7 @@
       "_origin": "ast",
       "id": "nsapplication",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": "nsapplication"
     },
     {
@@ -3016,6 +3391,7 @@
       "_origin": "ast",
       "id": "macos_runner_appdelegate_swift_bool",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": "bool"
     },
     {
@@ -3026,6 +3402,7 @@
       "_origin": "ast",
       "id": "macos_runner_appdelegate_appdelegate_applicationsupportssecurerestorablestate",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": ".applicationsupportssecurerestorablestate()"
     },
     {
@@ -3036,6 +3413,7 @@
       "_origin": "ast",
       "id": "macos_runner_mainflutterwindow",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": "mainflutterwindow.swift"
     },
     {
@@ -3046,6 +3424,7 @@
       "_origin": "ast",
       "id": "macos_runner_mainflutterwindow_mainflutterwindow",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": "mainflutterwindow"
     },
     {
@@ -3056,6 +3435,7 @@
       "_origin": "ast",
       "id": "nswindow",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": "nswindow"
     },
     {
@@ -3066,6 +3446,7 @@
       "_origin": "ast",
       "id": "macos_runner_mainflutterwindow_mainflutterwindow_awakefromnib",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": ".awakefromnib()"
     },
     {
@@ -3076,6 +3457,7 @@
       "_origin": "ast",
       "id": "test_widget_test",
       "community": 5,
+      "community_name": "App Router Navigation",
       "norm_label": "widget_test.dart"
     },
     {
@@ -3086,6 +3468,7 @@
       "_origin": "ast",
       "id": "test_widget_test_main",
       "community": 5,
+      "community_name": "App Router Navigation",
       "norm_label": "main"
     },
     {
@@ -3096,6 +3479,7 @@
       "_origin": "ast",
       "id": "package_flutter_test_flutter_test_dart",
       "community": 5,
+      "community_name": "App Router Navigation",
       "norm_label": "package:flutter_test/flutter_test.dart"
     },
     {
@@ -3106,6 +3490,7 @@
       "_origin": "ast",
       "id": "package_my_mind_main_dart",
       "community": 5,
+      "community_name": "App Router Navigation",
       "norm_label": "package:my_mind/main.dart"
     },
     {
@@ -3116,6 +3501,7 @@
       "_origin": "ast",
       "id": "web_manifest",
       "community": 11,
+      "community_name": "Web Manifest",
       "norm_label": "manifest.json"
     },
     {
@@ -3126,6 +3512,7 @@
       "_origin": "ast",
       "id": "web_manifest_name",
       "community": 11,
+      "community_name": "Web Manifest",
       "norm_label": "name"
     },
     {
@@ -3136,6 +3523,7 @@
       "_origin": "ast",
       "id": "web_manifest_short_name",
       "community": 11,
+      "community_name": "Web Manifest",
       "norm_label": "short_name"
     },
     {
@@ -3146,6 +3534,7 @@
       "_origin": "ast",
       "id": "web_manifest_start_url",
       "community": 11,
+      "community_name": "Web Manifest",
       "norm_label": "start_url"
     },
     {
@@ -3156,6 +3545,7 @@
       "_origin": "ast",
       "id": "web_manifest_display",
       "community": 11,
+      "community_name": "Web Manifest",
       "norm_label": "display"
     },
     {
@@ -3166,6 +3556,7 @@
       "_origin": "ast",
       "id": "web_manifest_background_color",
       "community": 11,
+      "community_name": "Web Manifest",
       "norm_label": "background_color"
     },
     {
@@ -3176,6 +3567,7 @@
       "_origin": "ast",
       "id": "web_manifest_theme_color",
       "community": 11,
+      "community_name": "Web Manifest",
       "norm_label": "theme_color"
     },
     {
@@ -3186,6 +3578,7 @@
       "_origin": "ast",
       "id": "web_manifest_description",
       "community": 11,
+      "community_name": "Web Manifest",
       "norm_label": "description"
     },
     {
@@ -3196,6 +3589,7 @@
       "_origin": "ast",
       "id": "web_manifest_orientation",
       "community": 11,
+      "community_name": "Web Manifest",
       "norm_label": "orientation"
     },
     {
@@ -3206,6 +3600,7 @@
       "_origin": "ast",
       "id": "web_manifest_prefer_related_applications",
       "community": 11,
+      "community_name": "Web Manifest",
       "norm_label": "prefer_related_applications"
     },
     {
@@ -3216,6 +3611,7 @@
       "_origin": "ast",
       "id": "web_manifest_icons",
       "community": 11,
+      "community_name": "Web Manifest",
       "norm_label": "icons"
     },
     {
@@ -3226,6 +3622,7 @@
       "_origin": "ast",
       "id": "windows_flutter_generated_plugin_registrant_cc_windows_flutter_generated_plugin_registrant",
       "community": 12,
+      "community_name": "Windows Plugin Registrant",
       "norm_label": "windows/flutter/generated_plugin_registrant.cc"
     },
     {
@@ -3236,6 +3633,7 @@
       "_origin": "ast",
       "id": "windows_flutter_generated_plugin_registrant_registerplugins",
       "community": 12,
+      "community_name": "Windows Plugin Registrant",
       "norm_label": "registerplugins()"
     },
     {
@@ -3246,6 +3644,7 @@
       "_origin": "ast",
       "id": "pluginregistry",
       "community": 12,
+      "community_name": "Windows Plugin Registrant",
       "norm_label": "pluginregistry"
     },
     {
@@ -3256,6 +3655,7 @@
       "_origin": "ast",
       "id": "windows_flutter_generated_plugin_registrant_h_windows_flutter_generated_plugin_registrant",
       "community": 12,
+      "community_name": "Windows Plugin Registrant",
       "norm_label": "windows/flutter/generated_plugin_registrant.h"
     },
     {
@@ -3266,6 +3666,7 @@
       "_origin": "ast",
       "id": "windows_runner_flutter_window_cpp_windows_runner_flutter_window",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "flutter_window.cpp"
     },
     {
@@ -3276,6 +3677,7 @@
       "_origin": "ast",
       "id": "windows_runner_flutter_window_flutterwindow_flutterwindow",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "flutterwindow::flutterwindow()"
     },
     {
@@ -3286,6 +3688,7 @@
       "_origin": "ast",
       "id": "windows_runner_flutter_window_cpp_dartproject",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "dartproject"
     },
     {
@@ -3296,6 +3699,7 @@
       "_origin": "ast",
       "id": "windows_runner_flutter_window_cpp_lresult",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "lresult"
     },
     {
@@ -3306,6 +3710,7 @@
       "_origin": "ast",
       "id": "windows_runner_flutter_window_cpp_hwnd",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "hwnd"
     },
     {
@@ -3316,6 +3721,7 @@
       "_origin": "ast",
       "id": "windows_runner_flutter_window_cpp_uint",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "uint"
     },
     {
@@ -3326,6 +3732,7 @@
       "_origin": "ast",
       "id": "windows_runner_flutter_window_cpp_wparam",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "wparam"
     },
     {
@@ -3336,6 +3743,7 @@
       "_origin": "ast",
       "id": "windows_runner_flutter_window_cpp_lparam",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "lparam"
     },
     {
@@ -3346,6 +3754,7 @@
       "_origin": "ast",
       "id": "windows_runner_flutter_window_h_windows_runner_flutter_window",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "flutter_window.h"
     },
     {
@@ -3356,6 +3765,7 @@
       "_origin": "ast",
       "id": "windows_runner_flutter_window_flutterwindow",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "flutterwindow"
     },
     {
@@ -3366,6 +3776,7 @@
       "_origin": "ast",
       "id": "windows_runner_flutter_window_flutterwindow_oncreate",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "oncreate"
     },
     {
@@ -3376,6 +3787,7 @@
       "_origin": "ast",
       "id": "windows_runner_flutter_window_flutterwindow_ondestroy",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "ondestroy"
     },
     {
@@ -3386,6 +3798,7 @@
       "_origin": "ast",
       "id": "windows_runner_flutter_window_flutterwindow_messagehandler",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "messagehandler"
     },
     {
@@ -3396,6 +3809,7 @@
       "_origin": "ast",
       "id": "windows_runner_flutter_window_h_dartproject",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "dartproject"
     },
     {
@@ -3406,6 +3820,7 @@
       "_origin": "ast",
       "id": "windows_runner_flutter_window_flutterwindow_project",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "project_"
     },
     {
@@ -3416,6 +3831,7 @@
       "_origin": "ast",
       "id": "unique_ptr",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "unique_ptr"
     },
     {
@@ -3426,6 +3842,7 @@
       "_origin": "ast",
       "id": "flutterviewcontroller",
       "community": 2,
+      "community_name": "iOS & macOS Runner",
       "norm_label": "flutterviewcontroller"
     },
     {
@@ -3436,6 +3853,7 @@
       "_origin": "ast",
       "id": "windows_runner_flutter_window_flutterwindow_flutter_controller",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "flutter_controller_"
     },
     {
@@ -3446,6 +3864,7 @@
       "_origin": "ast",
       "id": "windows_runner_main",
       "community": 10,
+      "community_name": "Windows Main Utils",
       "norm_label": "main.cpp"
     },
     {
@@ -3456,6 +3875,7 @@
       "_origin": "ast",
       "id": "windows_runner_main_wwinmain",
       "community": 10,
+      "community_name": "Windows Main Utils",
       "norm_label": "wwinmain()"
     },
     {
@@ -3466,6 +3886,7 @@
       "_origin": "ast",
       "id": "in",
       "community": 10,
+      "community_name": "Windows Main Utils",
       "norm_label": "_in_"
     },
     {
@@ -3476,6 +3897,7 @@
       "_origin": "ast",
       "id": "in_opt",
       "community": 10,
+      "community_name": "Windows Main Utils",
       "norm_label": "_in_opt_"
     },
     {
@@ -3486,6 +3908,7 @@
       "_origin": "ast",
       "id": "windows_runner_resource",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "resource.h"
     },
     {
@@ -3496,6 +3919,7 @@
       "_origin": "ast",
       "id": "windows_runner_utils_cpp_windows_runner_utils",
       "community": 10,
+      "community_name": "Windows Main Utils",
       "norm_label": "utils.cpp"
     },
     {
@@ -3506,6 +3930,7 @@
       "_origin": "ast",
       "id": "windows_runner_utils_createandattachconsole",
       "community": 10,
+      "community_name": "Windows Main Utils",
       "norm_label": "createandattachconsole()"
     },
     {
@@ -3516,6 +3941,7 @@
       "_origin": "ast",
       "id": "windows_runner_utils_getcommandlinearguments",
       "community": 10,
+      "community_name": "Windows Main Utils",
       "norm_label": "getcommandlinearguments()"
     },
     {
@@ -3526,6 +3952,7 @@
       "_origin": "ast",
       "id": "vector",
       "community": 10,
+      "community_name": "Windows Main Utils",
       "norm_label": "vector"
     },
     {
@@ -3536,6 +3963,7 @@
       "_origin": "ast",
       "id": "windows_runner_utils_cpp_string",
       "community": 10,
+      "community_name": "Windows Main Utils",
       "norm_label": "string"
     },
     {
@@ -3546,6 +3974,7 @@
       "_origin": "ast",
       "id": "windows_runner_utils_utf8fromutf16",
       "community": 10,
+      "community_name": "Windows Main Utils",
       "norm_label": "utf8fromutf16()"
     },
     {
@@ -3556,6 +3985,7 @@
       "_origin": "ast",
       "id": "windows_runner_utils_cpp_wchar_t",
       "community": 10,
+      "community_name": "Windows Main Utils",
       "norm_label": "wchar_t"
     },
     {
@@ -3566,6 +3996,7 @@
       "_origin": "ast",
       "id": "windows_runner_utils_h_windows_runner_utils",
       "community": 10,
+      "community_name": "Windows Main Utils",
       "norm_label": "utils.h"
     },
     {
@@ -3576,6 +4007,7 @@
       "_origin": "ast",
       "id": "windows_runner_win32_window_cpp_windows_runner_win32_window",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "win32_window.cpp"
     },
     {
@@ -3586,6 +4018,7 @@
       "_origin": "ast",
       "id": "windows_runner_win32_window_scale",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "scale()"
     },
     {
@@ -3596,6 +4029,7 @@
       "_origin": "ast",
       "id": "windows_runner_win32_window_enablefulldpisupportifavailable",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "enablefulldpisupportifavailable()"
     },
     {
@@ -3606,6 +4040,7 @@
       "_origin": "ast",
       "id": "windows_runner_win32_window_cpp_hwnd",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "hwnd"
     },
     {
@@ -3616,6 +4051,7 @@
       "_origin": "ast",
       "id": "windows_runner_win32_window_windowclassregistrar",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "windowclassregistrar"
     },
     {
@@ -3626,6 +4062,7 @@
       "_origin": "ast",
       "id": "windows_runner_win32_window_windowclassregistrar_windowclassregistrar",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": ".~windowclassregistrar()"
     },
     {
@@ -3636,6 +4073,7 @@
       "_origin": "ast",
       "id": "windows_runner_win32_window_windowclassregistrar_getinstance",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": ".getinstance()"
     },
     {
@@ -3646,6 +4084,7 @@
       "_origin": "ast",
       "id": "windows_runner_win32_window_windowclassregistrar_getwindowclass",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "getwindowclass"
     },
     {
@@ -3656,6 +4095,7 @@
       "_origin": "ast",
       "id": "windows_runner_win32_window_windowclassregistrar_unregisterwindowclass",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "unregisterwindowclass"
     },
     {
@@ -3666,6 +4106,7 @@
       "_origin": "ast",
       "id": "windows_runner_win32_window_windowclassregistrar_instance",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "instance_"
     },
     {
@@ -3676,6 +4117,7 @@
       "_origin": "ast",
       "id": "windows_runner_win32_window_windowclassregistrar_class_registered",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "class_registered_"
     },
     {
@@ -3686,6 +4128,7 @@
       "_origin": "ast",
       "id": "windows_runner_win32_window_cpp_wchar_t",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "wchar_t"
     },
     {
@@ -3696,6 +4139,7 @@
       "_origin": "ast",
       "id": "windows_runner_win32_window_win32window_win32window",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "win32window::win32window()"
     },
     {
@@ -3706,6 +4150,7 @@
       "_origin": "ast",
       "id": "wstring",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "wstring"
     },
     {
@@ -3716,6 +4161,7 @@
       "_origin": "ast",
       "id": "point",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "point"
     },
     {
@@ -3726,6 +4172,7 @@
       "_origin": "ast",
       "id": "size",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "size"
     },
     {
@@ -3736,6 +4183,7 @@
       "_origin": "ast",
       "id": "windows_runner_win32_window_cpp_lresult",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "lresult"
     },
     {
@@ -3746,6 +4194,7 @@
       "_origin": "ast",
       "id": "windows_runner_win32_window_cpp_uint",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "uint"
     },
     {
@@ -3756,6 +4205,7 @@
       "_origin": "ast",
       "id": "windows_runner_win32_window_cpp_wparam",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "wparam"
     },
     {
@@ -3766,6 +4216,7 @@
       "_origin": "ast",
       "id": "windows_runner_win32_window_cpp_lparam",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "lparam"
     },
     {
@@ -3776,6 +4227,7 @@
       "_origin": "ast",
       "id": "rect",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "rect"
     },
     {
@@ -3786,6 +4238,7 @@
       "_origin": "ast",
       "id": "windows_runner_win32_window_h_windows_runner_win32_window",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "win32_window.h"
     },
     {
@@ -3796,6 +4249,7 @@
       "_origin": "ast",
       "id": "windows_runner_win32_window_win32window",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "win32window"
     },
     {
@@ -3806,6 +4260,7 @@
       "_origin": "ast",
       "id": "windows_runner_win32_window_win32window_create",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "create"
     },
     {
@@ -3816,6 +4271,7 @@
       "_origin": "ast",
       "id": "windows_runner_win32_window_win32window_show",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "show"
     },
     {
@@ -3826,6 +4282,7 @@
       "_origin": "ast",
       "id": "windows_runner_win32_window_win32window_destroy",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "destroy"
     },
     {
@@ -3836,6 +4293,7 @@
       "_origin": "ast",
       "id": "windows_runner_win32_window_win32window_setchildcontent",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "setchildcontent"
     },
     {
@@ -3846,6 +4304,7 @@
       "_origin": "ast",
       "id": "windows_runner_win32_window_win32window_gethandle",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "gethandle"
     },
     {
@@ -3856,6 +4315,7 @@
       "_origin": "ast",
       "id": "windows_runner_win32_window_win32window_setquitonclose",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "setquitonclose"
     },
     {
@@ -3866,6 +4326,7 @@
       "_origin": "ast",
       "id": "windows_runner_win32_window_win32window_getclientarea",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "getclientarea"
     },
     {
@@ -3876,6 +4337,7 @@
       "_origin": "ast",
       "id": "windows_runner_win32_window_win32window_messagehandler",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "messagehandler"
     },
     {
@@ -3886,6 +4348,7 @@
       "_origin": "ast",
       "id": "windows_runner_win32_window_win32window_oncreate",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "oncreate"
     },
     {
@@ -3896,6 +4359,7 @@
       "_origin": "ast",
       "id": "windows_runner_win32_window_win32window_ondestroy",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "ondestroy"
     },
     {
@@ -3906,6 +4370,7 @@
       "_origin": "ast",
       "id": "windows_runner_win32_window_win32window_wndproc",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "wndproc"
     },
     {
@@ -3916,6 +4381,7 @@
       "_origin": "ast",
       "id": "windows_runner_win32_window_win32window_getthisfromhandle",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "getthisfromhandle"
     },
     {
@@ -3926,6 +4392,7 @@
       "_origin": "ast",
       "id": "windows_runner_win32_window_win32window_updatetheme",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "updatetheme"
     },
     {
@@ -3936,6 +4403,7 @@
       "_origin": "ast",
       "id": "windows_runner_win32_window_win32window_quit_on_close",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "quit_on_close_"
     },
     {
@@ -3946,6 +4414,7 @@
       "_origin": "ast",
       "id": "windows_runner_win32_window_h_hwnd",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "hwnd"
     },
     {
@@ -3956,6 +4425,7 @@
       "_origin": "ast",
       "id": "windows_runner_win32_window_win32window_window_handle",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "window_handle_"
     },
     {
@@ -3966,7 +4436,30 @@
       "_origin": "ast",
       "id": "windows_runner_win32_window_win32window_child_content",
       "community": 0,
+      "community_name": "Windows Runner Win32",
       "norm_label": "child_content_"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "ios_runner_assets_xcassets_launchimage_imageset_readme",
+      "community": 62,
+      "community_name": "README.md",
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Launch Screen Assets",
+      "file_type": "document",
+      "source_file": "ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "ios_runner_assets_xcassets_launchimage_imageset_readme_launch_screen_assets",
+      "community": 62,
+      "community_name": "README.md",
+      "norm_label": "launch screen assets"
     },
     {
       "label": "Graphify Rules",
@@ -3977,9 +4470,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "_agents_rules_graphify_rules",
       "community": 21,
-      "norm_label": "graphify rules"
+      "norm_label": "graphify rules",
+      "id": "_agents_rules_graphify_rules",
+      "community_name": "Icon/Config Artifacts"
     },
     {
       "label": "Graphify Workflow",
@@ -3990,9 +4484,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "_agents_workflows_graphify_workflow",
       "community": 22,
-      "norm_label": "graphify workflow"
+      "norm_label": "graphify workflow",
+      "id": "_agents_workflows_graphify_workflow",
+      "community_name": "Icon/Config Artifacts"
     },
     {
       "label": "Deploy Flutter Web to GitHub Pages",
@@ -4003,9 +4498,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "_github_workflows_deploy_web_build_and_deploy",
       "community": 17,
-      "norm_label": "deploy flutter web to github pages"
+      "norm_label": "deploy flutter web to github pages",
+      "id": "_github_workflows_deploy_web_build_and_deploy",
+      "community_name": "Web Github Deploy"
     },
     {
       "label": "My Mind",
@@ -4017,9 +4513,10 @@
       "author": null,
       "contributor": null,
       "rationale": "Cloud native personal knowledge management app synchronized automatically with GitHub.",
-      "id": "readme_my_mind",
       "community": 13,
-      "norm_label": "my mind"
+      "norm_label": "my mind",
+      "id": "readme_my_mind",
+      "community_name": "Pubspec Config"
     },
     {
       "label": "Markdown Native",
@@ -4031,9 +4528,10 @@
       "author": null,
       "contributor": null,
       "rationale": "Every character typed is instantly rendered into a live preview.",
-      "id": "readme_markdown_native",
       "community": 13,
-      "norm_label": "markdown native"
+      "norm_label": "markdown native",
+      "id": "readme_markdown_native",
+      "community_name": "Pubspec Config"
     },
     {
       "label": "Auto-Sync",
@@ -4045,9 +4543,10 @@
       "author": null,
       "contributor": null,
       "rationale": "Notes are saved automatically to a GitHub private repository after 5 seconds of idle time.",
-      "id": "readme_auto_sync",
       "community": 13,
-      "norm_label": "auto-sync"
+      "norm_label": "auto-sync",
+      "id": "readme_auto_sync",
+      "community_name": "Pubspec Config"
     },
     {
       "label": "Flutter Lints",
@@ -4058,22 +4557,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "analysis_options_flutter_lints",
       "community": 18,
-      "norm_label": "flutter lints"
-    },
-    {
-      "label": "Launch Screen Assets",
-      "file_type": "document",
-      "source_file": "ios/Runner/Assets/LaunchImage.imageset/README.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "ios_runner_assets_xcassets_launchimage_imageset_readme_launch_screen",
-      "community": 47,
-      "norm_label": "launch screen assets"
+      "norm_label": "flutter lints",
+      "id": "analysis_options_flutter_lints",
+      "community_name": "Icon/Config Artifacts"
     },
     {
       "label": "Linux my_mind Binary",
@@ -4084,9 +4571,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "linux_cmakelists_my_mind",
       "community": 16,
-      "norm_label": "linux my_mind binary"
+      "norm_label": "linux my_mind binary",
+      "id": "linux_cmakelists_my_mind",
+      "community_name": "Linux CMakeLists"
     },
     {
       "label": "Linux flutter_assemble",
@@ -4097,9 +4585,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "linux_flutter_cmakelists_flutter_assemble",
       "community": 16,
-      "norm_label": "linux flutter_assemble"
+      "norm_label": "linux flutter_assemble",
+      "id": "linux_flutter_cmakelists_flutter_assemble",
+      "community_name": "Linux CMakeLists"
     },
     {
       "label": "Linux runner",
@@ -4110,9 +4599,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "linux_runner_cmakelists_runner",
       "community": 16,
-      "norm_label": "linux runner"
+      "norm_label": "linux runner",
+      "id": "linux_runner_cmakelists_runner",
+      "community_name": "Linux CMakeLists"
     },
     {
       "label": "my_mind Package",
@@ -4123,9 +4613,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "pubspec_my_mind",
       "community": 18,
-      "norm_label": "my_mind package"
+      "norm_label": "my_mind package",
+      "id": "pubspec_my_mind",
+      "community_name": "Icon/Config Artifacts"
     },
     {
       "label": "Riverpod State Management",
@@ -4137,9 +4628,10 @@
       "author": null,
       "contributor": null,
       "rationale": "Clean architecture state management for Flutter.",
-      "id": "pubspec_riverpod",
       "community": 13,
-      "norm_label": "riverpod state management"
+      "norm_label": "riverpod state management",
+      "id": "pubspec_riverpod",
+      "community_name": "Pubspec Config"
     },
     {
       "label": "Web Base Href",
@@ -4151,9 +4643,10 @@
       "author": null,
       "contributor": null,
       "rationale": "Ensures assets load correctly from GitHub Pages subdirectory.",
-      "id": "web_index_base_href",
       "community": 17,
-      "norm_label": "web base href"
+      "norm_label": "web base href",
+      "id": "web_index_base_href",
+      "community_name": "Web Github Deploy"
     },
     {
       "label": "Windows my_mind Binary",
@@ -4164,9 +4657,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "windows_cmakelists_my_mind",
       "community": 14,
-      "norm_label": "windows my_mind binary"
+      "norm_label": "windows my_mind binary",
+      "id": "windows_cmakelists_my_mind",
+      "community_name": "Windows CMakeLists"
     },
     {
       "label": "Windows flutter_assemble",
@@ -4177,9 +4671,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "windows_flutter_cmakelists_flutter_assemble",
       "community": 14,
-      "norm_label": "windows flutter_assemble"
+      "norm_label": "windows flutter_assemble",
+      "id": "windows_flutter_cmakelists_flutter_assemble",
+      "community_name": "Windows CMakeLists"
     },
     {
       "label": "Windows flutter_wrapper_app",
@@ -4190,9 +4685,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "windows_flutter_cmakelists_flutter_wrapper_app",
       "community": 14,
-      "norm_label": "windows flutter_wrapper_app"
+      "norm_label": "windows flutter_wrapper_app",
+      "id": "windows_flutter_cmakelists_flutter_wrapper_app",
+      "community_name": "Windows CMakeLists"
     },
     {
       "label": "Windows runner",
@@ -4203,9 +4699,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "windows_runner_cmakelists_runner",
       "community": 14,
-      "norm_label": "windows runner"
+      "norm_label": "windows runner",
+      "id": "windows_runner_cmakelists_runner",
+      "community_name": "Windows CMakeLists"
     },
     {
       "label": "Flutter Logo / Default Launcher Icon",
@@ -4216,9 +4713,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "android_app_src_main_res_mipmap_hdpi_ic_launcher_flutter_logo",
       "community": 24,
-      "norm_label": "flutter logo / default launcher icon"
+      "norm_label": "flutter logo / default launcher icon",
+      "id": "android_app_src_main_res_mipmap_hdpi_ic_launcher_flutter_logo",
+      "community_name": "Icon/Config Artifacts"
     },
     {
       "label": "Flutter Logo (App Icon)",
@@ -4229,9 +4727,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "android_app_src_main_res_mipmap_mdpi_ic_launcher_flutter_logo",
       "community": 25,
-      "norm_label": "flutter logo (app icon)"
+      "norm_label": "flutter logo (app icon)",
+      "id": "android_app_src_main_res_mipmap_mdpi_ic_launcher_flutter_logo",
+      "community_name": "Icon/Config Artifacts"
     },
     {
       "label": "Flutter Logo App Icon",
@@ -4242,9 +4741,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "android_app_src_main_res_mipmap_xhdpi_ic_launcher_app_icon",
       "community": 26,
-      "norm_label": "flutter logo app icon"
+      "norm_label": "flutter logo app icon",
+      "id": "android_app_src_main_res_mipmap_xhdpi_ic_launcher_app_icon",
+      "community_name": "Icon/Config Artifacts"
     },
     {
       "label": "Flutter App Launcher Icon",
@@ -4255,9 +4755,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "android_app_src_main_res_mipmap_xxhdpi_ic_launcher_icon",
       "community": 27,
-      "norm_label": "flutter app launcher icon"
+      "norm_label": "flutter app launcher icon",
+      "id": "android_app_src_main_res_mipmap_xxhdpi_ic_launcher_icon",
+      "community_name": "Icon/Config Artifacts"
     },
     {
       "label": "Flutter Logo",
@@ -4268,9 +4769,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "android_app_src_main_res_mipmap_xxxhdpi_ic_launcher_flutter_logo",
       "community": 28,
-      "norm_label": "flutter logo"
+      "norm_label": "flutter logo",
+      "id": "android_app_src_main_res_mipmap_xxxhdpi_ic_launcher_flutter_logo",
+      "community_name": "Icon/Config Artifacts"
     },
     {
       "label": "Flutter Logo",
@@ -4281,9 +4783,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ios_runner_assets_xcassets_appicon_appiconset_icon_app_1024x1024_1x_flutter_logo",
       "community": 31,
-      "norm_label": "flutter logo"
+      "norm_label": "flutter logo",
+      "id": "ios_runner_assets_xcassets_appicon_appiconset_icon_app_1024x1024_1x_flutter_logo",
+      "community_name": "Icon/Config Artifacts"
     },
     {
       "label": "Flutter Logo App Icon (20x20@1x)",
@@ -4294,9 +4797,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ios_runner_assets_xcassets_appicon_appiconset_icon_app_20x20_1x_flutter_logo",
       "community": 19,
-      "norm_label": "flutter logo app icon (20x20@1x)"
+      "norm_label": "flutter logo app icon (20x20@1x)",
+      "id": "ios_runner_assets_xcassets_appicon_appiconset_icon_app_20x20_1x_flutter_logo",
+      "community_name": "Icon/Config Artifacts"
     },
     {
       "label": "Flutter",
@@ -4307,9 +4811,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ios_runner_assets_xcassets_appicon_appiconset_icon_app_20x20_1x_flutter",
       "community": 19,
-      "norm_label": "flutter"
+      "norm_label": "flutter",
+      "id": "ios_runner_assets_xcassets_appicon_appiconset_icon_app_20x20_1x_flutter",
+      "community_name": "Icon/Config Artifacts"
     },
     {
       "label": "Flutter App Icon (20x20@2x)",
@@ -4320,9 +4825,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ios_runner_assets_xcassets_appicon_appiconset_icon_app_20x20_2x_flutter_app_icon",
       "community": 32,
-      "norm_label": "flutter app icon (20x20@2x)"
+      "norm_label": "flutter app icon (20x20@2x)",
+      "id": "ios_runner_assets_xcassets_appicon_appiconset_icon_app_20x20_2x_flutter_app_icon",
+      "community_name": "Icon/Config Artifacts"
     },
     {
       "label": "Flutter Logo App Icon",
@@ -4333,9 +4839,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ios_runner_assets_xcassets_appicon_appiconset_icon_app_20x20_3x_flutter_logo",
       "community": 33,
-      "norm_label": "flutter logo app icon"
+      "norm_label": "flutter logo app icon",
+      "id": "ios_runner_assets_xcassets_appicon_appiconset_icon_app_20x20_3x_flutter_logo",
+      "community_name": "Icon/Config Artifacts"
     },
     {
       "label": "Flutter App Icon (29x29)",
@@ -4346,9 +4853,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ios_runner_assets_xcassets_appicon_appiconset_icon_app_29x29_1x_app_icon",
       "community": 34,
-      "norm_label": "flutter app icon (29x29)"
+      "norm_label": "flutter app icon (29x29)",
+      "id": "ios_runner_assets_xcassets_appicon_appiconset_icon_app_29x29_1x_app_icon",
+      "community_name": "Icon/Config Artifacts"
     },
     {
       "label": "Flutter Logo",
@@ -4359,9 +4867,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ios_runner_assets_xcassets_appicon_appiconset_icon_app_29x29_2x_flutter_logo",
       "community": 35,
-      "norm_label": "flutter logo"
+      "norm_label": "flutter logo",
+      "id": "ios_runner_assets_xcassets_appicon_appiconset_icon_app_29x29_2x_flutter_logo",
+      "community_name": "Icon/Config Artifacts"
     },
     {
       "label": "Flutter Logo App Icon",
@@ -4372,9 +4881,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ios_runner_assets_xcassets_appicon_appiconset_icon_app_29x29_3x_flutter_logo",
       "community": 36,
-      "norm_label": "flutter logo app icon"
+      "norm_label": "flutter logo app icon",
+      "id": "ios_runner_assets_xcassets_appicon_appiconset_icon_app_29x29_3x_flutter_logo",
+      "community_name": "Icon/Config Artifacts"
     },
     {
       "label": "Flutter Logo (App Icon)",
@@ -4385,9 +4895,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ios_runner_assets_xcassets_appicon_appiconset_icon_app_40x40_1x_flutter_logo",
       "community": 37,
-      "norm_label": "flutter logo (app icon)"
+      "norm_label": "flutter logo (app icon)",
+      "id": "ios_runner_assets_xcassets_appicon_appiconset_icon_app_40x40_1x_flutter_logo",
+      "community_name": "Icon/Config Artifacts"
     },
     {
       "label": "App Icon 40x40@2x",
@@ -4398,9 +4909,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ios_runner_assets_xcassets_appicon_appiconset_icon_app_40x40_2x_app_icon",
       "community": 38,
-      "norm_label": "app icon 40x40@2x"
+      "norm_label": "app icon 40x40@2x",
+      "id": "ios_runner_assets_xcassets_appicon_appiconset_icon_app_40x40_2x_app_icon",
+      "community_name": "Icon/Config Artifacts"
     },
     {
       "label": "Flutter Default App Icon",
@@ -4411,9 +4923,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ios_runner_assets_xcassets_appicon_appiconset_icon_app_40x40_3x_app_icon",
       "community": 39,
-      "norm_label": "flutter default app icon"
+      "norm_label": "flutter default app icon",
+      "id": "ios_runner_assets_xcassets_appicon_appiconset_icon_app_40x40_3x_app_icon",
+      "community_name": "Icon/Config Artifacts"
     },
     {
       "label": "Flutter Logo",
@@ -4424,9 +4937,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ios_runner_assets_xcassets_appicon_appiconset_icon_app_60x60_2x_flutterlogo",
       "community": 40,
-      "norm_label": "flutter logo"
+      "norm_label": "flutter logo",
+      "id": "ios_runner_assets_xcassets_appicon_appiconset_icon_app_60x60_2x_flutterlogo",
+      "community_name": "Icon/Config Artifacts"
     },
     {
       "label": "Flutter Logo App Icon",
@@ -4437,9 +4951,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ios_runner_assets_xcassets_appicon_appiconset_icon_app_60x60_3x_app_icon",
       "community": 41,
-      "norm_label": "flutter logo app icon"
+      "norm_label": "flutter logo app icon",
+      "id": "ios_runner_assets_xcassets_appicon_appiconset_icon_app_60x60_3x_app_icon",
+      "community_name": "Icon/Config Artifacts"
     },
     {
       "label": "Flutter Logo",
@@ -4450,9 +4965,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ios_runner_assets_xcassets_appicon_appiconset_icon_app_76x76_1x_flutter_logo",
       "community": 42,
-      "norm_label": "flutter logo"
+      "norm_label": "flutter logo",
+      "id": "ios_runner_assets_xcassets_appicon_appiconset_icon_app_76x76_1x_flutter_logo",
+      "community_name": "Icon/Config Artifacts"
     },
     {
       "label": "Flutter App Icon (76x76@2x)",
@@ -4463,9 +4979,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ios_runner_assets_xcassets_appicon_appiconset_icon_app_76x76_2x_image",
       "community": 20,
-      "norm_label": "flutter app icon (76x76@2x)"
+      "norm_label": "flutter app icon (76x76@2x)",
+      "id": "ios_runner_assets_xcassets_appicon_appiconset_icon_app_76x76_2x_image",
+      "community_name": "Icon/Config Artifacts"
     },
     {
       "label": "Flutter Framework Logo",
@@ -4476,9 +4993,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ios_runner_assets_xcassets_appicon_appiconset_icon_app_76x76_2x_flutter_logo",
       "community": 20,
-      "norm_label": "flutter framework logo"
+      "norm_label": "flutter framework logo",
+      "id": "ios_runner_assets_xcassets_appicon_appiconset_icon_app_76x76_2x_flutter_logo",
+      "community_name": "Icon/Config Artifacts"
     },
     {
       "label": "Flutter Logo App Icon",
@@ -4489,9 +5007,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ios_runner_assets_xcassets_appicon_appiconset_icon_app_83_5x83_5_2x_flutter_logo",
       "community": 43,
-      "norm_label": "flutter logo app icon"
+      "norm_label": "flutter logo app icon",
+      "id": "ios_runner_assets_xcassets_appicon_appiconset_icon_app_83_5x83_5_2x_flutter_logo",
+      "community_name": "Icon/Config Artifacts"
     },
     {
       "label": "LaunchImage",
@@ -4502,9 +5021,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ios_runner_assets_xcassets_launchimage_imageset_launchimage_launchimage",
       "community": 46,
-      "norm_label": "launchimage"
+      "norm_label": "launchimage",
+      "id": "ios_runner_assets_xcassets_launchimage_imageset_launchimage_launchimage",
+      "community_name": "Icon/Config Artifacts"
     },
     {
       "label": "LaunchImage@2x",
@@ -4515,9 +5035,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ios_runner_assets_xcassets_launchimage_imageset_launchimage_2x_launch_image",
       "community": 44,
-      "norm_label": "launchimage@2x"
+      "norm_label": "launchimage@2x",
+      "id": "ios_runner_assets_xcassets_launchimage_imageset_launchimage_2x_launch_image",
+      "community_name": "Icon/Config Artifacts"
     },
     {
       "label": "Launch Image (Black Screen)",
@@ -4528,9 +5049,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ios_runner_assets_xcassets_launchimage_imageset_launchimage_3x_launch_image",
       "community": 45,
-      "norm_label": "launch image (black screen)"
+      "norm_label": "launch image (black screen)",
+      "id": "ios_runner_assets_xcassets_launchimage_imageset_launchimage_3x_launch_image",
+      "community_name": "Icon/Config Artifacts"
     },
     {
       "label": "Flutter App Icon",
@@ -4541,9 +5063,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "macos_runner_assets_xcassets_appicon_appiconset_app_icon_1024_flutter_logo",
       "community": 49,
-      "norm_label": "flutter app icon"
+      "norm_label": "flutter app icon",
+      "id": "macos_runner_assets_xcassets_appicon_appiconset_app_icon_1024_flutter_logo",
+      "community_name": "Icon/Config Artifacts"
     },
     {
       "label": "macOS App Icon (128px)",
@@ -4554,9 +5077,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "macos_runner_assets_xcassets_appicon_appiconset_app_icon_128_app_icon_128",
       "community": 50,
-      "norm_label": "macos app icon (128px)"
+      "norm_label": "macos app icon (128px)",
+      "id": "macos_runner_assets_xcassets_appicon_appiconset_app_icon_128_app_icon_128",
+      "community_name": "Icon/Config Artifacts"
     },
     {
       "label": "macOS App Icon 16x16",
@@ -4567,9 +5091,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "macos_runner_assets_xcassets_appicon_appiconset_app_icon_16_image",
       "community": 51,
-      "norm_label": "macos app icon 16x16"
+      "norm_label": "macos app icon 16x16",
+      "id": "macos_runner_assets_xcassets_appicon_appiconset_app_icon_16_image",
+      "community_name": "Icon/Config Artifacts"
     },
     {
       "label": "Flutter Logo App Icon",
@@ -4580,9 +5105,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "macos_runner_assets_xcassets_appicon_appiconset_app_icon_256_flutter_logo",
       "community": 52,
-      "norm_label": "flutter logo app icon"
+      "norm_label": "flutter logo app icon",
+      "id": "macos_runner_assets_xcassets_appicon_appiconset_app_icon_256_flutter_logo",
+      "community_name": "Icon/Config Artifacts"
     },
     {
       "label": "Flutter Logo App Icon 32x32",
@@ -4593,9 +5119,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "macos_runner_assets_xcassets_appicon_appiconset_app_icon_32_flutter_logo",
       "community": 53,
-      "norm_label": "flutter logo app icon 32x32"
+      "norm_label": "flutter logo app icon 32x32",
+      "id": "macos_runner_assets_xcassets_appicon_appiconset_app_icon_32_flutter_logo",
+      "community_name": "Icon/Config Artifacts"
     },
     {
       "label": "App Icon (Flutter Logo)",
@@ -4606,9 +5133,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "macos_runner_assets_xcassets_appicon_appiconset_app_icon_512_app_icon",
       "community": 54,
-      "norm_label": "app icon (flutter logo)"
+      "norm_label": "app icon (flutter logo)",
+      "id": "macos_runner_assets_xcassets_appicon_appiconset_app_icon_512_app_icon",
+      "community_name": "Icon/Config Artifacts"
     },
     {
       "label": "Flutter Logo Icon",
@@ -4619,9 +5147,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "macos_runner_assets_xcassets_appicon_appiconset_app_icon_64_app_icon_64",
       "community": 55,
-      "norm_label": "flutter logo icon"
+      "norm_label": "flutter logo icon",
+      "id": "macos_runner_assets_xcassets_appicon_appiconset_app_icon_64_app_icon_64",
+      "community_name": "Icon/Config Artifacts"
     },
     {
       "label": "Flutter Logo Favicon",
@@ -4632,9 +5161,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "web_favicon_flutter_logo",
       "community": 57,
-      "norm_label": "flutter logo favicon"
+      "norm_label": "flutter logo favicon",
+      "id": "web_favicon_flutter_logo",
+      "community_name": "Icon/Config Artifacts"
     },
     {
       "label": "Flutter Logo Icon (192x192)",
@@ -4645,9 +5175,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "web_icons_icon_192_flutter_logo",
       "community": 58,
-      "norm_label": "flutter logo icon (192x192)"
+      "norm_label": "flutter logo icon (192x192)",
+      "id": "web_icons_icon_192_flutter_logo",
+      "community_name": "Icon/Config Artifacts"
     },
     {
       "label": "Flutter Logo",
@@ -4658,9 +5189,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "web_icons_icon_512_flutter_logo",
       "community": 59,
-      "norm_label": "flutter logo"
+      "norm_label": "flutter logo",
+      "id": "web_icons_icon_512_flutter_logo",
+      "community_name": "Icon/Config Artifacts"
     },
     {
       "label": "Flutter Maskable Icon 192",
@@ -4671,9 +5203,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "web_icons_icon_maskable_192_flutter_logo",
       "community": 60,
-      "norm_label": "flutter maskable icon 192"
+      "norm_label": "flutter maskable icon 192",
+      "id": "web_icons_icon_maskable_192_flutter_logo",
+      "community_name": "Icon/Config Artifacts"
     },
     {
       "label": "Flutter Logo",
@@ -4684,9 +5217,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "web_icons_icon_maskable_512_flutter_logo",
       "community": 61,
-      "norm_label": "flutter logo"
+      "norm_label": "flutter logo",
+      "id": "web_icons_icon_maskable_512_flutter_logo",
+      "community_name": "Icon/Config Artifacts"
     }
   ],
   "links": [
@@ -5461,6 +5995,17 @@
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
+      "source": "lib_features_sync_application_sync_service_autosavenotifier",
+      "target": "notifier"
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/sync/application/sync_service.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
       "source": "lib_features_sync_application_sync_service_syncmessagenotifier",
       "target": "notifier"
     },
@@ -5601,6 +6146,18 @@
       "weight": 1.0,
       "context": "riverpod_reference",
       "_origin": "ast",
+      "source": "lib_features_notes_presentation_workspace_screen_editmetadata",
+      "target": "lib_features_notes_application_notes_providers_currentnotepathprovider"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/notes/presentation/workspace_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "riverpod_reference",
+      "_origin": "ast",
       "source": "lib_features_notes_presentation_workspace_screen_initstate",
       "target": "lib_features_notes_application_notes_providers_currentnotepathprovider"
     },
@@ -5661,6 +6218,30 @@
       "weight": 1.0,
       "context": "riverpod_reference",
       "_origin": "ast",
+      "source": "lib_features_notes_presentation_workspace_screen_editmetadata",
+      "target": "lib_features_notes_application_notes_providers_activenotemetadataprovider"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/notes/presentation/workspace_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "riverpod_reference",
+      "_origin": "ast",
+      "source": "lib_features_notes_presentation_workspace_screen_workspacescreenstate",
+      "target": "lib_features_notes_application_notes_providers_activenotemetadataprovider"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/notes/presentation/workspace_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "riverpod_reference",
+      "_origin": "ast",
       "source": "lib_features_notes_presentation_workspace_screen_build",
       "target": "lib_features_notes_application_notes_providers_activenotecontentprovider"
     },
@@ -5674,6 +6255,18 @@
       "context": "riverpod_reference",
       "_origin": "ast",
       "source": "lib_features_notes_presentation_workspace_screen_createnewnote",
+      "target": "lib_features_notes_application_notes_providers_activenotecontentprovider"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/notes/presentation/workspace_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "riverpod_reference",
+      "_origin": "ast",
+      "source": "lib_features_notes_presentation_workspace_screen_editmetadata",
       "target": "lib_features_notes_application_notes_providers_activenotecontentprovider"
     },
     {
@@ -6045,6 +6638,17 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_features_notes_domain_note_metadata_dart_lib_features_notes_domain_note_metadata",
+      "target": "lib_features_notes_domain_note_metadata_date"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/notes/domain/note_metadata.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_notes_domain_note_metadata_dart_lib_features_notes_domain_note_metadata",
       "target": "lib_features_notes_domain_note_metadata_favorite"
     },
     {
@@ -6079,6 +6683,17 @@
       "_origin": "ast",
       "source": "lib_features_notes_domain_note_metadata_dart_lib_features_notes_domain_note_metadata",
       "target": "lib_features_notes_domain_note_metadata_operator"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/notes/domain/note_metadata.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_notes_domain_note_metadata_dart_lib_features_notes_domain_note_metadata",
+      "target": "lib_features_notes_domain_note_metadata_published"
     },
     {
       "relation": "defines",
@@ -6135,6 +6750,18 @@
       "_origin": "ast",
       "source": "lib_features_notes_domain_note_metadata_dart_lib_features_notes_domain_note_metadata",
       "target": "list"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/notes/presentation/workspace_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "type_lookup",
+      "_origin": "ast",
+      "source": "lib_features_notes_presentation_workspace_screen",
+      "target": "lib_features_notes_domain_note_metadata_notemetadata"
     },
     {
       "relation": "references",
@@ -6797,6 +7424,17 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_features_notes_presentation_workspace_screen",
+      "target": "lib_features_notes_presentation_workspace_screen_editmetadata"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/notes/presentation/workspace_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_notes_presentation_workspace_screen",
       "target": "lib_features_notes_presentation_workspace_screen_initstate"
     },
     {
@@ -6942,6 +7580,18 @@
       "_origin": "ast",
       "source": "lib_features_notes_presentation_workspace_screen_workspacescreenstate",
       "target": "consumerstate"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/notes/presentation/workspace_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "riverpod_reference",
+      "_origin": "ast",
+      "source": "lib_features_notes_presentation_workspace_screen_workspacescreenstate",
+      "target": "lib_features_sync_application_sync_service_autosaveprovider"
     },
     {
       "relation": "references",
@@ -7164,8 +7814,32 @@
       "weight": 1.0,
       "context": "riverpod_reference",
       "_origin": "ast",
+      "source": "lib_features_notes_presentation_workspace_screen_editmetadata",
+      "target": "lib_features_sync_application_sync_service_syncserviceprovider"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/notes/presentation/workspace_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "riverpod_reference",
+      "_origin": "ast",
       "source": "lib_features_notes_presentation_workspace_screen_initstate",
       "target": "lib_features_sync_application_sync_service_syncserviceprovider"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/notes/presentation/workspace_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "riverpod_reference",
+      "_origin": "ast",
+      "source": "lib_features_notes_presentation_workspace_screen_build",
+      "target": "lib_features_sync_application_sync_service_autosaveprovider"
     },
     {
       "relation": "references",
@@ -7202,6 +7876,17 @@
       "_origin": "ast",
       "source": "lib_features_notes_presentation_workspace_screen_build",
       "target": "lib_features_sync_application_sync_service_syncstateprovider"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/settings/presentation/settings_dialog.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_settings_presentation_settings_dialog",
+      "target": "sync_application_sync_service_dart"
     },
     {
       "relation": "defines",
@@ -7257,6 +7942,18 @@
       "context": "riverpod_reference",
       "_origin": "ast",
       "source": "lib_features_settings_presentation_settings_dialog_settingsdialog",
+      "target": "lib_features_sync_application_sync_service_autosaveprovider"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/settings/presentation/settings_dialog.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "riverpod_reference",
+      "_origin": "ast",
+      "source": "lib_features_settings_presentation_settings_dialog_settingsdialog",
       "target": "lib_features_sync_infrastructure_github_auth_service_githubauthnotifierprovider"
     },
     {
@@ -7282,6 +7979,18 @@
       "_origin": "ast",
       "source": "lib_features_settings_presentation_settings_dialog_settingsdialog",
       "target": "lib_features_workspace_infrastructure_workspace_repository_sharedpreferencesprovider"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/settings/presentation/settings_dialog.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "riverpod_reference",
+      "_origin": "ast",
+      "source": "lib_features_settings_presentation_settings_dialog_build",
+      "target": "lib_features_sync_application_sync_service_autosaveprovider"
     },
     {
       "relation": "references",
@@ -7346,6 +8055,17 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "lib/features/sync/application/sync_service.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_sync_application_sync_service",
+      "target": "workspace_infrastructure_workspace_repository_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "lib/features/sync/infrastructure/github_auth_service.dart",
       "source_location": null,
       "weight": 1.0,
@@ -7395,6 +8115,28 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_features_sync_application_sync_service",
+      "target": "lib_features_sync_application_sync_service_autosavenotifier"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/sync/application/sync_service.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_sync_application_sync_service",
+      "target": "lib_features_sync_application_sync_service_autosaveprovider"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/sync/application/sync_service.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_sync_application_sync_service",
       "target": "lib_features_sync_application_sync_service_build"
     },
     {
@@ -7418,6 +8160,17 @@
       "_origin": "ast",
       "source": "lib_features_sync_application_sync_service",
       "target": "lib_features_sync_application_sync_service_executeautosync"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/sync/application/sync_service.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_sync_application_sync_service",
+      "target": "lib_features_sync_application_sync_service_forcesave"
     },
     {
       "relation": "defines",
@@ -7539,6 +8292,17 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_features_sync_application_sync_service",
+      "target": "lib_features_sync_application_sync_service_toggle"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/sync/application/sync_service.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_sync_application_sync_service",
       "target": "lib_features_sync_application_sync_service_triggerautosync"
     },
     {
@@ -7616,9 +8380,45 @@
       "source_file": "lib/features/sync/application/sync_service.dart",
       "source_location": null,
       "weight": 1.0,
+      "context": "riverpod_reference",
+      "_origin": "ast",
+      "source": "lib_features_sync_application_sync_service_autosavenotifier",
+      "target": "lib_features_workspace_infrastructure_workspace_repository_sharedpreferencesprovider"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/sync/application/sync_service.dart",
+      "source_location": null,
+      "weight": 1.0,
       "_origin": "ast",
       "source": "lib_features_sync_application_sync_service_syncstatenotifier",
       "target": "lib_features_sync_application_sync_service_syncstate"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/sync/application/sync_service.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "riverpod_reference",
+      "_origin": "ast",
+      "source": "lib_features_sync_application_sync_service_build",
+      "target": "lib_features_workspace_infrastructure_workspace_repository_sharedpreferencesprovider"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/sync/application/sync_service.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "riverpod_reference",
+      "_origin": "ast",
+      "source": "lib_features_sync_application_sync_service_toggle",
+      "target": "lib_features_workspace_infrastructure_workspace_repository_sharedpreferencesprovider"
     },
     {
       "relation": "imports",
@@ -11049,6 +11849,17 @@
       "_origin": "ast",
       "source": "windows_runner_win32_window_win32window_wndproc",
       "target": "windows_runner_win32_window_win32window_getthisfromhandle"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "ios_runner_assets_xcassets_launchimage_imageset_readme",
+      "target": "ios_runner_assets_xcassets_launchimage_imageset_readme_launch_screen_assets",
+      "confidence_score": 1.0
     },
     {
       "relation": "conceptually_related_to",

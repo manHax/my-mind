@@ -323,6 +323,26 @@ class _WorkspaceScreenState extends ConsumerState<WorkspaceScreen> {
         elevation: 0,
         backgroundColor: Theme.of(context).colorScheme.surface,
         actions: [
+          Consumer(
+            builder: (context, ref, child) {
+              final viewMode = ref.watch(viewModeProvider);
+              return SegmentedButton<ViewMode>(
+                segments: const [
+                  ButtonSegment(value: ViewMode.editorOnly, icon: Icon(Icons.edit_note), tooltip: 'Editor Only'),
+                  ButtonSegment(value: ViewMode.split, icon: Icon(Icons.vertical_split), tooltip: 'Split View'),
+                  ButtonSegment(value: ViewMode.readerOnly, icon: Icon(Icons.menu_book), tooltip: 'Reader Only'),
+                ],
+                selected: {viewMode},
+                onSelectionChanged: (Set<ViewMode> newSelection) {
+                  ref.read(viewModeProvider.notifier).set(newSelection.first);
+                },
+                style: SegmentedButton.styleFrom(
+                  visualDensity: VisualDensity.compact,
+                ),
+              );
+            }
+          ),
+          const SizedBox(width: 16),
           IconButton(
             tooltip: 'Share as Public Link',
             icon: const Icon(Icons.ios_share),
@@ -461,52 +481,70 @@ class _WorkspaceScreenState extends ConsumerState<WorkspaceScreen> {
           ),
           
           // Editor
-          Expanded(
-            child: activeNoteContent == 'Loading...' 
-                ? const Center(child: CircularProgressIndicator()) 
-                : Padding(
-                    padding: const EdgeInsets.all(40.0),
-                    child: TextField(
-                      controller: _controller,
-                      maxLines: null,
-                      expands: true,
-                      decoration: const InputDecoration(
-                        border: InputBorder.none,
-                        hintText: 'Start writing...',
+          Consumer(
+            builder: (context, ref, child) {
+              final viewMode = ref.watch(viewModeProvider);
+              if (viewMode == ViewMode.readerOnly) return const SizedBox.shrink();
+              return Expanded(
+                child: activeNoteContent == 'Loading...' 
+                    ? const Center(child: CircularProgressIndicator()) 
+                    : Padding(
+                        padding: const EdgeInsets.all(40.0),
+                        child: TextField(
+                          controller: _controller,
+                          maxLines: null,
+                          expands: true,
+                          decoration: const InputDecoration(
+                            border: InputBorder.none,
+                            hintText: 'Start writing...',
+                          ),
+                          style: const TextStyle(
+                            fontSize: 16,
+                            height: 1.6,
+                            fontFamily: 'monospace',
+                          ),
+                          onChanged: (val) {
+                            ref.read(activeNoteContentProvider.notifier).updateContent(val);
+                            ref.read(syncServiceProvider).triggerAutoSync(val, currentPath);
+                          },
+                        ),
                       ),
-                      style: const TextStyle(
-                        fontSize: 16,
-                        height: 1.6,
-                        fontFamily: 'monospace',
-                      ),
-                      onChanged: (val) {
-                        ref.read(activeNoteContentProvider.notifier).updateContent(val);
-                        ref.read(syncServiceProvider).triggerAutoSync(val, currentPath);
-                      },
-                    ),
-                  ),
+              );
+            }
           ),
           
           // Divider
-          Container(
-            width: 1,
-            color: Theme.of(context).dividerColor.withOpacity(0.1),
+          Consumer(
+            builder: (context, ref, child) {
+              final viewMode = ref.watch(viewModeProvider);
+              if (viewMode != ViewMode.split) return const SizedBox.shrink();
+              return Container(
+                width: 1,
+                color: Theme.of(context).dividerColor.withOpacity(0.1),
+              );
+            }
           ),
           
           // Live Preview
-          Expanded(
-            child: Container(
-              color: Theme.of(context).colorScheme.surfaceContainerLowest,
-              child: Markdown(
-                data: activeNoteContent,
-                padding: const EdgeInsets.all(40),
-                styleSheet: MarkdownStyleSheet(
-                  h1: Theme.of(context).textTheme.headlineMedium?.copyWith(fontWeight: FontWeight.bold),
-                  h2: Theme.of(context).textTheme.headlineSmall?.copyWith(fontWeight: FontWeight.bold),
-                  p: Theme.of(context).textTheme.bodyLarge?.copyWith(height: 1.6),
+          Consumer(
+            builder: (context, ref, child) {
+              final viewMode = ref.watch(viewModeProvider);
+              if (viewMode == ViewMode.editorOnly) return const SizedBox.shrink();
+              return Expanded(
+                child: Container(
+                  color: Theme.of(context).colorScheme.surfaceContainerLowest,
+                  child: Markdown(
+                    data: activeNoteContent,
+                    padding: const EdgeInsets.all(40),
+                    styleSheet: MarkdownStyleSheet(
+                      h1: Theme.of(context).textTheme.headlineMedium?.copyWith(fontWeight: FontWeight.bold),
+                      h2: Theme.of(context).textTheme.headlineSmall?.copyWith(fontWeight: FontWeight.bold),
+                      p: Theme.of(context).textTheme.bodyLarge?.copyWith(height: 1.6),
+                    ),
+                  ),
                 ),
-              ),
-            ),
+              );
+            }
           ),
         ],
       ),

@@ -55,8 +55,8 @@
     "semantic_hash": ""
   },
   "lib/features/notes/application/notes_providers.dart": {
-    "mtime": 1785134308.3043664,
-    "ast_hash": "8bbfde74c7491b876527c34ffd8332d0",
+    "mtime": 1784801600.4066176,
+    "ast_hash": "8c79826930d6c572dfdc9f7f056216aa",
     "semantic_hash": ""
   },
   "lib/features/notes/domain/note.dart": {
@@ -85,8 +85,8 @@
     "semantic_hash": ""
   },
   "lib/features/notes/presentation/workspace_screen.dart": {
-    "mtime": 1785134308.596815,
-    "ast_hash": "4118b9fa34c80a64c8c5fe625c1f89d6",
+    "mtime": 1785129748.90383,
+    "ast_hash": "0d88ce4757acbd8956e5011d3de9c8c1",
     "semantic_hash": ""
   },
   "lib/features/settings/presentation/settings_dialog.dart": {
