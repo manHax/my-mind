@@ -5,6 +5,22 @@ import '../../notes/domain/note_metadata.dart';
 import '../../notes/infrastructure/markdown_parser.dart';
 import '../../notes/application/notes_providers.dart';
 import '../infrastructure/github_note_repository.dart';
+import '../../workspace/infrastructure/workspace_repository.dart';
+
+class AutoSaveNotifier extends Notifier<bool> {
+  @override
+  bool build() {
+    final prefs = ref.watch(sharedPreferencesProvider);
+    return prefs.getBool('autosave_enabled') ?? true;
+  }
+
+  void toggle() {
+    final newVal = !state;
+    ref.read(sharedPreferencesProvider).setBool('autosave_enabled', newVal);
+    state = newVal;
+  }
+}
+final autoSaveProvider = NotifierProvider<AutoSaveNotifier, bool>(AutoSaveNotifier.new);
 
 enum SyncState { idle, syncing, success, error }
 
@@ -38,6 +54,12 @@ class SyncService {
   }
 
   void triggerAutoSync(String content, String notePath) {
+    final autoSaveEnabled = _ref.read(autoSaveProvider);
+    if (!autoSaveEnabled) {
+      // Do nothing if autosave is disabled
+      return;
+    }
+    
     // Show typing status (optional, but good UX)
     _ref.read(syncStateProvider.notifier).set(SyncState.idle);
     _ref.read(syncMessageProvider.notifier).set('Waiting to save...');
@@ -46,6 +68,11 @@ class SyncService {
     _debounceTimer = Timer(const Duration(seconds: 5), () {
       _executeAutoSync(content, notePath);
     });
+  }
+
+  Future<void> forceSave(String content, String notePath) async {
+    _debounceTimer?.cancel();
+    await _executeAutoSync(content, notePath);
   }
 
   Future<void> _executeAutoSync(String content, String notePath) async {

@@ -1,0 +1,19 @@
+{
+  "nodes": [
+    {
+      "id": "web_icons_icon_192_flutter_logo",
+      "label": "Flutter Logo Icon (192x192)",
+      "file_type": "image",
+      "source_file": "C:\\Manhakkim\\LEARN\\my-mind\\web\\icons\\Icon-192.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

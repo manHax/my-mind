@@ -1,0 +1,336 @@
+{
+  "nodes": [
+    {
+      "id": "_agents_rules_graphify_rules",
+      "label": "Graphify Rules",
+      "file_type": "document",
+      "source_file": "C:\\Manhakkim\\LEARN\\my-mind\\.agents\\rules\\graphify.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "_agents_workflows_graphify_workflow",
+      "label": "Graphify Workflow",
+      "file_type": "document",
+      "source_file": "C:\\Manhakkim\\LEARN\\my-mind\\.agents\\workflows\\graphify.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "_github_workflows_deploy_web_build_and_deploy",
+      "label": "Deploy Flutter Web to GitHub Pages",
+      "file_type": "code",
+      "source_file": "C:\\Manhakkim\\LEARN\\my-mind\\.github\\workflows\\deploy-web.yml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_my_mind",
+      "label": "My Mind",
+      "file_type": "concept",
+      "source_file": "C:\\Manhakkim\\LEARN\\my-mind\\README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Cloud native personal knowledge management app synchronized automatically with GitHub."
+    },
+    {
+      "id": "readme_markdown_native",
+      "label": "Markdown Native",
+      "file_type": "concept",
+      "source_file": "C:\\Manhakkim\\LEARN\\my-mind\\README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Every character typed is instantly rendered into a live preview."
+    },
+    {
+      "id": "readme_auto_sync",
+      "label": "Auto-Sync",
+      "file_type": "concept",
+      "source_file": "C:\\Manhakkim\\LEARN\\my-mind\\README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Notes are saved automatically to a GitHub private repository after 5 seconds of idle time."
+    },
+    {
+      "id": "analysis_options_flutter_lints",
+      "label": "Flutter Lints",
+      "file_type": "concept",
+      "source_file": "C:\\Manhakkim\\LEARN\\my-mind\\analysis_options.yaml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ios_runner_assets_xcassets_launchimage_imageset_readme_launch_screen",
+      "label": "Launch Screen Assets",
+      "file_type": "document",
+      "source_file": "C:\\Manhakkim\\LEARN\\my-mind\\ios\\Runner\\Assets\\LaunchImage.imageset\\README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "linux_cmakelists_my_mind",
+      "label": "Linux my_mind Binary",
+      "file_type": "code",
+      "source_file": "C:\\Manhakkim\\LEARN\\my-mind\\linux\\CMakeLists.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "linux_flutter_cmakelists_flutter_assemble",
+      "label": "Linux flutter_assemble",
+      "file_type": "code",
+      "source_file": "C:\\Manhakkim\\LEARN\\my-mind\\linux\\flutter\\CMakeLists.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "linux_runner_cmakelists_runner",
+      "label": "Linux runner",
+      "file_type": "code",
+      "source_file": "C:\\Manhakkim\\LEARN\\my-mind\\linux\\runner\\CMakeLists.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pubspec_my_mind",
+      "label": "my_mind Package",
+      "file_type": "code",
+      "source_file": "C:\\Manhakkim\\LEARN\\my-mind\\pubspec.yaml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pubspec_riverpod",
+      "label": "Riverpod State Management",
+      "file_type": "concept",
+      "source_file": "C:\\Manhakkim\\LEARN\\my-mind\\pubspec.yaml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Clean architecture state management for Flutter."
+    },
+    {
+      "id": "web_index_base_href",
+      "label": "Web Base Href",
+      "file_type": "concept",
+      "source_file": "C:\\Manhakkim\\LEARN\\my-mind\\web\\index.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Ensures assets load correctly from GitHub Pages subdirectory."
+    },
+    {
+      "id": "windows_cmakelists_my_mind",
+      "label": "Windows my_mind Binary",
+      "file_type": "code",
+      "source_file": "C:\\Manhakkim\\LEARN\\my-mind\\windows\\CMakeLists.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "windows_flutter_cmakelists_flutter_assemble",
+      "label": "Windows flutter_assemble",
+      "file_type": "code",
+      "source_file": "C:\\Manhakkim\\LEARN\\my-mind\\windows\\flutter\\CMakeLists.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "windows_flutter_cmakelists_flutter_wrapper_app",
+      "label": "Windows flutter_wrapper_app",
+      "file_type": "code",
+      "source_file": "C:\\Manhakkim\\LEARN\\my-mind\\windows\\flutter\\CMakeLists.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "windows_runner_cmakelists_runner",
+      "label": "Windows runner",
+      "file_type": "code",
+      "source_file": "C:\\Manhakkim\\LEARN\\my-mind\\windows\\runner\\CMakeLists.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "readme_my_mind",
+      "target": "pubspec_riverpod",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Manhakkim\\LEARN\\my-mind\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_my_mind",
+      "target": "readme_auto_sync",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Manhakkim\\LEARN\\my-mind\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_my_mind",
+      "target": "readme_markdown_native",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Manhakkim\\LEARN\\my-mind\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "_github_workflows_deploy_web_build_and_deploy",
+      "target": "web_index_base_href",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Manhakkim\\LEARN\\my-mind\\.github\\workflows\\deploy-web.yml",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "linux_cmakelists_my_mind",
+      "target": "linux_flutter_cmakelists_flutter_assemble",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Manhakkim\\LEARN\\my-mind\\linux\\CMakeLists.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "linux_cmakelists_my_mind",
+      "target": "linux_runner_cmakelists_runner",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Manhakkim\\LEARN\\my-mind\\linux\\CMakeLists.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "windows_cmakelists_my_mind",
+      "target": "windows_runner_cmakelists_runner",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Manhakkim\\LEARN\\my-mind\\windows\\CMakeLists.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "windows_runner_cmakelists_runner",
+      "target": "windows_flutter_cmakelists_flutter_assemble",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Manhakkim\\LEARN\\my-mind\\windows\\runner\\CMakeLists.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "windows_runner_cmakelists_runner",
+      "target": "windows_flutter_cmakelists_flutter_wrapper_app",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Manhakkim\\LEARN\\my-mind\\windows\\runner\\CMakeLists.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "windows_flutter_cmakelists_flutter_wrapper_app",
+      "target": "windows_flutter_cmakelists_flutter_assemble",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Manhakkim\\LEARN\\my-mind\\windows\\flutter\\CMakeLists.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pubspec_my_mind",
+      "target": "analysis_options_flutter_lints",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "C:\\Manhakkim\\LEARN\\my-mind\\pubspec.yaml",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "build_configurations",
+      "label": "Application Build Configurations",
+      "nodes": [
+        "linux_cmakelists_my_mind",
+        "windows_cmakelists_my_mind",
+        "_github_workflows_deploy_web_build_and_deploy"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Manhakkim\\LEARN\\my-mind\\linux\\CMakeLists.txt"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

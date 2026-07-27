@@ -25,8 +25,6 @@ class MarkdownParser {
         try {
           final yamlMap = loadYaml(yamlString);
           if (yamlMap is YamlMap) {
-            // Convert YamlMap to a standard Map<String, dynamic> deeply if needed
-            // For simple structure, a shallow conversion often suffices or mapping items
             final map = <String, dynamic>{};
             for (final key in yamlMap.keys) {
               map[key.toString()] = yamlMap[key];
@@ -53,24 +51,36 @@ class MarkdownParser {
   }
 
   static String stringify(Note note) {
-    final metadataMap = note.metadata.toMap();
+    final m = note.metadata;
     final buffer = StringBuffer();
     buffer.writeln(_separator);
     
-    metadataMap.forEach((key, value) {
-      if (value is List) {
-        if (value.isEmpty) {
-          buffer.writeln('$key: []');
-        } else {
-          buffer.writeln('$key:');
-          for (var item in value) {
-            buffer.writeln('  - $item');
-          }
-        }
-      } else {
-        buffer.writeln('$key: $value');
-      }
-    });
+    // Format exactly as requested
+    // title: "..."
+    // tags: ["...", "..."]
+    // created: 2026-07-24T08:59:19.478
+    // updated: 2026-07-24T09:00:53.102
+    // favorite: false
+    // published: true
+    // date: "..."
+    
+    buffer.writeln('title: "${m.title.replaceAll('"', r'\"')}"');
+    
+    final tagsStr = m.tags.map((t) => '"${t.trim()}"').join(', ');
+    buffer.writeln('tags: [$tagsStr]');
+    
+    String formatDateTime(DateTime dt) {
+      return dt.toIso8601String().replaceAll(RegExp(r'Z$'), '');
+    }
+    
+    buffer.writeln('created: ${formatDateTime(m.created)}');
+    buffer.writeln('updated: ${formatDateTime(m.updated)}');
+    buffer.writeln('favorite: ${m.favorite}');
+    buffer.writeln('published: ${m.published}');
+    
+    if (m.date != null && m.date!.isNotEmpty) {
+      buffer.writeln('date: "${m.date}"');
+    }
     
     buffer.writeln(_separator);
     buffer.write(note.content);

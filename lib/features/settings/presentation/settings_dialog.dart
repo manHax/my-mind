@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import '../../sync/infrastructure/github_note_repository.dart';
 import '../../sync/infrastructure/github_auth_service.dart';
 import '../../workspace/infrastructure/workspace_repository.dart';
+import '../../sync/application/sync_service.dart';
 
 class SettingsDialog extends ConsumerWidget {
   const SettingsDialog({super.key});
@@ -69,6 +70,21 @@ class SettingsDialog extends ConsumerWidget {
                   ),
                 ],
               ),
+            ),
+            const SizedBox(height: 32),
+            const Text('Editor Settings', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+            const SizedBox(height: 8),
+            Consumer(
+              builder: (context, ref, child) {
+                final isAutoSave = ref.watch(autoSaveProvider);
+                return SwitchListTile(
+                  title: const Text('Auto-save Notes'),
+                  subtitle: const Text('Automatically sync changes to GitHub as you type.'),
+                  value: isAutoSave,
+                  onChanged: (val) => ref.read(autoSaveProvider.notifier).toggle(),
+                  contentPadding: EdgeInsets.zero,
+                );
+              },
             ),
             const SizedBox(height: 32),
             SizedBox(

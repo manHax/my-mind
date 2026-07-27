@@ -1,0 +1,787 @@
+{
+  "communities": {
+    "0": [
+      "point",
+      "rect",
+      "size",
+      "unique_ptr",
+      "windows_runner_flutter_window_cpp_dartproject",
+      "windows_runner_flutter_window_cpp_hwnd",
+      "windows_runner_flutter_window_cpp_lparam",
+      "windows_runner_flutter_window_cpp_lresult",
+      "windows_runner_flutter_window_cpp_uint",
+      "windows_runner_flutter_window_cpp_windows_runner_flutter_window",
+      "windows_runner_flutter_window_cpp_wparam",
+      "windows_runner_flutter_window_flutterwindow",
+      "windows_runner_flutter_window_flutterwindow_flutter_controller",
+      "windows_runner_flutter_window_flutterwindow_flutterwindow",
+      "windows_runner_flutter_window_flutterwindow_messagehandler",
+      "windows_runner_flutter_window_flutterwindow_oncreate",
+      "windows_runner_flutter_window_flutterwindow_ondestroy",
+      "windows_runner_flutter_window_flutterwindow_project",
+      "windows_runner_flutter_window_h_dartproject",
+      "windows_runner_flutter_window_h_windows_runner_flutter_window",
+      "windows_runner_resource",
+      "windows_runner_win32_window_cpp_hwnd",
+      "windows_runner_win32_window_cpp_lparam",
+      "windows_runner_win32_window_cpp_lresult",
+      "windows_runner_win32_window_cpp_uint",
+      "windows_runner_win32_window_cpp_wchar_t",
+      "windows_runner_win32_window_cpp_windows_runner_win32_window",
+      "windows_runner_win32_window_cpp_wparam",
+      "windows_runner_win32_window_enablefulldpisupportifavailable",
+      "windows_runner_win32_window_h_hwnd",
+      "windows_runner_win32_window_h_windows_runner_win32_window",
+      "windows_runner_win32_window_scale",
+      "windows_runner_win32_window_win32window",
+      "windows_runner_win32_window_win32window_child_content",
+      "windows_runner_win32_window_win32window_create",
+      "windows_runner_win32_window_win32window_destroy",
+      "windows_runner_win32_window_win32window_getclientarea",
+      "windows_runner_win32_window_win32window_gethandle",
+      "windows_runner_win32_window_win32window_getthisfromhandle",
+      "windows_runner_win32_window_win32window_messagehandler",
+      "windows_runner_win32_window_win32window_oncreate",
+      "windows_runner_win32_window_win32window_ondestroy",
+      "windows_runner_win32_window_win32window_quit_on_close",
+      "windows_runner_win32_window_win32window_setchildcontent",
+      "windows_runner_win32_window_win32window_setquitonclose",
+      "windows_runner_win32_window_win32window_show",
+      "windows_runner_win32_window_win32window_updatetheme",
+      "windows_runner_win32_window_win32window_win32window",
+      "windows_runner_win32_window_win32window_window_handle",
+      "windows_runner_win32_window_win32window_wndproc",
+      "windows_runner_win32_window_windowclassregistrar",
+      "windows_runner_win32_window_windowclassregistrar_class_registered",
+      "windows_runner_win32_window_windowclassregistrar_getinstance",
+      "windows_runner_win32_window_windowclassregistrar_getwindowclass",
+      "windows_runner_win32_window_windowclassregistrar_instance",
+      "windows_runner_win32_window_windowclassregistrar_unregisterwindowclass",
+      "windows_runner_win32_window_windowclassregistrar_windowclassregistrar",
+      "wstring"
+    ],
+    "1": [
+      "dart_async",
+      "github_auth_service_dart",
+      "infrastructure_github_note_repository_dart",
+      "lib_features_notes_application_notes_providers_currentnotepathnotifier",
+      "lib_features_notes_infrastructure_local_note_repository_workspacepathnotifier",
+      "lib_features_sync_application_sync_service",
+      "lib_features_sync_application_sync_service_build",
+      "lib_features_sync_application_sync_service_debouncetimer",
+      "lib_features_sync_application_sync_service_executeautosync",
+      "lib_features_sync_application_sync_service_issyncing",
+      "lib_features_sync_application_sync_service_onstartup",
+      "lib_features_sync_application_sync_service_ref",
+      "lib_features_sync_application_sync_service_syncmessagenotifier",
+      "lib_features_sync_application_sync_service_syncservice",
+      "lib_features_sync_application_sync_service_syncstate",
+      "lib_features_sync_application_sync_service_syncstatenotifier",
+      "lib_features_sync_application_sync_service_triggerautosync",
+      "lib_features_sync_infrastructure_github_auth_service",
+      "lib_features_sync_infrastructure_github_auth_service_accesstoken",
+      "lib_features_sync_infrastructure_github_auth_service_authstate",
+      "lib_features_sync_infrastructure_github_auth_service_build",
+      "lib_features_sync_infrastructure_github_auth_service_githubauthnotifier",
+      "lib_features_sync_infrastructure_github_auth_service_settoken",
+      "lib_features_sync_infrastructure_github_note_repository",
+      "lib_features_sync_infrastructure_github_note_repository_build",
+      "lib_features_sync_infrastructure_github_note_repository_createpublicgist",
+      "lib_features_sync_infrastructure_github_note_repository_fetchallmarkdownfiles",
+      "lib_features_sync_infrastructure_github_note_repository_fetchnotecontent",
+      "lib_features_sync_infrastructure_github_note_repository_githubnoterepository",
+      "lib_features_sync_infrastructure_github_note_repository_headers",
+      "lib_features_sync_infrastructure_github_note_repository_renamenote",
+      "lib_features_sync_infrastructure_github_note_repository_repo",
+      "lib_features_sync_infrastructure_github_note_repository_repofullname",
+      "lib_features_sync_infrastructure_github_note_repository_savenote",
+      "lib_features_sync_infrastructure_github_note_repository_token",
+      "lib_features_sync_infrastructure_github_note_repository_workspacereponotifier",
+      "lib_features_workspace_infrastructure_workspace_repository_sharedpreferencesprovider",
+      "map",
+      "notes_application_notes_providers_dart",
+      "notes_domain_note_dart",
+      "notes_domain_note_metadata_dart",
+      "notes_infrastructure_markdown_parser_dart",
+      "notifier",
+      "ref",
+      "timer",
+      "workspace_infrastructure_workspace_repository_dart"
+    ],
+    "2": [
+      "any",
+      "cocoa",
+      "file_picker",
+      "flutter",
+      "flutterappdelegate",
+      "flutterimplicitenginebridge",
+      "flutterimplicitenginedelegate",
+      "fluttermacos",
+      "flutterpluginregistry",
+      "flutterscenedelegate",
+      "flutterviewcontroller",
+      "foundation",
+      "ios_runner_appdelegate",
+      "ios_runner_appdelegate_appdelegate",
+      "ios_runner_appdelegate_appdelegate_application",
+      "ios_runner_appdelegate_appdelegate_didinitializeimplicitflutterengine",
+      "ios_runner_appdelegate_swift_bool",
+      "ios_runner_scenedelegate",
+      "ios_runner_scenedelegate_scenedelegate",
+      "ios_runnertests_runnertests",
+      "ios_runnertests_runnertests_runnertests",
+      "ios_runnertests_runnertests_runnertests_testexample",
+      "macos_flutter_generatedpluginregistrant",
+      "macos_flutter_generatedpluginregistrant_registergeneratedplugins",
+      "macos_runner_appdelegate",
+      "macos_runner_appdelegate_appdelegate",
+      "macos_runner_appdelegate_appdelegate_applicationshouldterminateafterlastwindowclosed",
+      "macos_runner_appdelegate_appdelegate_applicationsupportssecurerestorablestate",
+      "macos_runner_appdelegate_swift_bool",
+      "macos_runner_mainflutterwindow",
+      "macos_runner_mainflutterwindow_mainflutterwindow",
+      "macos_runner_mainflutterwindow_mainflutterwindow_awakefromnib",
+      "macos_runnertests_runnertests",
+      "macos_runnertests_runnertests_runnertests",
+      "macos_runnertests_runnertests_runnertests_testexample",
+      "nsapplication",
+      "nswindow",
+      "shared_preferences_foundation",
+      "uiapplication",
+      "uikit",
+      "url_launcher_macos",
+      "xctest",
+      "xctestcase"
+    ],
+    "3": [
+      "application_notes_providers_dart",
+      "consumerstate",
+      "domain_note_dart",
+      "domain_note_metadata_dart",
+      "lib_features_notes_application_notes_providers",
+      "lib_features_notes_application_notes_providers_activenotecontentnotifier",
+      "lib_features_notes_application_notes_providers_activenotecontentprovider",
+      "lib_features_notes_application_notes_providers_activenotemetadataprovider",
+      "lib_features_notes_application_notes_providers_build",
+      "lib_features_notes_application_notes_providers_currentnotepathprovider",
+      "lib_features_notes_application_notes_providers_fetchallmarkdownfiles",
+      "lib_features_notes_application_notes_providers_loadcontent",
+      "lib_features_notes_application_notes_providers_noteslistprovider",
+      "lib_features_notes_application_notes_providers_repo",
+      "lib_features_notes_application_notes_providers_updatecontent",
+      "lib_features_notes_infrastructure_markdown_parser",
+      "lib_features_notes_infrastructure_markdown_parser_extracttitle",
+      "lib_features_notes_infrastructure_markdown_parser_markdownparser",
+      "lib_features_notes_infrastructure_markdown_parser_parse",
+      "lib_features_notes_infrastructure_markdown_parser_separator",
+      "lib_features_notes_infrastructure_markdown_parser_stringify",
+      "lib_features_notes_presentation_workspace_screen",
+      "lib_features_notes_presentation_workspace_screen_build",
+      "lib_features_notes_presentation_workspace_screen_controller",
+      "lib_features_notes_presentation_workspace_screen_createnewnote",
+      "lib_features_notes_presentation_workspace_screen_createstate",
+      "lib_features_notes_presentation_workspace_screen_dispose",
+      "lib_features_notes_presentation_workspace_screen_initstate",
+      "lib_features_notes_presentation_workspace_screen_renamecurrentnote",
+      "lib_features_notes_presentation_workspace_screen_sharepublicgist",
+      "lib_features_notes_presentation_workspace_screen_syncstatusindicator",
+      "lib_features_notes_presentation_workspace_screen_workspacescreenstate",
+      "lib_features_sync_application_sync_service_syncmessageprovider",
+      "lib_features_sync_application_sync_service_syncserviceprovider",
+      "lib_features_sync_application_sync_service_syncstateprovider",
+      "lib_features_sync_infrastructure_github_note_repository_githubnoterepositoryprovider",
+      "package_flutter_services_dart",
+      "package_yaml_yaml_dart",
+      "settings_presentation_settings_dialog_dart",
+      "static_const",
+      "sync_application_sync_service_dart"
+    ],
+    "4": [
+      "annotation_immutable",
+      "datetime",
+      "int_get",
+      "lib_features_notes_application_notes_providers_activenotemetadatanotifier",
+      "lib_features_notes_domain_note",
+      "lib_features_notes_domain_note_content",
+      "lib_features_notes_domain_note_copywith",
+      "lib_features_notes_domain_note_dart_lib_features_notes_domain_note_metadata",
+      "lib_features_notes_domain_note_hashcode",
+      "lib_features_notes_domain_note_metadata_copywith",
+      "lib_features_notes_domain_note_metadata_created",
+      "lib_features_notes_domain_note_metadata_dart_lib_features_notes_domain_note_metadata",
+      "lib_features_notes_domain_note_metadata_favorite",
+      "lib_features_notes_domain_note_metadata_frommap",
+      "lib_features_notes_domain_note_metadata_notemetadata",
+      "lib_features_notes_domain_note_metadata_operator",
+      "lib_features_notes_domain_note_metadata_tags",
+      "lib_features_notes_domain_note_metadata_title",
+      "lib_features_notes_domain_note_metadata_tomap",
+      "lib_features_notes_domain_note_metadata_updated",
+      "lib_features_notes_domain_note_note",
+      "lib_features_notes_domain_note_operator",
+      "lib_features_notes_domain_note_path",
+      "lib_features_workspace_domain_workspace",
+      "lib_features_workspace_domain_workspace_copywith",
+      "lib_features_workspace_domain_workspace_frommap",
+      "lib_features_workspace_domain_workspace_id",
+      "lib_features_workspace_domain_workspace_lastopened",
+      "lib_features_workspace_domain_workspace_name",
+      "lib_features_workspace_domain_workspace_operator",
+      "lib_features_workspace_domain_workspace_path",
+      "lib_features_workspace_domain_workspace_tomap",
+      "lib_features_workspace_domain_workspace_workspace",
+      "list",
+      "note_metadata_dart",
+      "package_flutter_foundation_dart"
+    ],
+    "5": [
+      "class",
+      "consumerstatefulwidget",
+      "features_notes_presentation_shared_note_screen_dart",
+      "features_notes_presentation_workspace_screen_dart",
+      "features_sync_infrastructure_github_note_repository_dart",
+      "features_workspace_presentation_workspace_selector_screen_dart",
+      "gorouter",
+      "lib_core_router_app_router",
+      "lib_features_notes_presentation_workspace_screen_workspacescreen",
+      "lib_features_settings_presentation_settings_dialog",
+      "lib_features_settings_presentation_settings_dialog_build",
+      "lib_features_settings_presentation_settings_dialog_settingsdialog",
+      "lib_features_sync_infrastructure_github_auth_service_githubauthnotifierprovider",
+      "lib_features_sync_infrastructure_github_note_repository_workspacerepoprovider",
+      "lib_features_workspace_presentation_workspace_selector_screen",
+      "lib_features_workspace_presentation_workspace_selector_screen_build",
+      "lib_features_workspace_presentation_workspace_selector_screen_createstate",
+      "lib_features_workspace_presentation_workspace_selector_screen_dispose",
+      "lib_features_workspace_presentation_workspace_selector_screen_repocontroller",
+      "lib_features_workspace_presentation_workspace_selector_screen_tokencontroller",
+      "lib_features_workspace_presentation_workspace_selector_screen_workspaceselectorscreen",
+      "lib_features_workspace_presentation_workspace_selector_screen_workspaceselectorscreenstate",
+      "package_flutter_material_dart",
+      "package_flutter_riverpod_flutter_riverpod_dart",
+      "package_flutter_test_flutter_test_dart",
+      "package_go_router_go_router_dart",
+      "package_my_mind_main_dart",
+      "route",
+      "route_workspace",
+      "sync_infrastructure_github_auth_service_dart",
+      "sync_infrastructure_github_note_repository_dart",
+      "test_widget_test",
+      "test_widget_test_main",
+      "texteditingcontroller"
+    ],
+    "6": [
+      "dart_io",
+      "exception",
+      "lib_features_notes_infrastructure_local_note_repository",
+      "lib_features_notes_infrastructure_local_note_repository_build",
+      "lib_features_notes_infrastructure_local_note_repository_deletenote",
+      "lib_features_notes_infrastructure_local_note_repository_getallnotes",
+      "lib_features_notes_infrastructure_local_note_repository_localnoterepository",
+      "lib_features_notes_infrastructure_local_note_repository_localnoterepositoryprovider",
+      "lib_features_notes_infrastructure_local_note_repository_path",
+      "lib_features_notes_infrastructure_local_note_repository_savenote",
+      "lib_features_notes_infrastructure_local_note_repository_workspacepath",
+      "lib_features_notes_infrastructure_local_note_repository_workspacepathprovider",
+      "lib_features_sync_infrastructure_git_service",
+      "lib_features_sync_infrastructure_git_service_commit",
+      "lib_features_sync_infrastructure_git_service_connecttoremote",
+      "lib_features_sync_infrastructure_git_service_fetch",
+      "lib_features_sync_infrastructure_git_service_gitconflictexception",
+      "lib_features_sync_infrastructure_git_service_gitservice",
+      "lib_features_sync_infrastructure_git_service_gitserviceprovider",
+      "lib_features_sync_infrastructure_git_service_haschanges",
+      "lib_features_sync_infrastructure_git_service_hasconflicts",
+      "lib_features_sync_infrastructure_git_service_init",
+      "lib_features_sync_infrastructure_git_service_message",
+      "lib_features_sync_infrastructure_git_service_path",
+      "lib_features_sync_infrastructure_git_service_pull",
+      "lib_features_sync_infrastructure_git_service_push",
+      "lib_features_sync_infrastructure_git_service_run",
+      "lib_features_sync_infrastructure_git_service_tostring",
+      "lib_features_sync_infrastructure_git_service_workspacepath",
+      "markdown_parser_dart",
+      "notes_infrastructure_local_note_repository_dart",
+      "package_path_path_dart"
+    ],
+    "7": [
+      "flpluginregistry",
+      "flview",
+      "gapplication",
+      "gboolean",
+      "gchar",
+      "gobject",
+      "gtkapplication",
+      "linux_flutter_generated_plugin_registrant_cc_linux_flutter_generated_plugin_registrant",
+      "linux_flutter_generated_plugin_registrant_fl_register_plugins",
+      "linux_flutter_generated_plugin_registrant_h_linux_flutter_generated_plugin_registrant",
+      "linux_runner_main",
+      "linux_runner_main_main",
+      "linux_runner_my_application_cc_linux_runner_my_application",
+      "linux_runner_my_application_first_frame_cb",
+      "linux_runner_my_application_h_linux_runner_my_application",
+      "linux_runner_my_application_my_application_activate",
+      "linux_runner_my_application_my_application_class_init",
+      "linux_runner_my_application_my_application_dispose",
+      "linux_runner_my_application_my_application_init",
+      "linux_runner_my_application_my_application_local_command_line",
+      "linux_runner_my_application_my_application_new",
+      "linux_runner_my_application_my_application_shutdown",
+      "linux_runner_my_application_my_application_startup",
+      "linux_runner_my_application_myapplication",
+      "linux_runner_my_application_myapplication_dart_entrypoint_arguments",
+      "linux_runner_my_application_myapplication_parent_instance",
+      "myapplicationclass"
+    ],
+    "8": [
+      "consumerwidget",
+      "core_router_app_router_dart",
+      "dart_convert",
+      "domain_workspace_dart",
+      "features_workspace_infrastructure_workspace_repository_dart",
+      "lib_core_router_app_router_routerprovider",
+      "lib_features_workspace_infrastructure_workspace_repository",
+      "lib_features_workspace_infrastructure_workspace_repository_getlastopenedworkspaceid",
+      "lib_features_workspace_infrastructure_workspace_repository_getrecentworkspaces",
+      "lib_features_workspace_infrastructure_workspace_repository_getworkspacesmap",
+      "lib_features_workspace_infrastructure_workspace_repository_lastopenedkey",
+      "lib_features_workspace_infrastructure_workspace_repository_prefs",
+      "lib_features_workspace_infrastructure_workspace_repository_recentworkspaceskey",
+      "lib_features_workspace_infrastructure_workspace_repository_saveworkspace",
+      "lib_features_workspace_infrastructure_workspace_repository_setlastopenedworkspaceid",
+      "lib_features_workspace_infrastructure_workspace_repository_workspacerepository",
+      "lib_features_workspace_infrastructure_workspace_repository_workspacerepositoryprovider",
+      "lib_main",
+      "lib_main_build",
+      "lib_main_main",
+      "lib_main_myapp",
+      "lib_main_prefs",
+      "package_google_fonts_google_fonts_dart",
+      "package_shared_preferences_shared_preferences_dart",
+      "sharedpreferences"
+    ],
+    "9": [
+      "infrastructure_markdown_parser_dart",
+      "lib_features_notes_presentation_shared_note_screen",
+      "lib_features_notes_presentation_shared_note_screen_build",
+      "lib_features_notes_presentation_shared_note_screen_content",
+      "lib_features_notes_presentation_shared_note_screen_createstate",
+      "lib_features_notes_presentation_shared_note_screen_error",
+      "lib_features_notes_presentation_shared_note_screen_fetchgist",
+      "lib_features_notes_presentation_shared_note_screen_filename",
+      "lib_features_notes_presentation_shared_note_screen_gistid",
+      "lib_features_notes_presentation_shared_note_screen_initstate",
+      "lib_features_notes_presentation_shared_note_screen_isloading",
+      "lib_features_notes_presentation_shared_note_screen_sharednotescreen",
+      "lib_features_notes_presentation_shared_note_screen_sharednotescreenstate",
+      "package_flutter_markdown_flutter_markdown_dart",
+      "package_http_http_dart",
+      "state",
+      "statefulwidget"
+    ],
+    "10": [
+      "in",
+      "in_opt",
+      "vector",
+      "windows_runner_main",
+      "windows_runner_main_wwinmain",
+      "windows_runner_utils_cpp_string",
+      "windows_runner_utils_cpp_wchar_t",
+      "windows_runner_utils_cpp_windows_runner_utils",
+      "windows_runner_utils_createandattachconsole",
+      "windows_runner_utils_getcommandlinearguments",
+      "windows_runner_utils_h_windows_runner_utils",
+      "windows_runner_utils_utf8fromutf16"
+    ],
+    "11": [
+      "web_manifest",
+      "web_manifest_background_color",
+      "web_manifest_description",
+      "web_manifest_display",
+      "web_manifest_icons",
+      "web_manifest_name",
+      "web_manifest_orientation",
+      "web_manifest_prefer_related_applications",
+      "web_manifest_short_name",
+      "web_manifest_start_url",
+      "web_manifest_theme_color"
+    ],
+    "12": [
+      "pluginregistry",
+      "windows_flutter_generated_plugin_registrant_cc_windows_flutter_generated_plugin_registrant",
+      "windows_flutter_generated_plugin_registrant_h_windows_flutter_generated_plugin_registrant",
+      "windows_flutter_generated_plugin_registrant_registerplugins"
+    ],
+    "13": [
+      "pubspec_riverpod",
+      "readme_auto_sync",
+      "readme_markdown_native",
+      "readme_my_mind"
+    ],
+    "14": [
+      "windows_cmakelists_my_mind",
+      "windows_flutter_cmakelists_flutter_assemble",
+      "windows_flutter_cmakelists_flutter_wrapper_app",
+      "windows_runner_cmakelists_runner"
+    ],
+    "15": [
+      "android_app_src_main_kotlin_com_example_my_mind_mainactivity",
+      "android_app_src_main_kotlin_com_example_my_mind_mainactivity_mainactivity",
+      "flutteractivity"
+    ],
+    "16": [
+      "linux_cmakelists_my_mind",
+      "linux_flutter_cmakelists_flutter_assemble",
+      "linux_runner_cmakelists_runner"
+    ],
+    "17": [
+      "_github_workflows_deploy_web_build_and_deploy",
+      "web_index_base_href"
+    ],
+    "18": [
+      "analysis_options_flutter_lints",
+      "pubspec_my_mind"
+    ],
+    "19": [
+      "ios_runner_assets_xcassets_appicon_appiconset_icon_app_20x20_1x_flutter",
+      "ios_runner_assets_xcassets_appicon_appiconset_icon_app_20x20_1x_flutter_logo"
+    ],
+    "20": [
+      "ios_runner_assets_xcassets_appicon_appiconset_icon_app_76x76_2x_flutter_logo",
+      "ios_runner_assets_xcassets_appicon_appiconset_icon_app_76x76_2x_image"
+    ],
+    "21": [
+      "_agents_rules_graphify_rules"
+    ],
+    "22": [
+      "_agents_workflows_graphify_workflow"
+    ],
+    "23": [
+      "android_app_build_gradle"
+    ],
+    "24": [
+      "android_app_src_main_res_mipmap_hdpi_ic_launcher_flutter_logo"
+    ],
+    "25": [
+      "android_app_src_main_res_mipmap_mdpi_ic_launcher_flutter_logo"
+    ],
+    "26": [
+      "android_app_src_main_res_mipmap_xhdpi_ic_launcher_app_icon"
+    ],
+    "27": [
+      "android_app_src_main_res_mipmap_xxhdpi_ic_launcher_icon"
+    ],
+    "28": [
+      "android_app_src_main_res_mipmap_xxxhdpi_ic_launcher_flutter_logo"
+    ],
+    "29": [
+      "android_build_gradle"
+    ],
+    "30": [
+      "android_settings_gradle"
+    ],
+    "31": [
+      "ios_runner_assets_xcassets_appicon_appiconset_icon_app_1024x1024_1x_flutter_logo"
+    ],
+    "32": [
+      "ios_runner_assets_xcassets_appicon_appiconset_icon_app_20x20_2x_flutter_app_icon"
+    ],
+    "33": [
+      "ios_runner_assets_xcassets_appicon_appiconset_icon_app_20x20_3x_flutter_logo"
+    ],
+    "34": [
+      "ios_runner_assets_xcassets_appicon_appiconset_icon_app_29x29_1x_app_icon"
+    ],
+    "35": [
+      "ios_runner_assets_xcassets_appicon_appiconset_icon_app_29x29_2x_flutter_logo"
+    ],
+    "36": [
+      "ios_runner_assets_xcassets_appicon_appiconset_icon_app_29x29_3x_flutter_logo"
+    ],
+    "37": [
+      "ios_runner_assets_xcassets_appicon_appiconset_icon_app_40x40_1x_flutter_logo"
+    ],
+    "38": [
+      "ios_runner_assets_xcassets_appicon_appiconset_icon_app_40x40_2x_app_icon"
+    ],
+    "39": [
+      "ios_runner_assets_xcassets_appicon_appiconset_icon_app_40x40_3x_app_icon"
+    ],
+    "40": [
+      "ios_runner_assets_xcassets_appicon_appiconset_icon_app_60x60_2x_flutterlogo"
+    ],
+    "41": [
+      "ios_runner_assets_xcassets_appicon_appiconset_icon_app_60x60_3x_app_icon"
+    ],
+    "42": [
+      "ios_runner_assets_xcassets_appicon_appiconset_icon_app_76x76_1x_flutter_logo"
+    ],
+    "43": [
+      "ios_runner_assets_xcassets_appicon_appiconset_icon_app_83_5x83_5_2x_flutter_logo"
+    ],
+    "44": [
+      "ios_runner_assets_xcassets_launchimage_imageset_launchimage_2x_launch_image"
+    ],
+    "45": [
+      "ios_runner_assets_xcassets_launchimage_imageset_launchimage_3x_launch_image"
+    ],
+    "46": [
+      "ios_runner_assets_xcassets_launchimage_imageset_launchimage_launchimage"
+    ],
+    "47": [
+      "ios_runner_assets_xcassets_launchimage_imageset_readme_launch_screen"
+    ],
+    "48": [
+      "ios_runner_runner_bridging_header"
+    ],
+    "49": [
+      "macos_runner_assets_xcassets_appicon_appiconset_app_icon_1024_flutter_logo"
+    ],
+    "50": [
+      "macos_runner_assets_xcassets_appicon_appiconset_app_icon_128_app_icon_128"
+    ],
+    "51": [
+      "macos_runner_assets_xcassets_appicon_appiconset_app_icon_16_image"
+    ],
+    "52": [
+      "macos_runner_assets_xcassets_appicon_appiconset_app_icon_256_flutter_logo"
+    ],
+    "53": [
+      "macos_runner_assets_xcassets_appicon_appiconset_app_icon_32_flutter_logo"
+    ],
+    "54": [
+      "macos_runner_assets_xcassets_appicon_appiconset_app_icon_512_app_icon"
+    ],
+    "55": [
+      "macos_runner_assets_xcassets_appicon_appiconset_app_icon_64_app_icon_64"
+    ],
+    "56": [
+      "none_string"
+    ],
+    "57": [
+      "web_favicon_flutter_logo"
+    ],
+    "58": [
+      "web_icons_icon_192_flutter_logo"
+    ],
+    "59": [
+      "web_icons_icon_512_flutter_logo"
+    ],
+    "60": [
+      "web_icons_icon_maskable_192_flutter_logo"
+    ],
+    "61": [
+      "web_icons_icon_maskable_512_flutter_logo"
+    ]
+  },
+  "cohesion": {
+    "0": 0.06594071385359952,
+    "1": 0.05410628019323672,
+    "2": 0.05647840531561462,
+    "3": 0.08902439024390243,
+    "4": 0.06190476190476191,
+    "5": 0.08021390374331551,
+    "6": 0.0625,
+    "7": 0.09401709401709402,
+    "8": 0.08333333333333333,
+    "9": 0.125,
+    "10": 0.24242424242424243,
+    "11": 0.18181818181818182,
+    "12": 0.5,
+    "13": 0.5,
+    "14": 0.6666666666666666,
+    "15": 0.6666666666666666,
+    "16": 0.6666666666666666,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 1.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 1.0,
+    "30": 1.0,
+    "31": 1.0,
+    "32": 1.0,
+    "33": 1.0,
+    "34": 1.0,
+    "35": 1.0,
+    "36": 1.0,
+    "37": 1.0,
+    "38": 1.0,
+    "39": 1.0,
+    "40": 1.0,
+    "41": 1.0,
+    "42": 1.0,
+    "43": 1.0,
+    "44": 1.0,
+    "45": 1.0,
+    "46": 1.0,
+    "47": 1.0,
+    "48": 1.0,
+    "49": 1.0,
+    "50": 1.0,
+    "51": 1.0,
+    "52": 1.0,
+    "53": 1.0,
+    "54": 1.0,
+    "55": 1.0,
+    "56": 1.0,
+    "57": 1.0,
+    "58": 1.0,
+    "59": 1.0,
+    "60": 1.0,
+    "61": 1.0
+  },
+  "gods": [
+    {
+      "id": "windows_runner_win32_window_win32window",
+      "label": "Win32Window",
+      "degree": 22
+    },
+    {
+      "id": "windows_runner_win32_window_win32window_messagehandler",
+      "label": "MessageHandler",
+      "degree": 12
+    },
+    {
+      "id": "lib_features_notes_presentation_workspace_screen_workspacescreenstate",
+      "label": "_WorkspaceScreenState",
+      "degree": 10
+    },
+    {
+      "id": "windows_runner_flutter_window_flutterwindow",
+      "label": "FlutterWindow",
+      "degree": 10
+    },
+    {
+      "id": "windows_runner_win32_window_win32window_create",
+      "label": "Create",
+      "degree": 10
+    },
+    {
+      "id": "windows_runner_win32_window_win32window_wndproc",
+      "label": "WndProc",
+      "degree": 10
+    },
+    {
+      "id": "windows_runner_flutter_window_flutterwindow_messagehandler",
+      "label": "MessageHandler",
+      "degree": 9
+    },
+    {
+      "id": "lib_features_workspace_infrastructure_workspace_repository_sharedpreferencesprovider",
+      "label": "sharedPreferencesProvider",
+      "degree": 8
+    },
+    {
+      "id": "lib_features_notes_application_notes_providers_currentnotepathprovider",
+      "label": "currentNotePathProvider",
+      "degree": 7
+    },
+    {
+      "id": "lib_features_notes_application_notes_providers_activenotecontentprovider",
+      "label": "activeNoteContentProvider",
+      "degree": 7
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Deploy Flutter Web to GitHub Pages",
+      "target": "Web Base Href",
+      "source_files": [
+        ".github/workflows/deploy-web.yml",
+        "web/index.html"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    },
+    {
+      "source": "my_mind Package",
+      "target": "Flutter Lints",
+      "source_files": [
+        "pubspec.yaml",
+        "analysis_options.yaml"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    },
+    {
+      "source": "OnCreate",
+      "target": "RegisterPlugins()",
+      "source_files": [
+        "windows/runner/flutter_window.h",
+        "windows/flutter/generated_plugin_registrant.cc"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "wWinMain()",
+      "target": "CreateAndAttachConsole()",
+      "source_files": [
+        "windows/runner/main.cpp",
+        "windows/runner/utils.cpp"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; peripheral node `CreateAndAttachConsole()` unexpectedly reaches hub `wWinMain()`"
+    },
+    {
+      "source": "Win32Window::Win32Window()",
+      "target": "Destroy",
+      "source_files": [
+        "windows/runner/win32_window.cpp",
+        "windows/runner/win32_window.h"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; peripheral node `Win32Window::Win32Window()` unexpectedly reaches hub `Destroy`"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `FlutterWindow` connect `Community 0` to `Community 2`?",
+      "why": "High betweenness centrality (0.036) - this node is a cross-community bridge."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 4 inferred relationships involving `MessageHandler` (e.g. with `Destroy` and `GetClientArea`) actually correct?",
+      "why": "`MessageHandler` has 4 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `repo`, `fetchAllMarkdownFiles`, `build` to the rest of the system?",
+      "why": "177 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 0` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.06594071385359952 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 1` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.05410628019323672 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 2` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.05647840531561462 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 3` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.08902439024390243 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

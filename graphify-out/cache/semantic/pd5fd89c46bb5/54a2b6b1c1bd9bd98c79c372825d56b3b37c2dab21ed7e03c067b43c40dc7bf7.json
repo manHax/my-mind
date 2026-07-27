@@ -1,0 +1,1 @@
+{"nodes": [{"id": "web_index_base_href", "label": "Web Base Href", "file_type": "concept", "source_file": "web/index.html", "source_location": null, "source_url": null, "captured_at": null, "author": null, "contributor": null, "rationale": "Ensures assets load correctly from GitHub Pages subdirectory."}], "edges": [], "hyperedges": []}

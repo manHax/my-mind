@@ -1,0 +1,19 @@
+{
+  "nodes": [
+    {
+      "id": "ios_runner_assets_xcassets_launchimage_imageset_launchimage_2x_launch_image",
+      "label": "LaunchImage@2x",
+      "file_type": "image",
+      "source_file": "C:\\Manhakkim\\LEARN\\my-mind\\ios\\Runner\\Assets.xcassets\\LaunchImage.imageset\\LaunchImage@2x.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

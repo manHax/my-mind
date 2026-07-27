@@ -177,6 +177,88 @@ class _WorkspaceScreenState extends ConsumerState<WorkspaceScreen> {
     }
   }
 
+  Future<void> _editMetadata(BuildContext context, WidgetRef ref) async {
+    final meta = ref.read(activeNoteMetadataProvider);
+    if (meta == null) {
+      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('No active note to edit')));
+      return;
+    }
+    
+    final tagsController = TextEditingController(text: meta.tags.join(', '));
+    final dateController = TextEditingController(text: meta.date ?? '');
+    bool isFavorite = meta.favorite;
+    bool isPublished = meta.published;
+
+    final result = await showDialog<NoteMetadata>(
+      context: context,
+      builder: (ctx) {
+        return StatefulBuilder(
+          builder: (context, setState) {
+            return AlertDialog(
+              title: const Text('Edit Metadata'),
+              content: SingleChildScrollView(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    TextField(
+                      controller: tagsController,
+                      decoration: const InputDecoration(
+                        labelText: 'Tags (comma separated)',
+                        border: OutlineInputBorder(),
+                      ),
+                    ),
+                    const SizedBox(height: 16),
+                    TextField(
+                      controller: dateController,
+                      decoration: const InputDecoration(
+                        labelText: 'Date (e.g. 2024-01-01)',
+                        border: OutlineInputBorder(),
+                      ),
+                    ),
+                    const SizedBox(height: 16),
+                    SwitchListTile(
+                      title: const Text('Favorite'),
+                      value: isFavorite,
+                      onChanged: (val) => setState(() => isFavorite = val),
+                    ),
+                    SwitchListTile(
+                      title: const Text('Published'),
+                      value: isPublished,
+                      onChanged: (val) => setState(() => isPublished = val),
+                    ),
+                  ],
+                ),
+              ),
+              actions: [
+                TextButton(onPressed: () => Navigator.pop(ctx), child: const Text('Cancel')),
+                FilledButton(
+                  onPressed: () {
+                    final newMeta = meta.copyWith(
+                      tags: tagsController.text.split(',').map((e) => e.trim()).where((e) => e.isNotEmpty).toList(),
+                      date: dateController.text,
+                      favorite: isFavorite,
+                      published: isPublished,
+                    );
+                    Navigator.pop(ctx, newMeta);
+                  },
+                  child: const Text('Save'),
+                ),
+              ],
+            );
+          },
+        );
+      },
+    );
+
+    if (result != null) {
+      ref.read(activeNoteMetadataProvider.notifier).set(result);
+      final content = ref.read(activeNoteContentProvider);
+      final path = ref.read(currentNotePathProvider);
+      ref.read(syncServiceProvider).forceSave(content, path);
+      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Metadata updated')));
+    }
+  }
+
   @override
   void initState() {
     super.initState();
@@ -250,6 +332,26 @@ class _WorkspaceScreenState extends ConsumerState<WorkspaceScreen> {
             tooltip: 'Rename / Move Note',
             icon: const Icon(Icons.drive_file_rename_outline),
             onPressed: () => _renameCurrentNote(context, ref),
+          ),
+          IconButton(
+            tooltip: 'Edit Metadata',
+            icon: const Icon(Icons.tune),
+            onPressed: () => _editMetadata(context, ref),
+          ),
+          Consumer(
+            builder: (context, ref, child) {
+              final isAutoSave = ref.watch(autoSaveProvider);
+              if (isAutoSave) return const SizedBox.shrink();
+              return IconButton(
+                tooltip: 'Save Note',
+                icon: const Icon(Icons.save),
+                onPressed: () {
+                  final content = ref.read(activeNoteContentProvider);
+                  final path = ref.read(currentNotePathProvider);
+                  ref.read(syncServiceProvider).forceSave(content, path);
+                },
+              );
+            },
           ),
           const SizedBox(width: 16),
           const SyncStatusIndicator(),
