@@ -10,6 +10,17 @@ final notesListProvider = FutureProvider<List<String>>((ref) async {
   return await repo.fetchAllMarkdownFiles();
 });
 
+// Provider to hold map of shared note identifier (full path or filename) -> gistId
+final sharedGistsProvider = FutureProvider<Map<String, String>>((ref) async {
+  final repo = ref.watch(githubNoteRepositoryProvider);
+  if (repo == null) return {};
+  return await repo.fetchSharedGists();
+});
+
+String? resolveSharedGistId(Map<String, String> sharedGists, String notePath) {
+  return sharedGists[notePath] ?? sharedGists[notePath.split('/').last];
+}
+
 class CurrentNotePathNotifier extends Notifier<String> {
   @override
   String build() => 'Welcome.md';

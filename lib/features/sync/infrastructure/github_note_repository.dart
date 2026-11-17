@@ -134,6 +134,43 @@ class GithubNoteRepository {
     }
   }
 
+  static const String _gistDescPrefix = 'Shared via My Mind';
+  static const String _gistPathMarker = 'Shared via My Mind | path: ';
+
+  /// Fetches a map of shared note identifiers (full path or filename) -> gistId
+  Future<Map<String, String>> fetchSharedGists() async {
+    final url = Uri.parse('https://api.github.com/gists?per_page=100');
+    final res = await http.get(url, headers: _headers);
+    if (res.statusCode != 200) return {};
+
+    final List<dynamic> gists = jsonDecode(res.body);
+    final Map<String, String> sharedMap = {};
+
+    for (final gist in gists) {
+      final desc = (gist['description'] as String?) ?? '';
+      if (!desc.startsWith(_gistDescPrefix)) continue;
+
+      final gistId = gist['id'] as String?;
+      if (gistId == null) continue;
+
+      if (desc.startsWith(_gistPathMarker)) {
+        final notePath = desc.substring(_gistPathMarker.length).trim();
+        if (notePath.isNotEmpty) {
+          sharedMap.putIfAbsent(notePath, () => gistId);
+          continue;
+        }
+      }
+
+      // Legacy fallback: match by filename in files map
+      final files = gist['files'] as Map<String, dynamic>?;
+      if (files != null && files.isNotEmpty) {
+        final fileName = files.keys.first;
+        sharedMap.putIfAbsent(fileName, () => gistId);
+      }
+    }
+    return sharedMap;
+  }
+
   /// Creates a public GitHub Gist to share a specific note
   Future<String> createPublicGist(String filename, String content) async {
     final gistContent = content.trim().isEmpty ? "(Catatan kosong)" : content;
@@ -142,7 +179,7 @@ class GithubNoteRepository {
       url,
       headers: _headers,
       body: jsonEncode({
-        'description': 'Shared via My Mind (Cloud Native PKM)',
+        'description': '$_gistPathMarker$filename',
         'public': false,
         'files': {
           filename.split('/').last: {
@@ -157,6 +194,37 @@ class GithubNoteRepository {
       return json['id']; // We now return ID so we can embed it in our own web URL
     } else {
       throw Exception('Failed to create Gist: ${res.body}');
+    }
+  }
+
+  /// Updates an existing GitHub Gist with the latest note content
+  Future<void> updatePublicGist(String gistId, String filename, String content) async {
+    final gistContent = content.trim().isEmpty ? "(Catatan kosong)" : content;
+    final url = Uri.parse('https://api.github.com/gists/$gistId');
+    final res = await http.patch(
+      url,
+      headers: _headers,
+      body: jsonEncode({
+        'description': '$_gistPathMarker$filename',
+        'files': {
+          filename.split('/').last: {
+            'content': gistContent
+          }
+        }
+      }),
+    );
+
+    if (res.statusCode >= 400) {
+      throw Exception('Failed to update Gist: ${res.body}');
+    }
+  }
+
+  /// Deletes a GitHub Gist to unshare a note
+  Future<void> deleteGist(String gistId) async {
+    final url = Uri.parse('https://api.github.com/gists/$gistId');
+    final res = await http.delete(url, headers: _headers);
+    if (res.statusCode != 204 && res.statusCode != 404) {
+      throw Exception('Failed to delete Gist: ${res.body}');
     }
   }
 }

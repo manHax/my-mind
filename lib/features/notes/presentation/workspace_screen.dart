@@ -109,7 +109,14 @@ class _WorkspaceScreenState extends ConsumerState<WorkspaceScreen> {
   Future<void> _sharePublicGist(BuildContext context, WidgetRef ref) async {
     final currentPath = ref.read(currentNotePathProvider);
     final content = ref.read(activeNoteContentProvider);
-    
+    final sharedGists = ref.read(sharedGistsProvider).asData?.value ?? {};
+    final existingGistId = resolveSharedGistId(sharedGists, currentPath);
+
+    if (existingGistId != null) {
+      _showManageShareDialog(context, ref, currentPath, content, existingGistId);
+      return;
+    }
+
     showDialog(
       context: context,
       barrierDismissible: false,
@@ -131,43 +138,8 @@ class _WorkspaceScreenState extends ConsumerState<WorkspaceScreen> {
       if (context.mounted) Navigator.pop(context); // close loading dialog
       
       if (gistId != null && context.mounted) {
-        final String baseUrl = Uri.base.toString().split('#').first;
-        final String shareUrl = '$baseUrl#/share/$gistId';
-
-        showDialog(
-          context: context,
-          builder: (ctx) => AlertDialog(
-            title: const Text('Share Link Ready! 🚀'),
-            content: Column(
-              mainAxisSize: MainAxisSize.min,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const Text('Anyone with this link can read this note seamlessly on your web app:'),
-                const SizedBox(height: 12),
-                Container(
-                  padding: const EdgeInsets.all(12),
-                  decoration: BoxDecoration(
-                    color: Theme.of(context).colorScheme.surfaceContainerHighest,
-                    borderRadius: BorderRadius.circular(8),
-                  ),
-                  child: SelectableText(shareUrl, style: TextStyle(fontFamily: 'monospace', color: Theme.of(context).colorScheme.primary)),
-                ),
-              ],
-            ),
-            actions: [
-              TextButton(onPressed: () => Navigator.pop(ctx), child: const Text('Close')),
-              FilledButton.icon(
-                icon: const Icon(Icons.copy, size: 16),
-                label: const Text('Copy Link'),
-                onPressed: () {
-                  Clipboard.setData(ClipboardData(text: shareUrl));
-                  ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Link copied to clipboard!')));
-                  Navigator.pop(ctx);
-                },
-              ),
-            ],
-          ),
-        );
+        ref.invalidate(sharedGistsProvider);
+        _showManageShareDialog(context, ref, currentPath, content, gistId, isNewlyCreated: true);
       }
     } catch(e) {
       if (context.mounted) Navigator.pop(context);
@@ -177,6 +149,124 @@ class _WorkspaceScreenState extends ConsumerState<WorkspaceScreen> {
     }
   }
 
+  void _showManageShareDialog(
+    BuildContext context,
+    WidgetRef ref,
+    String currentPath,
+    String content,
+    String gistId, {
+    bool isNewlyCreated = false,
+  }) {
+    final String baseUrl = Uri.base.toString().split('#').first;
+    final String shareUrl = '$baseUrl#/share/$gistId';
+
+    showDialog(
+      context: context,
+      builder: (ctx) {
+        bool isProcessing = false;
+        return StatefulBuilder(
+          builder: (context, setState) {
+            return AlertDialog(
+              title: Text(isNewlyCreated ? 'Share Link Ready! 🚀' : 'Public Link Active 🔗'),
+              content: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text('Anyone with this link can read this note seamlessly on your web app:'),
+                  const SizedBox(height: 12),
+                  Container(
+                    padding: const EdgeInsets.all(12),
+                    decoration: BoxDecoration(
+                      color: Theme.of(context).colorScheme.surfaceContainerHighest,
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: SelectableText(
+                      shareUrl,
+                      style: TextStyle(fontFamily: 'monospace', color: Theme.of(context).colorScheme.primary),
+                    ),
+                  ),
+                ],
+              ),
+              actions: [
+                TextButton(
+                  onPressed: isProcessing ? null : () => Navigator.pop(ctx),
+                  child: const Text('Close'),
+                ),
+                TextButton.icon(
+                  icon: const Icon(Icons.link_off, size: 16, color: Colors.red),
+                  label: const Text('Batalkan Bagikan', style: TextStyle(color: Colors.red)),
+                  onPressed: isProcessing
+                      ? null
+                      : () async {
+                          setState(() => isProcessing = true);
+                          try {
+                            final repo = ref.read(githubNoteRepositoryProvider);
+                            await repo?.deleteGist(gistId);
+                            ref.invalidate(sharedGistsProvider);
+                            if (ctx.mounted) Navigator.pop(ctx);
+                            if (context.mounted) {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                const SnackBar(content: Text('Link publik berhasil dibatalkan')),
+                              );
+                            }
+                          } catch (e) {
+                            setState(() => isProcessing = false);
+                            if (context.mounted) {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(content: Text('Error: $e')),
+                              );
+                            }
+                          }
+                        },
+                ),
+                if (!isNewlyCreated)
+                  TextButton.icon(
+                    icon: const Icon(Icons.sync, size: 16),
+                    label: const Text('Update Isi'),
+                    onPressed: isProcessing
+                        ? null
+                        : () async {
+                            setState(() => isProcessing = true);
+                            try {
+                              final repo = ref.read(githubNoteRepositoryProvider);
+                              await repo?.updatePublicGist(gistId, currentPath, content);
+                              setState(() => isProcessing = false);
+                              if (context.mounted) {
+                                ScaffoldMessenger.of(context).showSnackBar(
+                                  const SnackBar(content: Text('Isi link publik diperbarui')),
+                                );
+                              }
+                            } catch (e) {
+                              setState(() => isProcessing = false);
+                              if (context.mounted) {
+                                ScaffoldMessenger.of(context).showSnackBar(
+                                  SnackBar(content: Text('Error: $e')),
+                                );
+                              }
+                            }
+                          },
+                  ),
+                FilledButton.icon(
+                  icon: const Icon(Icons.copy, size: 16),
+                  label: const Text('Copy Link'),
+                  onPressed: isProcessing
+                      ? null
+                      : () {
+                          Clipboard.setData(ClipboardData(text: shareUrl));
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            const SnackBar(content: Text('Link copied to clipboard!')),
+                          );
+                          Navigator.pop(ctx);
+                        },
+                ),
+              ],
+            );
+          },
+        );
+      },
+    );
+  }
+
   Future<void> _editMetadata(BuildContext context, WidgetRef ref) async {
     final meta = ref.read(activeNoteMetadataProvider);
     if (meta == null) {
@@ -184,6 +274,9 @@ class _WorkspaceScreenState extends ConsumerState<WorkspaceScreen> {
       return;
     }
     
+    final repo = ref.read(workspaceRepoProvider);
+    final isManHax = repo?.split('/').first.trim().toLowerCase() == 'manhax';
+
     final tagsController = TextEditingController(text: meta.tags.join(', '));
     final dateController = TextEditingController(text: meta.date ?? '');
     bool isFavorite = meta.favorite;
@@ -221,11 +314,12 @@ class _WorkspaceScreenState extends ConsumerState<WorkspaceScreen> {
                       value: isFavorite,
                       onChanged: (val) => setState(() => isFavorite = val),
                     ),
-                    SwitchListTile(
-                      title: const Text('Published'),
-                      value: isPublished,
-                      onChanged: (val) => setState(() => isPublished = val),
-                    ),
+                    if (isManHax)
+                      SwitchListTile(
+                        title: const Text('Published'),
+                        value: isPublished,
+                        onChanged: (val) => setState(() => isPublished = val),
+                      ),
                   ],
                 ),
               ),
@@ -343,10 +437,19 @@ class _WorkspaceScreenState extends ConsumerState<WorkspaceScreen> {
             }
           ),
           const SizedBox(width: 16),
-          IconButton(
-            tooltip: 'Share as Public Link',
-            icon: const Icon(Icons.ios_share),
-            onPressed: () => _sharePublicGist(context, ref),
+          Consumer(
+            builder: (context, ref, child) {
+              final sharedGists = ref.watch(sharedGistsProvider).asData?.value ?? {};
+              final isShared = resolveSharedGistId(sharedGists, currentPath) != null;
+              return IconButton(
+                tooltip: isShared ? 'Shared (Manage Public Link)' : 'Share as Public Link',
+                icon: Icon(
+                  isShared ? Icons.public : Icons.ios_share,
+                  color: isShared ? Colors.green[600] : null,
+                ),
+                onPressed: () => _sharePublicGist(context, ref),
+              );
+            },
           ),
           IconButton(
             tooltip: 'Rename / Move Note',
@@ -417,7 +520,10 @@ class _WorkspaceScreenState extends ConsumerState<WorkspaceScreen> {
                             IconButton(
                               icon: const Icon(Icons.refresh, size: 16),
                               tooltip: 'Refresh Cloud',
-                              onPressed: () => ref.refresh(notesListProvider),
+                              onPressed: () {
+                                ref.invalidate(notesListProvider);
+                                ref.invalidate(sharedGistsProvider);
+                              },
                             ),
                           ],
                         ),
@@ -428,6 +534,7 @@ class _WorkspaceScreenState extends ConsumerState<WorkspaceScreen> {
                     child: Consumer(
                       builder: (context, ref, child) {
                         final notesAsync = ref.watch(notesListProvider);
+                        final sharedGists = ref.watch(sharedGistsProvider).asData?.value ?? {};
                         return notesAsync.when(
                           loading: () => const Center(child: CircularProgressIndicator()),
                           error: (e, st) => Center(child: Text('Error: $e', style: const TextStyle(fontSize: 12))),
@@ -439,6 +546,7 @@ class _WorkspaceScreenState extends ConsumerState<WorkspaceScreen> {
                               itemBuilder: (context, index) {
                                 final path = notes[index];
                                 final isSelected = path == currentPath;
+                                final isShared = resolveSharedGistId(sharedGists, path) != null;
                                 
                                 return ListTile(
                                   leading: Icon(Icons.description_outlined, 
@@ -447,6 +555,12 @@ class _WorkspaceScreenState extends ConsumerState<WorkspaceScreen> {
                                   ),
                                   title: Text(path.split('/').last, style: TextStyle(fontSize: 14, fontWeight: isSelected ? FontWeight.bold : FontWeight.w500)),
                                   subtitle: path.contains('/') ? Text(path, style: const TextStyle(fontSize: 10)) : null,
+                                  trailing: isShared
+                                      ? Tooltip(
+                                          message: 'Shared via Public Link',
+                                          child: Icon(Icons.public, size: 16, color: Colors.green[600]),
+                                        )
+                                      : null,
                                   selected: isSelected,
                                   selectedTileColor: Theme.of(context).colorScheme.primaryContainer.withOpacity(0.5),
                                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
