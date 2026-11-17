@@ -81,6 +81,9 @@ class MarkdownParser {
     if (m.date != null && m.date!.isNotEmpty) {
       buffer.writeln('date: "${m.date}"');
     }
+    if (m.shareTheme != null && m.shareTheme!.isNotEmpty) {
+      buffer.writeln('share_theme: "${m.shareTheme}"');
+    }
     
     buffer.writeln(_separator);
     buffer.write(note.content);

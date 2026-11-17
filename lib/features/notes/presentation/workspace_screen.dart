@@ -4,6 +4,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 import '../domain/note.dart';
 import '../domain/note_metadata.dart';
+import '../domain/share_theme.dart';
+import '../infrastructure/markdown_parser.dart';
 import '../../sync/application/sync_service.dart';
 import '../../sync/infrastructure/github_note_repository.dart';
 import '../../settings/presentation/settings_dialog.dart';
@@ -113,7 +115,11 @@ class _WorkspaceScreenState extends ConsumerState<WorkspaceScreen> {
     final existingGistId = resolveSharedGistId(sharedGists, currentPath);
 
     if (existingGistId != null) {
-      _showManageShareDialog(context, ref, currentPath, content, existingGistId);
+      final meta = ref.read(activeNoteMetadataProvider);
+      final gistPayload = meta != null
+          ? MarkdownParser.stringify(Note(path: currentPath, metadata: meta, content: content))
+          : content;
+      _showManageShareDialog(context, ref, currentPath, gistPayload, existingGistId);
       return;
     }
 
@@ -133,13 +139,17 @@ class _WorkspaceScreenState extends ConsumerState<WorkspaceScreen> {
 
     try {
       final repo = ref.read(githubNoteRepositoryProvider);
-      final gistId = await repo?.createPublicGist(currentPath, content);
+      final meta = ref.read(activeNoteMetadataProvider);
+      final gistPayload = meta != null
+          ? MarkdownParser.stringify(Note(path: currentPath, metadata: meta, content: content))
+          : content;
+      final gistId = await repo?.createPublicGist(currentPath, gistPayload);
       
       if (context.mounted) Navigator.pop(context); // close loading dialog
       
       if (gistId != null && context.mounted) {
         ref.invalidate(sharedGistsProvider);
-        _showManageShareDialog(context, ref, currentPath, content, gistId, isNewlyCreated: true);
+        _showManageShareDialog(context, ref, currentPath, gistPayload, gistId, isNewlyCreated: true);
       }
     } catch(e) {
       if (context.mounted) Navigator.pop(context);
@@ -158,7 +168,8 @@ class _WorkspaceScreenState extends ConsumerState<WorkspaceScreen> {
     bool isNewlyCreated = false,
   }) {
     final String baseUrl = Uri.base.toString().split('#').first;
-    final String shareUrl = '$baseUrl#/share/$gistId';
+    final meta = ref.read(activeNoteMetadataProvider);
+    ShareTheme? selectedTheme = ShareTheme.fromId(meta?.shareTheme);
 
     showDialog(
       context: context,
@@ -166,26 +177,67 @@ class _WorkspaceScreenState extends ConsumerState<WorkspaceScreen> {
         bool isProcessing = false;
         return StatefulBuilder(
           builder: (context, setState) {
+            final String shareUrl = selectedTheme != null
+                ? '$baseUrl#/share/$gistId?theme=${selectedTheme!.id}'
+                : '$baseUrl#/share/$gistId';
+
             return AlertDialog(
               title: Text(isNewlyCreated ? 'Share Link Ready! 🚀' : 'Public Link Active 🔗'),
-              content: Column(
-                mainAxisSize: MainAxisSize.min,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const Text('Anyone with this link can read this note seamlessly on your web app:'),
-                  const SizedBox(height: 12),
-                  Container(
-                    padding: const EdgeInsets.all(12),
-                    decoration: BoxDecoration(
-                      color: Theme.of(context).colorScheme.surfaceContainerHighest,
-                      borderRadius: BorderRadius.circular(8),
+              content: SizedBox(
+                width: 460,
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text('Anyone with this link can read this note seamlessly on your web app:'),
+                    const SizedBox(height: 12),
+                    Container(
+                      width: double.infinity,
+                      padding: const EdgeInsets.all(12),
+                      decoration: BoxDecoration(
+                        color: Theme.of(context).colorScheme.surfaceContainerHighest,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: SelectableText(
+                        shareUrl,
+                        style: TextStyle(fontFamily: 'monospace', color: Theme.of(context).colorScheme.primary),
+                      ),
                     ),
-                    child: SelectableText(
-                      shareUrl,
-                      style: TextStyle(fontFamily: 'monospace', color: Theme.of(context).colorScheme.primary),
+                    const SizedBox(height: 16),
+                    Text(
+                      'Tema Halaman Share (URL Preset)',
+                      style: Theme.of(context).textTheme.labelMedium?.copyWith(fontWeight: FontWeight.w600),
                     ),
-                  ),
-                ],
+                    const SizedBox(height: 8),
+                    Wrap(
+                      spacing: 8,
+                      runSpacing: 6,
+                      children: [
+                        ChoiceChip(
+                          label: const Text('Default'),
+                          selected: selectedTheme == null,
+                          onSelected: (_) => setState(() => selectedTheme = null),
+                        ),
+                        ...ShareTheme.values.map((theme) {
+                          return ChoiceChip(
+                            avatar: CircleAvatar(
+                              backgroundColor: theme.background,
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  border: Border.all(color: theme.primary, width: 2),
+                                ),
+                              ),
+                            ),
+                            label: Text(theme.label),
+                            selected: selectedTheme == theme,
+                            onSelected: (_) => setState(() => selectedTheme = theme),
+                          );
+                        }),
+                      ],
+                    ),
+                  ],
+                ),
               ),
               actions: [
                 TextButton(
@@ -281,6 +333,7 @@ class _WorkspaceScreenState extends ConsumerState<WorkspaceScreen> {
     final dateController = TextEditingController(text: meta.date ?? '');
     bool isFavorite = meta.favorite;
     bool isPublished = meta.published;
+    String? selectedShareTheme = ShareTheme.fromId(meta.shareTheme)?.id;
 
     final result = await showDialog<NoteMetadata>(
       context: context,
@@ -309,6 +362,25 @@ class _WorkspaceScreenState extends ConsumerState<WorkspaceScreen> {
                       ),
                     ),
                     const SizedBox(height: 16),
+                    DropdownButtonFormField<String?>(
+                      value: selectedShareTheme,
+                      decoration: const InputDecoration(
+                        labelText: 'Default Share Theme',
+                        border: OutlineInputBorder(),
+                      ),
+                      items: [
+                        const DropdownMenuItem<String?>(
+                          value: null,
+                          child: Text('System Default'),
+                        ),
+                        ...ShareTheme.values.map((t) => DropdownMenuItem<String?>(
+                              value: t.id,
+                              child: Text(t.label),
+                            )),
+                      ],
+                      onChanged: (val) => setState(() => selectedShareTheme = val),
+                    ),
+                    const SizedBox(height: 16),
                     SwitchListTile(
                       title: const Text('Favorite'),
                       value: isFavorite,
@@ -327,11 +399,15 @@ class _WorkspaceScreenState extends ConsumerState<WorkspaceScreen> {
                 TextButton(onPressed: () => Navigator.pop(ctx), child: const Text('Cancel')),
                 FilledButton(
                   onPressed: () {
-                    final newMeta = meta.copyWith(
+                    final newMeta = NoteMetadata(
+                      title: meta.title,
                       tags: tagsController.text.split(',').map((e) => e.trim()).where((e) => e.isNotEmpty).toList(),
+                      created: meta.created,
+                      updated: DateTime.now(),
                       date: dateController.text,
                       favorite: isFavorite,
                       published: isPublished,
+                      shareTheme: selectedShareTheme,
                     );
                     Navigator.pop(ctx, newMeta);
                   },

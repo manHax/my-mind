@@ -9,6 +9,7 @@ class NoteMetadata {
   final bool favorite;
   final bool published;
   final String? date;
+  final String? shareTheme;
 
   const NoteMetadata({
     required this.title,
@@ -18,6 +19,7 @@ class NoteMetadata {
     this.favorite = false,
     this.published = false,
     this.date,
+    this.shareTheme,
   });
 
   NoteMetadata copyWith({
@@ -28,6 +30,7 @@ class NoteMetadata {
     bool? favorite,
     bool? published,
     String? date,
+    String? shareTheme,
   }) {
     return NoteMetadata(
       title: title ?? this.title,
@@ -37,6 +40,7 @@ class NoteMetadata {
       favorite: favorite ?? this.favorite,
       published: published ?? this.published,
       date: date ?? this.date,
+      shareTheme: shareTheme ?? this.shareTheme,
     );
   }
 
@@ -64,6 +68,7 @@ class NoteMetadata {
       favorite: map['favorite']?.toString().toLowerCase() == 'true',
       published: map['published']?.toString().toLowerCase() == 'true',
       date: map['date']?.toString(),
+      shareTheme: map['share_theme']?.toString(),
     );
   }
 
@@ -101,6 +106,9 @@ class NoteMetadata {
     if (date != null && date!.isNotEmpty) {
       res['date'] = date;
     }
+    if (shareTheme != null && shareTheme!.isNotEmpty) {
+      res['share_theme'] = shareTheme;
+    }
     return res;
   }
 
@@ -114,11 +122,12 @@ class NoteMetadata {
         other.updated == updated &&
         other.favorite == favorite &&
         other.published == published &&
-        other.date == date;
+        other.date == date &&
+        other.shareTheme == shareTheme;
   }
 
   @override
   int get hashCode {
-    return title.hashCode ^ tags.hashCode ^ created.hashCode ^ updated.hashCode ^ favorite.hashCode ^ published.hashCode ^ date.hashCode;
+    return title.hashCode ^ tags.hashCode ^ created.hashCode ^ updated.hashCode ^ favorite.hashCode ^ published.hashCode ^ date.hashCode ^ shareTheme.hashCode;
   }
 }

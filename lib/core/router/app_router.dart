@@ -28,7 +28,8 @@ final routerProvider = Provider<GoRouter>((ref) {
         path: '/share/:gistId',
         builder: (context, state) {
           final gistId = state.pathParameters['gistId']!;
-          return SharedNoteScreen(gistId: gistId);
+          final themeParam = state.uri.queryParameters['theme'];
+          return SharedNoteScreen(gistId: gistId, initialThemeId: themeParam);
         },
       ),
     ],
