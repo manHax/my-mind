@@ -92,6 +92,38 @@ class _SharedNoteScreenState extends State<SharedNoteScreen> {
     return '$minutes min read';
   }
 
+  ({String title, String body}) _resolveTitleAndBody() {
+    final lines = _content.split('\n');
+    String? leadingH1;
+    int h1LineIndex = -1;
+
+    for (int i = 0; i < lines.length; i++) {
+      final trimmed = lines[i].trim();
+      if (trimmed.isEmpty) continue;
+      if (trimmed.startsWith('# ')) {
+        leadingH1 = trimmed.substring(2).trim();
+        h1LineIndex = i;
+      }
+      break;
+    }
+
+    final bareFilename = _filename.split(RegExp(r'[\\/]')).last.replaceAll('.md', '');
+    final metaTitle = _metadata?.title.trim() ?? '';
+    final isGenericMetaTitle =
+        metaTitle.isEmpty || metaTitle == 'Untitled' || metaTitle.toLowerCase() == bareFilename.toLowerCase();
+
+    final resolvedTitle = (!isGenericMetaTitle)
+        ? metaTitle
+        : (leadingH1 ?? MarkdownParser.extractTitle(_content, _filename));
+
+    // Remove the leading H1 from body so the title isn't rendered twice
+    final resolvedBody = h1LineIndex != -1
+        ? lines.sublist(h1LineIndex + 1).join('\n').trimLeft()
+        : _content;
+
+    return (title: resolvedTitle, body: resolvedBody);
+  }
+
   @override
   Widget build(BuildContext context) {
     final activeShareTheme = _resolveTheme(context);
@@ -229,33 +261,44 @@ class _SharedNoteScreenState extends State<SharedNoteScreen> {
                                       ],
                                     ),
                                   )
-                                : Column(
-                                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                                    children: [
-                                      _buildArticleHeader(context, colorScheme, textTheme, isCompact),
-                                      const SizedBox(height: 24),
-                                      Divider(color: colorScheme.outline, height: 1),
-                                      const SizedBox(height: 28),
-                                      MarkdownBody(
-                                        data: _content,
-                                        selectable: true,
-                                        styleSheet: _buildMarkdownStyle(colorScheme, textTheme),
-                                      ),
-                                      const SizedBox(height: 40),
-                                      Divider(color: colorScheme.outline, height: 1),
-                                      const SizedBox(height: 20),
-                                      Row(
-                                        mainAxisAlignment: MainAxisAlignment.center,
+                                : Builder(
+                                    builder: (context) {
+                                      final resolved = _resolveTitleAndBody();
+                                      return Column(
+                                        crossAxisAlignment: CrossAxisAlignment.stretch,
                                         children: [
-                                          Icon(Icons.auto_stories_outlined, size: 14, color: colorScheme.onSurfaceVariant),
-                                          const SizedBox(width: 6),
-                                          Text(
-                                            'Published with My Mind',
-                                            style: textTheme.labelMedium?.copyWith(color: colorScheme.onSurfaceVariant),
+                                          _buildArticleHeader(
+                                            context,
+                                            colorScheme,
+                                            textTheme,
+                                            isCompact,
+                                            resolved.title,
+                                          ),
+                                          const SizedBox(height: 24),
+                                          Divider(color: colorScheme.outline, height: 1),
+                                          const SizedBox(height: 28),
+                                          MarkdownBody(
+                                            data: resolved.body,
+                                            selectable: true,
+                                            styleSheet: _buildMarkdownStyle(colorScheme, textTheme),
+                                          ),
+                                          const SizedBox(height: 40),
+                                          Divider(color: colorScheme.outline, height: 1),
+                                          const SizedBox(height: 20),
+                                          Row(
+                                            mainAxisAlignment: MainAxisAlignment.center,
+                                            children: [
+                                              Icon(Icons.auto_stories_outlined, size: 14, color: colorScheme.onSurfaceVariant),
+                                              const SizedBox(width: 6),
+                                              Text(
+                                                'Published with My Mind',
+                                                style: textTheme.labelMedium?.copyWith(color: colorScheme.onSurfaceVariant),
+                                              ),
+                                            ],
                                           ),
                                         ],
-                                      ),
-                                    ],
+                                      );
+                                    },
                                   ),
                       ),
                     ],
@@ -274,10 +317,8 @@ class _SharedNoteScreenState extends State<SharedNoteScreen> {
     ColorScheme colorScheme,
     TextTheme textTheme,
     bool isCompact,
+    String title,
   ) {
-    final title = _metadata?.title.isNotEmpty == true && _metadata?.title != 'Untitled'
-        ? _metadata!.title
-        : MarkdownParser.extractTitle(_content, _filename);
     final dateStr = _metadata?.date?.isNotEmpty == true ? _metadata!.date! : null;
     final tags = _metadata?.tags ?? const [];
     final readingTime = _estimateReadingTime(_content);
@@ -288,6 +329,7 @@ class _SharedNoteScreenState extends State<SharedNoteScreen> {
         Text(
           title,
           style: (isCompact ? textTheme.headlineMedium : textTheme.displaySmall)?.copyWith(
+            fontSize: isCompact ? 26 : 34,
             fontWeight: FontWeight.w700,
             color: colorScheme.onSurface,
             height: 1.25,
