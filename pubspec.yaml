@@ -1,5 +1,5 @@
 name: my_mind
-description: "A new Flutter project."
+description: "Aplikasi manajemen pengetahuan pribadi (Personal Knowledge Management) berbasis Markdown yang tersinkronisasi dengan GitHub."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev

@@ -1,11 +1,11 @@
 {
-    "name": "my_mind",
-    "short_name": "my_mind",
+    "name": "My Mind",
+    "short_name": "My Mind",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Aplikasi manajemen pengetahuan pribadi (Personal Knowledge Management) berbasis Markdown yang tersinkronisasi dengan GitHub.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
